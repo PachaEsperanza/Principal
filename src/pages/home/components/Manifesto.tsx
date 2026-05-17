@@ -182,19 +182,16 @@ const Manifesto = () => {
 
         </div>
 
-        {/* Stats column 2x2 */}
-        <div ref={statsRef} className="grid grid-cols-2 gap-4 lg:sticky lg:top-20">
-          {stats.map((s) => (
-            <CircleStat
-              key={s.label}
-              val={s.val}
-              prefix={s.prefix}
-              suffix={s.suffix}
-              label={s.label}
-              maxVal={s.maxVal}
-              active={statsVisible}
+        {/* Image column */}
+        <div className="lg:sticky lg:top-20">
+          <div className="rounded-2xl overflow-hidden" style={{ border: '1px solid rgba(201,168,76,0.2)' }}>
+            <img
+              src="/SemillasDeEsperanza/images/imagen1.png"
+              alt="Semillas de Esperanza"
+              className="w-full h-full object-cover"
+              style={{ minHeight: '360px', maxHeight: '480px' }}
             />
-          ))}
+          </div>
         </div>
 
       </div>
