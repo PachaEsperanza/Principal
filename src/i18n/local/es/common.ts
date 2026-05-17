@@ -7,9 +7,9 @@ const es = {
   nav_contact: 'Contacto',
 
   // Hero
-  hero_eyebrow: "Cacao Fino · La Convención · Perú",
+  hero_eyebrow: "Cacao Chuncho · La Convención · Perú",
   hero_subtitle: "Esto no es solo cacao.\nEs la promesa\nde que nunca más serán olvidados.",
-  hero_desc: "Cacao fino de La Convención, Cusco. Cosechado por familias que creyeron de nuevo, fermentado con paciencia y entregado al mundo con sus historias intactas.",
+  hero_desc: "Cacao Chuncho de La Convención, Cusco. Cosechado por familias que creyeron de nuevo, fermentado con paciencia y entregado al mundo con sus historias intactas.",
   hero_cta_primary: 'GENERAR IMPACTO',
   hero_cta_secondary: 'Nuestros Productores',
 
