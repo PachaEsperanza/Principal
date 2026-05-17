@@ -127,7 +127,7 @@ const Manifesto = () => {
         loop
         playsInline
         className="absolute inset-0 w-full h-full object-cover opacity-40 pointer-events-none"
-        src="/Home/videos/hero5.mp4"
+        src="/Home/videos/fondo2.mp4"
       />
       <div className="absolute inset-0 bg-coffee-900/45 pointer-events-none" />
       <div className="relative z-10 max-w-6xl mx-auto grid lg:grid-cols-3 gap-10 items-start">
@@ -148,13 +148,20 @@ const Manifesto = () => {
               <button
                 key={tab.key}
                 onClick={() => setActiveTab(i)}
-                className={`px-4 py-1.5 rounded-full text-xs tracking-widest uppercase font-sans transition-all duration-300 cursor-pointer whitespace-nowrap ${
+                className={`relative overflow-hidden px-4 py-1.5 rounded-full text-xs tracking-widest uppercase transition-all duration-300 cursor-pointer whitespace-nowrap ${
                   activeTab === i
                     ? 'bg-gold text-coffee-900 font-semibold'
                     : 'text-cream/50 hover:text-cream'
                 }`}
+                style={{ fontFamily: "'Playfair Display', serif" }}
               >
-                {tab.label}
+                {activeTab === i && (
+                  <span
+                    className="absolute top-0 bottom-0 w-1/3 bg-gradient-to-r from-transparent via-white/40 to-transparent"
+                    style={{ animation: 'shimmerSweep 2s ease-in-out infinite' }}
+                  />
+                )}
+                <span className="relative z-10">{tab.label}</span>
               </button>
             ))}
           </div>
@@ -211,5 +218,21 @@ const Manifesto = () => {
     </section>
   );
 };
+
+// shimmerSweep is defined globally in index.css — adding inline fallback
+const _shimmerStyle = `
+@keyframes shimmerSweep {
+  0% { transform: translateX(-100%); }
+  60% { transform: translateX(200%); }
+  100% { transform: translateX(200%); }
+}
+`;
+
+if (typeof document !== 'undefined' && !document.getElementById('manifesto-shimmer')) {
+  const s = document.createElement('style');
+  s.id = 'manifesto-shimmer';
+  s.textContent = _shimmerStyle;
+  document.head.appendChild(s);
+}
 
 export default Manifesto;
