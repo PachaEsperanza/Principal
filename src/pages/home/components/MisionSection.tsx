@@ -93,6 +93,29 @@ const MisionSection = () => {
               />
             </div>
 
+            {/* Badge "Desliza" — entre el título y las fotos */}
+            <div className="mb-4">
+              <div
+                className="relative overflow-hidden inline-flex items-center gap-2 px-5 py-2 rounded-full font-sans text-xs font-semibold tracking-[0.18em] uppercase select-none cursor-default"
+                style={{
+                  background: 'linear-gradient(135deg, #3F0D17 0%, #7A1D2E 50%, #3F0D17 100%)',
+                  color: '#fff8f0',
+                  boxShadow: '0 0 18px rgba(122,29,46,0.6), 0 0 10px rgba(201,169,110,0.25)',
+                  whiteSpace: 'nowrap',
+                }}
+              >
+                <i className="ri-drag-move-line text-sm" />
+                Desliza para ver más
+                <span
+                  className="absolute top-0 bottom-0 w-1/3 pointer-events-none"
+                  style={{
+                    background: 'linear-gradient(90deg, transparent, rgba(255,255,255,0.35), transparent)',
+                    animation: 'misionShimmer 2.2s ease-in-out infinite',
+                  }}
+                />
+              </div>
+            </div>
+
             {/* Carousel container */}
             <div
               className="relative rounded-2xl overflow-hidden"
@@ -116,29 +139,6 @@ const MisionSection = () => {
                 className="absolute inset-x-0 bottom-0 h-28 pointer-events-none"
                 style={{ background: 'linear-gradient(to top, rgba(15,8,3,0.85), transparent)' }}
               />
-
-              {/* Badge "Desliza" — ahora en la parte inferior sobre el gradiente, no choca con imagen */}
-              <div className="absolute bottom-10 left-1/2 z-20" style={{ transform: 'translateX(-50%)' }}>
-                <div
-                  className="relative overflow-hidden inline-flex items-center gap-2 px-5 py-2 rounded-full font-sans text-xs font-semibold tracking-[0.18em] uppercase select-none cursor-default"
-                  style={{
-                    background: 'linear-gradient(135deg, #3F0D17 0%, #7A1D2E 50%, #3F0D17 100%)',
-                    color: '#fff8f0',
-                    boxShadow: '0 0 18px rgba(122,29,46,0.6), 0 0 10px rgba(201,169,110,0.25)',
-                    whiteSpace: 'nowrap',
-                  }}
-                >
-                  <i className="ri-drag-move-line text-sm" />
-                  Desliza para ver más
-                  <span
-                    className="absolute top-0 bottom-0 w-1/3 pointer-events-none"
-                    style={{
-                      background: 'linear-gradient(90deg, transparent, rgba(255,255,255,0.35), transparent)',
-                      animation: 'misionShimmer 2.2s ease-in-out infinite',
-                    }}
-                  />
-                </div>
-              </div>
 
               {/* Dots */}
               <div className="absolute bottom-4 left-0 right-0 flex justify-center gap-2 z-10">
