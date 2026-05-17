@@ -134,7 +134,7 @@ const Manifesto = () => {
 
         {/* LEFT */}
         <div className={`lg:col-span-2 transition-all duration-700 ${contentVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'}`}>
-          <h2 className="font-serif text-4xl md:text-5xl text-cream leading-tight mb-8" style={{ fontWeight: 800 }}>
+          <h2 className="font-serif text-3xl md:text-4xl text-cream leading-tight mb-8" style={{ fontWeight: 800 }}>
             {t('manifesto_title').split('\n').map((line, i, arr) => (
               i === arr.length - 1
                 ? <span key={i}>{line} <em style={{ fontStyle: 'italic', color: '#7A1D2E', WebkitTextStroke: '0.3px #7A1D2E', filter: 'drop-shadow(0 0 14px rgba(255,255,255,0.95)) drop-shadow(0 0 28px rgba(255,255,255,0.55)) drop-shadow(0 0 6px rgba(122,29,46,0.4))' }}>{t('manifesto_title_highlight')}</em></span>
