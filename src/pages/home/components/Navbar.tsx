@@ -50,7 +50,6 @@ const Navbar = ({ cartCount, onCartOpen }: NavbarProps) => {
 
   const links = [
     { key: 'manifesto', label: t('nav_philosophy') },
-    { key: 'products', label: t('nav_catalog') },
     { key: 'farmers', label: t('nav_farmers') },
     { key: 'process', label: t('nav_process') },
     { key: 'contact', label: t('nav_contact') },
@@ -88,15 +87,7 @@ const Navbar = ({ cartCount, onCartOpen }: NavbarProps) => {
                 </button>
               </li>
             ))}
-            <li>
-              <Link
-                to="/empresas"
-                className="flex items-center gap-1.5 text-sm tracking-widest uppercase font-sans whitespace-nowrap px-4 py-1.5 rounded-full border border-gold/50 text-gold hover:bg-gold hover:text-coffee-900 transition-all duration-200 font-semibold"
-              >
-                <i className="ri-building-2-line text-sm" />
-                Empresas
-              </Link>
-            </li>
+
             <li className="flex items-center gap-2 animate-flag-float">
               <img
                 src="https://flagcdn.com/w40/pe.png"
@@ -254,14 +245,6 @@ const Navbar = ({ cartCount, onCartOpen }: NavbarProps) => {
                 {l.label}
               </button>
             ))}
-            <Link
-              to="/empresas"
-              onClick={() => setMobOpen(false)}
-              className="flex items-center gap-2 text-gold font-semibold tracking-widest uppercase font-sans text-base"
-            >
-              <i className="ri-building-2-line" />
-              Empresas
-            </Link>
           </div>
           <a
             href="https://wa.me/51XXXXXXXXX?text=Hola,%20me%20interesa%20el%20café%20HOLZEN"

@@ -57,10 +57,12 @@ const Hero = () => {
           {t('hero_eyebrow')}
         </p>
         <h1
-          className="font-serif font-black text-[clamp(1.8rem,5vw,4rem)] leading-none tracking-[0.1em] uppercase mb-4 relative inline-block overflow-hidden"
+          className="font-serif text-[clamp(2rem,5.5vw,4.5rem)] leading-none tracking-[0.1em] uppercase mb-4 relative inline-block"
           style={{
             color: '#7A1D2E',
-            textShadow: '0 0 24px rgba(201,169,110,0.55), 0 2px 12px rgba(0,0,0,0.6)',
+            fontWeight: 950,
+            WebkitTextStroke: '0.5px #7A1D2E',
+            textShadow: '0 0 24px rgba(201,169,110,0.5), 0 2px 12px rgba(0,0,0,0.6)',
           }}
         >
           Comparto tu Esperanza
@@ -68,12 +70,16 @@ const Hero = () => {
             aria-hidden="true"
             className="absolute inset-0 animate-shimmer pointer-events-none"
             style={{
-              background: 'linear-gradient(110deg, transparent 30%, rgba(255,255,255,0.55) 50%, transparent 70%)',
-              mixBlendMode: 'overlay',
+              background: 'linear-gradient(110deg, transparent 35%, rgba(255,255,255,0.85) 50%, transparent 65%)',
+              WebkitBackgroundClip: 'text',
+              WebkitTextFillColor: 'transparent',
+              backgroundClip: 'text',
             }}
-          />
+          >
+            Comparto tu Esperanza
+          </span>
         </h1>
-
+        
         <p className="font-serif font-black text-[clamp(0.85rem,2.3vw,1.9rem)] leading-tight tracking-[0.08em] text-cream uppercase mb-8 whitespace-pre-line">
           {t('hero_subtitle')}
         </p>
