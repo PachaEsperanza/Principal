@@ -74,12 +74,7 @@ const Navbar = ({ cartCount, onCartOpen }: NavbarProps) => {
             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
             className="cursor-pointer"
           >
-            <span className="font-serif text-xl font-bold tracking-[0.2em] text-cream uppercase">
-              HOLZEN
-            </span>
-            <span className="block text-[10px] tracking-[0.15em] text-gold font-sans font-light">
-              by Legado Inca
-            </span>
+            <span></span>
           </button>
 
           <ul className="hidden md:flex items-center gap-8">
