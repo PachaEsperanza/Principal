@@ -25,14 +25,14 @@ const b2bProducts = [
     name: 'Caturra del Cusco',
     origin: 'Quillabamba, Cusco · 1,200 msnm',
     notes: 'Frutas rojas · Jazmín · Panela',
-    image: '/Holzen/images/product1.jpeg',
+    image: '/Home/images/product1.jpeg',
     formats: [
       { label: 'Caja 5 kg', price: 29.50, unit: 'caja', minQty: 5 },
       { label: 'Saco 30 kg', price: 27.00, unit: 'saco', minQty: 1 },
       { label: 'Saco 60 kg', price: 25.50, unit: 'saco', minQty: 1 },
     ],
     producer: 'Lucía Quispe',
-    producerImg: '/Holzen/images/farmer1.jpg',
+    producerImg: '/Home/images/farmer1.jpg',
     badge: 'Más pedido',
   },
   {
@@ -41,14 +41,14 @@ const b2bProducts = [
     name: 'Bourbon Rojo Natural',
     origin: 'San Martín, Perú · 1,600 msnm',
     notes: 'Ciruela · Chocolate negro · Miel',
-    image: '/Holzen/images/product2.jpg',
+    image: '/Home/images/product2.jpg',
     formats: [
       { label: 'Caja 5 kg', price: 26.00, unit: 'caja', minQty: 5 },
       { label: 'Saco 30 kg', price: 23.50, unit: 'saco', minQty: 1 },
       { label: 'Saco 60 kg', price: 22.00, unit: 'saco', minQty: 1 },
     ],
     producer: 'Edilberto Rojas',
-    producerImg: '/Holzen/images/farmer2.jpeg',
+    producerImg: '/Home/images/farmer2.jpeg',
     badge: null,
   },
   {
@@ -57,14 +57,14 @@ const b2bProducts = [
     name: 'Monzón Heritage Honey',
     origin: 'Valle Monzón, Huánuco · 900 msnm',
     notes: 'Durazno · Caña · Madera dulce',
-    image: '/Holzen/images/product3.jpg',
+    image: '/Home/images/product3.jpg',
     formats: [
       { label: 'Caja 5 kg', price: 25.50, unit: 'caja', minQty: 5 },
       { label: 'Saco 30 kg', price: 23.00, unit: 'saco', minQty: 1 },
       { label: 'Saco 60 kg', price: 21.50, unit: 'saco', minQty: 1 },
     ],
     producer: 'Rosa Panduro',
-    producerImg: '/Holzen/images/farmer3.jpeg',
+    producerImg: '/Home/images/farmer3.jpeg',
     badge: null,
   },
   {
@@ -73,14 +73,14 @@ const b2bProducts = [
     name: 'Geisha de Jaén',
     origin: 'Jaén, Cajamarca · 1,800 msnm',
     notes: 'Bergamota · Flor blanca · Limón',
-    image: '/Holzen/images/product4.jpg',
+    image: '/Home/images/product4.jpg',
     formats: [
       { label: 'Caja 5 kg', price: 40.00, unit: 'caja', minQty: 3 },
       { label: 'Saco 30 kg', price: 37.00, unit: 'saco', minQty: 1 },
       { label: 'Saco 60 kg', price: 35.00, unit: 'saco', minQty: 1 },
     ],
     producer: 'Segundo Herrera',
-    producerImg: '/Holzen/images/farmer5.jpg',
+    producerImg: '/Home/images/farmer5.jpg',
     badge: 'Premium',
   },
   {
@@ -89,14 +89,14 @@ const b2bProducts = [
     name: 'Pampas Alto Typica',
     origin: 'Ayacucho · 2,200 msnm',
     notes: 'Cacao · Tabaco suave · Frutos secos',
-    image: '/Holzen/images/product5.jpeg',
+    image: '/Home/images/product5.jpeg',
     formats: [
       { label: 'Caja 5 kg', price: 31.00, unit: 'caja', minQty: 5 },
       { label: 'Saco 30 kg', price: 28.50, unit: 'saco', minQty: 1 },
       { label: 'Saco 60 kg', price: 27.00, unit: 'saco', minQty: 1 },
     ],
     producer: 'Manuel Ccahuana',
-    producerImg: '/Holzen/images/farmer6.jpg',
+    producerImg: '/Home/images/farmer6.jpg',
     badge: null,
   },
   {
@@ -105,14 +105,14 @@ const b2bProducts = [
     name: 'La Esperanza Caturra',
     origin: 'Cusco · Finca La Esperanza · 2,800 msnm',
     notes: 'Naranja · Caramelo · Almendra',
-    image: '/Holzen/images/farmer7.jpeg',
+    image: '/Home/images/farmer7.jpeg',
     formats: [
       { label: 'Caja 5 kg', price: 36.50, unit: 'caja', minQty: 3 },
       { label: 'Saco 30 kg', price: 33.00, unit: 'saco', minQty: 1 },
       { label: 'Saco 60 kg', price: 31.00, unit: 'saco', minQty: 1 },
     ],
     producer: 'Rosa Quispe',
-    producerImg: '/Holzen/images/farmer4.jpeg',
+    producerImg: '/Home/images/farmer4.jpeg',
     badge: null,
   },
 ];
@@ -129,7 +129,7 @@ const CORPORATE_FARMERS = [
     need: 'Necesita: Tanques de fermentación artesanal',
     progress: 68,
     adopters: 3,
-    image: '/Holzen/images/farmer1.jpg',
+    image: '/Home/images/farmer1.jpg',
     impact: {
       500: 'Financia el análisis de laboratorio mensual + empaque GrainPro de 2 sacos de 60 kg.',
       700: 'Cubre la certificación EUDR anual de su finca + transporte al puerto de exportación.',
@@ -146,7 +146,7 @@ const CORPORATE_FARMERS = [
     need: 'Necesita: Camas africanas de secado solar',
     progress: 45,
     adopters: 2,
-    image: '/Holzen/images/farmer2.jpeg',
+    image: '/Home/images/farmer2.jpeg',
     impact: {
       500: 'Financia 4 camas africanas de secado solar para su finca de 3 hectáreas.',
       700: 'Cubre la renovación de plantas + insumos de procesado natural por un año.',
@@ -163,7 +163,7 @@ const CORPORATE_FARMERS = [
     need: 'Necesita: Secadora solar portátil',
     progress: 20,
     adopters: 1,
-    image: '/Holzen/images/farmer3.jpeg',
+    image: '/Home/images/farmer3.jpeg',
     impact: {
       500: 'Financia la secadora solar portátil que necesita para independizarse de intermediarios.',
       700: 'Cubre la secadora + capacitación en catación + primer lote de exportación directa.',
@@ -278,7 +278,7 @@ const EmpresasHero = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       <video autoPlay muted loop playsInline className="absolute inset-0 w-full h-full object-cover">
-        <source src="/Holzen/videos/hero5.mp4" type="video/mp4" />
+        <source src="/Home/videos/hero5.mp4" type="video/mp4" />
       </video>
       <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/20 to-coffee-900/75" />
 
@@ -367,7 +367,7 @@ const B2BCatalog = () => {
   return (
     <section id="b2b-catalogo" className="relative py-16 md:py-24 px-4 md:px-6 overflow-hidden">
       <div className="absolute inset-0">
-        <video autoPlay muted loop playsInline className="w-full h-full object-cover object-center"><source src="/Holzen/videos/farmers-bg.mp4" type="video/mp4" /></video>
+        <video autoPlay muted loop playsInline className="w-full h-full object-cover object-center"><source src="/Home/videos/farmers-bg.mp4" type="video/mp4" /></video>
         <div className="absolute inset-0 bg-coffee-900/70" />
       </div>
 
@@ -494,7 +494,7 @@ const B2BFarmers = () => {
     <section id="b2b-productores" className="relative py-16 md:py-20 px-4 md:px-6 overflow-hidden">
       <div className="absolute inset-0 z-0">
         <video autoPlay muted loop playsInline className="w-full h-full object-cover object-center">
-          <source src="/Holzen/videos/hero4.mp4" type="video/mp4" />
+          <source src="/Home/videos/hero4.mp4" type="video/mp4" />
         </video>
         <div className="absolute inset-0 bg-coffee-900/75" />
       </div>
@@ -589,28 +589,28 @@ const B2BProcess = () => {
       title: t('emp_process_step1_title'),
       desc: t('emp_process_step1_desc'),
       tags: ['100% Manual', 'GPS trazado'],
-      image: '/Holzen/images/process1.jpeg',
+      image: '/Home/images/process1.jpeg',
     },
     {
       n: '02', icon: 'ri-flask-line',
       title: t('emp_process_step2_title'),
       desc: t('emp_process_step2_desc'),
       tags: ['48-72 horas', 'Fermentación'],
-      image: '/Holzen/images/process2.jpeg',
+      image: '/Home/images/process2.jpeg',
     },
     {
       n: '03', icon: 'ri-sun-line',
       title: t('emp_process_step3_title'),
       desc: t('emp_process_step3_desc'),
       tags: ['7-10 días', '≤7% humedad'],
-      image: '/Holzen/images/process3.jpeg',
+      image: '/Home/images/process3.jpeg',
     },
     {
       n: '04', icon: 'ri-shield-check-line',
       title: t('emp_process_step4_title'),
       desc: t('emp_process_step4_desc'),
       tags: ['Cert. EUDR', 'GrainPro'],
-      image: '/Holzen/images/process4.jpeg',
+      image: '/Home/images/process4.jpeg',
     },
   ];
 
@@ -635,7 +635,7 @@ const B2BProcess = () => {
   return (
     <section id="b2b-proceso" className="relative py-16 md:py-20 px-4 md:px-6 overflow-hidden">
       <div className="absolute inset-0">
-        <img src="/Holzen/images/process3.jpeg" alt="bg" className="w-full h-full object-cover object-center" />
+        <img src="/Home/images/process3.jpeg" alt="bg" className="w-full h-full object-cover object-center" />
         <div className="absolute inset-0 bg-coffee-900/80" />
       </div>
 
@@ -742,17 +742,17 @@ const B2BImpact = () => {
   };
 
   const impactCards = [
-    { icon: 'ri-group-line', getValue: (n: number) => String(Math.max(1, Math.round(n / 8))), label: t('emp_impact_card1'), image: '/Holzen/images/impact1.jpeg' },
-    { icon: 'ri-money-dollar-circle-line', getValue: (n: number) => `$${(n * 3.2).toFixed(0)}`, label: t('emp_impact_card2'), image: '/Holzen/images/product5.jpeg' },
-    { icon: 'ri-book-open-line', getValue: (n: number) => String(Math.max(1, Math.round(n / 12))), label: t('emp_impact_card3'), image: '/Holzen/images/impact3.jpeg' },
-    { icon: 'ri-plant-line', getValue: (n: number) => String(Math.max(1, Math.round(n * 2.1))), label: t('emp_impact_card4'), image: '/Holzen/images/product1.jpeg' },
+    { icon: 'ri-group-line', getValue: (n: number) => String(Math.max(1, Math.round(n / 8))), label: t('emp_impact_card1'), image: '/Home/images/impact1.jpeg' },
+    { icon: 'ri-money-dollar-circle-line', getValue: (n: number) => `$${(n * 3.2).toFixed(0)}`, label: t('emp_impact_card2'), image: '/Home/images/product5.jpeg' },
+    { icon: 'ri-book-open-line', getValue: (n: number) => String(Math.max(1, Math.round(n / 12))), label: t('emp_impact_card3'), image: '/Home/images/impact3.jpeg' },
+    { icon: 'ri-plant-line', getValue: (n: number) => String(Math.max(1, Math.round(n * 2.1))), label: t('emp_impact_card4'), image: '/Home/images/product1.jpeg' },
   ];
 
   return (
     <section className="relative py-12 md:py-16 px-4 md:px-6 overflow-hidden">
       <div className="absolute inset-0 z-0">
         <video autoPlay muted loop playsInline className="w-full h-full object-cover object-center">
-          <source src="/Holzen/videos/farmers-bg.mp4" type="video/mp4" />
+          <source src="/Home/videos/farmers-bg.mp4" type="video/mp4" />
         </video>
         <div className="absolute inset-0 bg-coffee-900/85" />
       </div>
@@ -875,7 +875,7 @@ const B2BAdoption = () => {
   return (
     <section id="b2b-adopcion" className="relative py-16 md:py-20 px-4 md:px-6 overflow-hidden">
       <div className="absolute inset-0">
-        <img src="/Holzen/images/product1.jpeg" alt="bg" className="w-full h-full object-cover object-center" />
+        <img src="/Home/images/product1.jpeg" alt="bg" className="w-full h-full object-cover object-center" />
         <div className="absolute inset-0" style={{ background: 'rgba(20,12,5,0.75)' }} />
       </div>
 
@@ -1070,7 +1070,7 @@ const B2BContact = () => {
   return (
     <section id="b2b-contacto" className="relative py-16 md:py-20 px-4 md:px-6 overflow-hidden">
       <div className="absolute inset-0 z-0">
-        <img src="/Holzen/images/reviews-bg.jpg" alt="bg" className="w-full h-full object-cover object-center" />
+        <img src="/Home/images/reviews-bg.jpg" alt="bg" className="w-full h-full object-cover object-center" />
         <div className="absolute inset-0" style={{ background: 'rgba(20,12,5,0.75)' }} />
       </div>
       <div className="absolute top-0 left-0 right-0 h-px" style={{ background: 'linear-gradient(90deg, transparent, rgba(201,169,110,0.3), transparent)' }} />
@@ -1090,7 +1090,7 @@ const B2BContact = () => {
           {/* Left: contact info */}
           <div className="flex flex-col gap-5">
             <div className="rounded-xl overflow-hidden" style={{ height: 220 }}>
-              <img src="/Holzen/images/process3.jpeg" alt="B2B contact" className="w-full h-full object-cover object-center" />
+              <img src="/Home/images/process3.jpeg" alt="B2B contact" className="w-full h-full object-cover object-center" />
             </div>
 
             <div className="flex flex-col gap-3">

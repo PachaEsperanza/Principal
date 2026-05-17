@@ -129,7 +129,7 @@ const Manifesto = () => {
         loop
         playsInline
         className="absolute inset-0 w-full h-full object-cover opacity-40 pointer-events-none"
-        src="/Holzen/videos/hero5.mp4"
+        src="/Home/videos/hero5.mp4"
       />
       <div className="absolute inset-0 bg-coffee-900/45 pointer-events-none" />
       <div className="relative z-10 max-w-6xl mx-auto grid lg:grid-cols-3 gap-10 items-start">

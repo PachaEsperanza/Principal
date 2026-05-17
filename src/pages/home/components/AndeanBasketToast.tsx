@@ -2,7 +2,7 @@ import { useEffect, useState, useRef, useCallback } from 'react';
 import { useTranslation } from 'react-i18next';
 import { CartItem } from '../types';
 
-const GRACIAS_AUDIO_URL = '/Holzen/gracias.mp3';
+const GRACIAS_AUDIO_URL = '/Home/gracias.mp3';
 const AUDIO_START_OFFSET = 2.2;
 
 interface AndeanBasketToastProps {
@@ -139,7 +139,7 @@ const AndeanBasketToast = ({ item, cartCount, cartTotal, producerName, producerI
           {/* Background image with golden overlay */}
           <div className="absolute inset-0" style={{ zIndex: 0 }}>
             <img
-              src="/Holzen/images/process3.jpeg"
+              src="/Home/images/process3.jpeg"
               alt=""
               className="w-full h-full object-cover object-center"
               style={{ opacity: 0.55 }}

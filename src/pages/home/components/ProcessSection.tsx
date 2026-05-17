@@ -11,7 +11,7 @@ const ProcessSection = () => {
       {/* Background */}
       <div className="absolute inset-0">
         <img
-          src="/Holzen/images/product1.jpeg"
+          src="/Home/images/product1.jpeg"
           alt="background"
           className="w-full h-full object-cover object-center"
         />

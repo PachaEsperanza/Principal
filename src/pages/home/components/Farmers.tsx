@@ -108,7 +108,7 @@ const Farmers = () => {
     <section id="farmers" className="relative w-full bg-coffee-900 overflow-hidden py-10 md:py-12">
       <video autoPlay muted loop playsInline
         className="absolute inset-0 w-full h-full object-cover opacity-50 pointer-events-none"
-        src="/Holzen/videos/farmers-bg.mp4"
+        src="/Home/videos/farmers-bg.mp4"
       />
       <div className="absolute inset-0 bg-coffee-900/35 pointer-events-none" />
 
