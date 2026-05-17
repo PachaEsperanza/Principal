@@ -150,10 +150,12 @@ const Manifesto = () => {
                 onClick={() => setActiveTab(i)}
                 className={`relative overflow-hidden px-4 py-1.5 rounded-full text-xs tracking-widest uppercase transition-all duration-300 cursor-pointer whitespace-nowrap ${
                   activeTab === i
-                    ? 'bg-gold text-coffee-900 font-semibold'
+                    ? 'text-cream font-semibold'
                     : 'text-cream/50 hover:text-cream'
                 }`}
-                style={{ fontFamily: "'Playfair Display', serif" }}
+                style={activeTab === i
+                  ? { fontFamily: "'Playfair Display', serif", background: 'linear-gradient(135deg, #3F0D17 0%, #7A1D2E 50%, #3F0D17 100%)', boxShadow: '0 0 18px rgba(122,29,46,0.55), 0 0 10px rgba(201,169,110,0.25)' }
+                  : { fontFamily: "'Playfair Display', serif" }}
               >
                 {activeTab === i && (
                   <span
@@ -180,7 +182,16 @@ const Manifesto = () => {
                   </p>
                   {parts[1] && (
                     <>
-                      <p className="font-serif font-black text-gold leading-tight mb-4" style={{ fontSize: 'clamp(1.6rem, 3.5vw, 2.4rem)', letterSpacing: '-0.01em' }}>
+                      <p
+                        className="font-serif font-black leading-tight mb-4 inline-block"
+                        style={{
+                          fontSize: 'clamp(1.6rem, 3.5vw, 2.4rem)',
+                          letterSpacing: '-0.01em',
+                          color: '#5C1422',
+                          WebkitTextStroke: '0.4px #5C1422',
+                          filter: 'drop-shadow(0 0 12px rgba(255,255,255,0.85)) drop-shadow(0 0 22px rgba(255,255,255,0.45)) drop-shadow(0 2px 6px rgba(0,0,0,0.6))',
+                        }}
+                      >
                         Comparto tu Esperanza
                       </p>
                       <p className="text-cream/80 font-serif text-sm leading-relaxed rounded-2xl p-5" style={{ background: 'rgba(20,10,5,0.55)', backdropFilter: 'blur(12px)', border: '1px solid rgba(201,168,76,0.15)' }}>
