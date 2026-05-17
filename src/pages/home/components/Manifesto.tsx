@@ -86,8 +86,6 @@ const Manifesto = () => {
 
   const tabs = [
     { key: 'historia', label: t('manifesto_tab_historia'), content: t('manifesto_historia') },
-    { key: 'mision', label: t('manifesto_tab_mision'), content: t('manifesto_mision') },
-    { key: 'impacto', label: t('manifesto_tab_impacto'), content: t('manifesto_impacto') },
   ];
 
   const stats = [
