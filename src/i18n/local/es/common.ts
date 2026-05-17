@@ -27,8 +27,8 @@ const es = {
 
   // Manifesto
   manifesto_eyebrow: 'Nuestra Filosofía',
-  manifesto_title: "No diseñamos una marca; construimos el puente entre historias de resiliencia y el alma del",
-  manifesto_title_highlight: "mundo.",
+  manifesto_title: "Unimos nuestras vidas y lo arriesgamos todo, porque solo como una gran familia haremos realidad nuestros",
+  manifesto_title_highlight: "sueños.",
   manifesto_tab_historia: 'Historia',
   manifesto_tab_mision: 'Misión',
   manifesto_tab_impacto: 'Impacto',

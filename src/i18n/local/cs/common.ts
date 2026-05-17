@@ -27,8 +27,8 @@ const cs = {
 
   // Manifesto
   manifesto_eyebrow: 'Naše filozofie',
-  manifesto_title: "Nenavrhujeme značku; stavíme most mezi příběhy odolnosti a duší",
-  manifesto_title_highlight: "světa.",
+  manifesto_title: "Spojujeme své životy a riskujeme vše, protože jen jako jedna velká rodina uskutečníme naše",
+  manifesto_title_highlight: "sny.",
   manifesto_tab_historia: 'Příběh',
   manifesto_tab_mision: 'Mise',
   manifesto_tab_impacto: 'Dopad',

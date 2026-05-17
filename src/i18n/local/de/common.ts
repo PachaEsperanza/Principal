@@ -27,8 +27,8 @@ const de = {
 
   // Manifesto
   manifesto_eyebrow: 'Unsere Philosophie',
-  manifesto_title: "Wir entwerfen keine Marke; wir bauen die Brücke zwischen Geschichten der Widerstandsfähigkeit und der Seele der",
-  manifesto_title_highlight: "Welt.",
+  manifesto_title: "Wir verbinden unser Leben und riskieren alles, denn nur als eine große Familie werden wir unsere",
+  manifesto_title_highlight: "Träume verwirklichen.",
   manifesto_tab_historia: 'Geschichte',
   manifesto_tab_mision: 'Mission',
   manifesto_tab_impacto: 'Wirkung',

@@ -27,8 +27,8 @@ const en = {
 
   // Manifesto
   manifesto_eyebrow: 'Our Philosophy',
-  manifesto_title: "We do not design a brand; we build the bridge between stories of resilience and the soul of the",
-  manifesto_title_highlight: "world.",
+  manifesto_title: "We unite our lives and risk everything, because only as one great family will we make our",
+  manifesto_title_highlight: "dreams real.",
   manifesto_tab_historia: 'Story',
   manifesto_tab_mision: 'Mission',
   manifesto_tab_impacto: 'Impact',
