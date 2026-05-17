@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
-  <rect width="512" height="512" rx="80" fill="#3D2B1F"/>
+  <rect width="512" height="512" rx="80" fill="#556B2F"/>
   <text
     x="256"
     y="370"
@@ -9,5 +9,5 @@
     text-anchor="middle"
     fill="#C9A84C"
     letter-spacing="-8"
-  >H</text>
+  >E</text>
 </svg>
