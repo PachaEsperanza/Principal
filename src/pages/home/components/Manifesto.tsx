@@ -161,16 +161,29 @@ const Manifesto = () => {
 
           {/* Tab content */}
           <div className="mb-8">
-            {tabs.map((tab, i) => (
-              <p
-                key={tab.key}
-                className={`text-cream/70 font-serif text-sm leading-relaxed transition-all duration-500 ${
-                  activeTab === i ? 'opacity-100 block' : 'opacity-0 hidden'
-                }`}
-              >
-                {tab.content}
-              </p>
-            ))}
+            {tabs.map((tab, i) => {
+              const parts = tab.content.split('\nComparto tu Esperanza\n');
+              return (
+                <div
+                  key={tab.key}
+                  className={`transition-all duration-500 ${activeTab === i ? 'opacity-100 block' : 'opacity-0 hidden'}`}
+                >
+                  <p className="text-cream/70 font-serif text-sm leading-relaxed mb-6">
+                    {parts[0]}
+                  </p>
+                  {parts[1] && (
+                    <>
+                      <p className="font-serif font-black text-gold leading-tight mb-4" style={{ fontSize: 'clamp(1.6rem, 3.5vw, 2.4rem)', letterSpacing: '-0.01em' }}>
+                        Comparto tu Esperanza
+                      </p>
+                      <p className="text-cream/70 font-serif text-sm leading-relaxed">
+                        {parts[1]}
+                      </p>
+                    </>
+                  )}
+                </div>
+              );
+            })}
           </div>
 
           {/* Quote */}
