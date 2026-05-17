@@ -57,16 +57,12 @@ const Hero = () => {
           {t('hero_eyebrow')}
         </p>
         <h1
-          className="font-serif text-[clamp(2rem,5.5vw,4.5rem)] leading-none tracking-[0.1em] uppercase mb-4 inline-block animate-text-shine"
+          className="font-serif text-[clamp(2rem,5.5vw,4.5rem)] leading-none tracking-[0.1em] uppercase mb-4 inline-block"
           style={{
+            color: '#5C1422',
             fontWeight: 950,
-            backgroundImage: 'linear-gradient(110deg, #7A1D2E 35%, rgba(255,255,255,0.95) 50%, #7A1D2E 65%)',
-            backgroundSize: '200% 100%',
-            WebkitBackgroundClip: 'text',
-            WebkitTextFillColor: 'transparent',
-            backgroundClip: 'text',
-            filter: 'drop-shadow(0 0 14px rgba(255,255,255,0.85)) drop-shadow(0 0 28px rgba(255,255,255,0.5)) drop-shadow(0 2px 8px rgba(0,0,0,0.6))',
-            WebkitTextStroke: '0.5px rgba(122,29,46,0.5)',
+            WebkitTextStroke: '0.5px #5C1422',
+            filter: 'drop-shadow(0 0 14px rgba(255,255,255,0.9)) drop-shadow(0 0 28px rgba(255,255,255,0.55)) drop-shadow(0 2px 8px rgba(0,0,0,0.7))',
           }}
         >
           Comparto tu Esperanza
