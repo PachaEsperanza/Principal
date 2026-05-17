@@ -126,7 +126,7 @@ const Manifesto = () => {
         muted
         loop
         playsInline
-        className="absolute inset-0 w-full h-full object-cover opacity-40 pointer-events-none"
+        className="absolute inset-0 w-full h-full object-cover opacity-70 pointer-events-none"
         src="/Home/videos/fondo2.mp4"
       />
       <div className="absolute inset-0 bg-coffee-900/45 pointer-events-none" />
