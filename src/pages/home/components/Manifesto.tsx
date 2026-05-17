@@ -162,7 +162,7 @@ const Manifesto = () => {
           {/* Tab content */}
           <div className="mb-8">
             {tabs.map((tab, i) => {
-              const parts = tab.content.split('\nComparto tu Esperanza\n');
+              const parts = tab.content.split('COMPARTO_TU_ESPERANZA ');
               return (
                 <div
                   key={tab.key}
