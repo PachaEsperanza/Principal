@@ -31,6 +31,7 @@ const cs = {
   manifesto_title_highlight: "sny.",
   manifesto_tab_historia: 'Příběh',
   manifesto_tab_mision: 'Mise',
+  mision_title: 'Poslání',
   manifesto_tab_impacto: 'Dopad',
   manifesto_historia: "Existuje hluboké Peru, které bije silou v tichu svých hor. Tam, v údolích Echarati (La Convención), zemědělci, na něž systém zapomněl, s oddaností pečují o kakao Chuncho a léčí zemi zasaženou opuštěním a nespravedlivými cenami. Tito producenti jsou duší odporu; muži a venkovské rodiny, kteří povstali s ryzí odvahou proti prázdným slibům a překupníkům, kteří je vykořisťovali. Proti větru a bez státu, který by je podpořil, se rozhodli nevzdat, proměnili bolest v hrdost a zvolili důstojnost jako jedinou cestu k ochraně svých kořenů. COMPARTO_TU_ESPERANZA je objetí, které spojuje tuto neúnavnou odvahu s tebou. Vytváříme tento most proto, aby každá unce čokolády, kterou na druhé straně oceánu ochutnáš, přestala být pouhým potěšením a stala se objetím na oplátku — skutečnou investicí do životů těch, kteří dávají vše pro svou zemi. Vybrat si toto kakao není jen otázkou dobrého vkusu; je to pohled jim do očí, uznání jejich hodnoty a závazek k obnově posvátného odkazu, který se oni navzdory všemu rozhodli zachránit.",
   manifesto_mision: "Inspirovat smysluplnou spotřebu prostřednictvím excelence peruánské kávy. V HOLZEN proměňujeme okamžik vychutnávání šálku v investici s významem, spojujíce odolné pěstitele s globálními spotřebiteli pod standardem elegance, transparentnosti a lidské důstojnosti.",
