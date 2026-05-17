@@ -8,14 +8,14 @@ export default {
       extend: {
         colors: {
           coffee: {
-            950: '#0A0204',
-            900: '#180408',
-            800: '#2B080F',
-            700: '#3F0D17',
-            600: '#5C1422',
-            500: '#7A1D2E',
-            400: '#9A2A3F',
-            300: '#B83D55',
+            950: '#0A0300',
+            900: '#0F0500',
+            800: '#1C0A00',
+            700: '#2A1200',
+            600: '#3D1F00',
+            500: '#5C3010',
+            400: '#7A4520',
+            300: '#A0612E',
           },
           gold: {
             DEFAULT: '#C8A96E',
@@ -40,10 +40,15 @@ export default {
             '0%, 100%': { transform: 'rotate(-8deg) scale(1.05)' },
             '50%': { transform: 'rotate(8deg) scale(0.95)' },
           },
+          'text-shine': {
+            '0%': { backgroundPosition: '-200% center' },
+            '100%': { backgroundPosition: '200% center' },
+          },
         },
         animation: {
           shimmer: 'shimmer 2.2s ease-in-out infinite',
           'flag-float': 'flag-float 2s ease-in-out infinite',
+          'text-shine': 'text-shine 3s ease-in-out infinite',
         },
       },
     },
