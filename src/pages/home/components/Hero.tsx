@@ -57,15 +57,23 @@ const Hero = () => {
           {t('hero_eyebrow')}
         </p>
         <h1
-          className="font-serif font-black text-[clamp(1.8rem,5vw,4rem)] leading-none tracking-[0.1em] uppercase mb-4"
+          className="font-serif font-black text-[clamp(1.8rem,5vw,4rem)] leading-none tracking-[0.1em] uppercase mb-4 relative inline-block overflow-hidden"
           style={{
-            color: '#B83D55',
-            textShadow: '0 0 18px rgba(201,169,110,0.5), 0 2px 12px rgba(0,0,0,0.6)',
+            color: '#7A1D2E',
+            textShadow: '0 0 24px rgba(201,169,110,0.55), 0 2px 12px rgba(0,0,0,0.6)',
           }}
         >
           Comparto tu Esperanza
+          <span
+            aria-hidden="true"
+            className="absolute inset-0 animate-shimmer pointer-events-none"
+            style={{
+              background: 'linear-gradient(110deg, transparent 30%, rgba(255,255,255,0.55) 50%, transparent 70%)',
+              mixBlendMode: 'overlay',
+            }}
+          />
         </h1>
-       
+
         <p className="font-serif font-black text-[clamp(0.85rem,2.3vw,1.9rem)] leading-tight tracking-[0.08em] text-cream uppercase mb-8 whitespace-pre-line">
           {t('hero_subtitle')}
         </p>
