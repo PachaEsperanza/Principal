@@ -133,7 +133,7 @@ const Manifesto = () => {
       <div className="relative z-10 max-w-6xl mx-auto grid lg:grid-cols-3 gap-10 items-start">
 
         {/* LEFT */}
-        <div className={`lg:col-span-2 transition-all duration-700 rounded-2xl p-6 ${contentVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'}`} style={{ background: 'rgba(20,10,5,0.55)', backdropFilter: 'blur(12px)', border: '1px solid rgba(201,168,76,0.15)' }}>
+        <div className={`lg:col-span-2 transition-all duration-700 ${contentVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'}`}>
           <h2 className="font-serif text-4xl md:text-5xl text-cream leading-tight mb-8">
             {t('manifesto_title').split('\n').map((line, i, arr) => (
               i === arr.length - 1
@@ -175,7 +175,7 @@ const Manifesto = () => {
                   key={tab.key}
                   className={`transition-all duration-500 ${activeTab === i ? 'opacity-100 block' : 'opacity-0 hidden'}`}
                 >
-                  <p className="text-cream/70 font-serif text-sm leading-relaxed mb-6">
+                  <p className="text-cream/80 font-serif text-sm leading-relaxed mb-6 rounded-2xl p-5" style={{ background: 'rgba(20,10,5,0.55)', backdropFilter: 'blur(12px)', border: '1px solid rgba(201,168,76,0.15)' }}>
                     {parts[0]}
                   </p>
                   {parts[1] && (
@@ -183,7 +183,7 @@ const Manifesto = () => {
                       <p className="font-serif font-black text-gold leading-tight mb-4" style={{ fontSize: 'clamp(1.6rem, 3.5vw, 2.4rem)', letterSpacing: '-0.01em' }}>
                         Comparto tu Esperanza
                       </p>
-                      <p className="text-cream/70 font-serif text-sm leading-relaxed">
+                      <p className="text-cream/80 font-serif text-sm leading-relaxed rounded-2xl p-5" style={{ background: 'rgba(20,10,5,0.55)', backdropFilter: 'blur(12px)', border: '1px solid rgba(201,168,76,0.15)' }}>
                         {parts[1]}
                       </p>
                     </>
