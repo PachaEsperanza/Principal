@@ -70,9 +70,12 @@ const VisionSection = () => {
           >
             {/* Header arriba de la imagen */}
             <div className="mb-6">
-              <p className="text-gold text-xs tracking-[0.4em] uppercase font-sans mb-3">
-                {t('vision_eyebrow')}
-              </p>
+              <div className="mb-3">
+                <span className="relative overflow-hidden inline-flex items-center gap-2 px-5 py-2 rounded-full text-xs tracking-[0.25em] uppercase font-semibold" style={{ background: 'linear-gradient(135deg, #7A1D2E 0%, #5C1422 100%)', color: '#FFFFFF', fontFamily: "'Playfair Display', serif", boxShadow: '0 4px 18px rgba(92,20,34,0.45)' }}>
+                  <span className="absolute top-0 bottom-0 w-1/3 bg-gradient-to-r from-transparent via-white/35 to-transparent" style={{ animation: 'shimmerSweep 2.2s ease-in-out infinite' }} />
+                  <span className="relative z-10">{t('vision_eyebrow')}</span>
+                </span>
+              </div>
               <h2
                 className="font-serif text-5xl md:text-6xl text-cream mb-3"
                 style={{ fontWeight: 900 }}
