@@ -230,7 +230,8 @@ const Navbar = ({ cartCount, onCartOpen }: NavbarProps) => {
               <button
                 key={l.key}
                 onClick={() => { scrollTo(l.key); setMobOpen(false); }}
-                className="text-left text-cream/80 hover:text-gold transition-colors text-base tracking-widest uppercase font-sans cursor-pointer"
+                className="text-left text-cream/80 hover:text-gold transition-colors text-base tracking-widest uppercase font-serif font-bold cursor-pointer"
+                style={{ fontFamily: "'Playfair Display', serif" }}
               >
                 {l.label}
               </button>
