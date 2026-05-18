@@ -12,8 +12,8 @@ const SiteFooter = () => {
   ];
 
   return (
-    <footer className="bg-coffee-950 pt-16 pb-8 px-6">
-      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 pb-10 border-b border-gold/10">
+    <footer style={{ background: 'linear-gradient(160deg, #2C1A06 0%, #3D2308 40%, #2A1504 100%)' }} className="pt-16 pb-8 px-6">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 pb-10" style={{ borderBottom: '1px solid rgba(201,168,76,0.2)' }}>
         <div>
           <div
             className="font-serif uppercase mb-3"
@@ -30,16 +30,16 @@ const SiteFooter = () => {
             Comparto tu Esperanza
           </div>
           <p
-            className="text-cream/65 text-sm leading-relaxed whitespace-pre-line"
-            style={{ fontFamily: "'Playfair Display', serif", fontWeight: 600 }}
+            className="text-sm leading-relaxed whitespace-pre-line"
+            style={{ fontFamily: "'Playfair Display', serif", fontWeight: 600, color: 'rgba(245,230,211,0.8)' }}
           >
             {t('footer_tagline')}
           </p>
         </div>
         <div>
           <h5
-            className="text-cream/85 text-xs tracking-widest uppercase mb-4"
-            style={{ fontFamily: "'Playfair Display', serif", fontWeight: 800 }}
+            className="text-xs tracking-widest uppercase mb-4"
+            style={{ fontFamily: "'Playfair Display', serif", fontWeight: 800, color: 'rgba(201,168,76,0.9)' }}
           >
             {t('footer_company')}
           </h5>
@@ -48,8 +48,8 @@ const SiteFooter = () => {
               <li key={i.id}>
                 <button
                   onClick={() => scrollTo(i.id)}
-                  className="text-cream/60 hover:text-gold text-sm transition-colors cursor-pointer"
-                  style={{ fontFamily: "'Playfair Display', serif", fontWeight: 700 }}
+                  className="hover:text-gold text-sm transition-colors cursor-pointer"
+                  style={{ fontFamily: "'Playfair Display', serif", fontWeight: 700, color: 'rgba(245,230,211,0.75)' }}
                 >
                   {i.l}
                 </button>
@@ -60,8 +60,8 @@ const SiteFooter = () => {
       </div>
       <div className="max-w-6xl mx-auto flex justify-center items-center pt-8">
         <p
-          className="text-cream/40 text-xs"
-          style={{ fontFamily: "'Playfair Display', serif", fontWeight: 600 }}
+          className="text-xs"
+          style={{ fontFamily: "'Playfair Display', serif", fontWeight: 600, color: 'rgba(201,168,76,0.45)' }}
         >
           {t('footer_copyright')}
         </p>
