@@ -177,7 +177,7 @@ const Farmers = () => {
                 </span>
               </div>
 
-              <div className="absolute top-4 right-4 z-30 flex flex-col items-end gap-2">
+              <div className="absolute top-1/2 right-4 z-30 flex flex-col items-end gap-2" style={{ transform: 'translateY(-50%)' }}>
                 {/* Badge principal: años cultivando */}
                 <div
                   className="relative overflow-hidden inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full font-sans font-bold"

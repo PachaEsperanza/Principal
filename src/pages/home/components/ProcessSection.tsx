@@ -36,14 +36,14 @@ const ProcessSection = () => {
           backgroundImage: "url('/Home/images/products-bg.jpeg')",
           backgroundSize: 'cover',
           backgroundPosition: 'center',
-          opacity: 0.65,
+          opacity: 0.38,
         }}
       />
       {/* Dark overlay */}
       <div
         className="absolute inset-0 z-0"
         style={{
-          background: 'linear-gradient(160deg, rgba(30,16,4,0.45) 0%, rgba(90,50,10,0.25) 50%, rgba(25,12,2,0.45) 100%)',
+          background: 'linear-gradient(160deg, rgba(30,16,4,0.72) 0%, rgba(90,50,10,0.45) 50%, rgba(25,12,2,0.70) 100%)',
         }}
       />
 
@@ -126,7 +126,7 @@ const ProcessSection = () => {
                   {/* Step number badge */}
                   <div
                     className="absolute top-3 right-3 w-6 h-6 flex items-center justify-center rounded-full text-xs font-bold z-10"
-                    style={{ background: 'linear-gradient(135deg, #3F0D17 0%, #7A1D2E 50%, #3F0D17 100%)', color: '#fff8f0', boxShadow: '0 0 10px rgba(255,255,255,0.4)' }}
+                    style={{ background: 'linear-gradient(135deg, #B8862A 0%, #C9A84C 50%, #B8862A 100%)', color: '#1a0f05', boxShadow: '0 0 10px rgba(201,168,76,0.5)' }}
                   >
                     {i + 1}
                   </div>
