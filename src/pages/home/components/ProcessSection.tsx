@@ -46,14 +46,14 @@ const ProcessSection = () => {
         <div className="text-center mb-12">
           <div className="flex items-center justify-center gap-3 mb-4">
             <span className="w-10 h-px" style={{ background: '#c9a96e' }} />
-            <span className="text-xs font-semibold tracking-[0.35em] uppercase" style={{ color: '#c9a96e' }}>
+            <span className="text-xs tracking-[0.35em] uppercase" style={{ color: '#c9a96e', fontFamily: "'Playfair Display', serif", fontWeight: 700 }}>
               {t('process_eyebrow')}
             </span>
             <span className="w-10 h-px" style={{ background: '#c9a96e' }} />
           </div>
           <h2
-            className="text-4xl md:text-5xl font-bold"
-            style={{ fontFamily: "'Playfair Display', serif", color: '#F5E6D3' }}
+            className="text-4xl md:text-5xl"
+            style={{ fontFamily: "'Playfair Display', serif", color: '#F5E6D3', fontWeight: 900 }}
           >
             {t('process_title')} <em style={{ color: '#c9a96e', fontStyle: 'italic' }}>{t('process_title_highlight')}</em>
           </h2>
@@ -158,29 +158,33 @@ const ProcessSection = () => {
                   {/* Text content */}
                   <div className="relative z-10 w-full px-4 pb-5 text-center">
                     <h4
-                      className="font-bold mb-2"
+                      className="mb-2"
                       style={{
                         fontFamily: "'Playfair Display', serif",
                         color: '#F5E6D3',
                         fontSize: isActive ? '18px' : '13px',
+                        fontWeight: 800,
+                        letterSpacing: '0.02em',
                       }}
                     >
                       {step.title}
                     </h4>
                     {isActive && (
                       <>
-                        <p className="text-xs leading-relaxed mb-3" style={{ color: '#B8A898' }}>
+                        <p className="text-xs leading-relaxed mb-3" style={{ color: '#D4C4B0', fontFamily: "'Playfair Display', serif", fontWeight: 500 }}>
                           {step.desc}
                         </p>
                         <div className="flex flex-wrap justify-center gap-1.5">
                           {step.tags.map((tag) => (
                             <span
                               key={tag}
-                              className="font-sans text-[9px] tracking-widest uppercase px-2.5 py-0.5 rounded-full"
+                              className="text-[9px] tracking-widest uppercase px-2.5 py-0.5 rounded-full"
                               style={{
                                 background: 'rgba(201,169,110,0.15)',
                                 border: '1px solid rgba(201,169,110,0.45)',
                                 color: '#c9a96e',
+                                fontFamily: "'Playfair Display', serif",
+                                fontWeight: 700,
                               }}
                             >
                               {tag}
@@ -245,14 +249,14 @@ const ProcessSection = () => {
                   >
                     <i className={`${STEP_ICONS[i]} text-sm`} style={{ color: '#c9a96e' }} />
                   </div>
-                  <span className="font-sans text-[10px] tracking-[0.3em] uppercase font-bold" style={{ color: '#c9a96e' }}>
+                  <span className="text-[10px] tracking-[0.3em] uppercase" style={{ color: '#c9a96e', fontFamily: "'Playfair Display', serif", fontWeight: 800 }}>
                     {t('process_step_label', { n: step.n })}
                   </span>
                 </div>
                 <div>
-                  <p className="text-cream/50 font-sans text-[10px] tracking-widest uppercase mb-1">{step.subtitle}</p>
-                  <h3 className="font-serif text-cream text-lg leading-tight mb-1">{step.title}</h3>
-                  <p className="text-cream/60 font-sans text-xs leading-relaxed">{step.desc}</p>
+                  <p className="text-cream/50 text-[10px] tracking-widest uppercase mb-1" style={{ fontFamily: "'Playfair Display', serif", fontWeight: 600 }}>{step.subtitle}</p>
+                  <h3 className="font-serif text-cream text-lg leading-tight mb-1" style={{ fontWeight: 800 }}>{step.title}</h3>
+                  <p className="text-cream/70 text-xs leading-relaxed" style={{ fontFamily: "'Playfair Display', serif", fontWeight: 500 }}>{step.desc}</p>
                 </div>
               </div>
             </div>
