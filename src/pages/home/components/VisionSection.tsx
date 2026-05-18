@@ -128,23 +128,6 @@ const VisionSection = () => {
                 }}
               />
 
-              {/* Ribbon angular dorado/guinda */}
-              <div
-                className="absolute top-8 -left-4 px-6 py-2 z-10"
-                style={{
-                  background: 'linear-gradient(135deg, #3F0D17 0%, #7A1D2E 50%, #3F0D17 100%)',
-                  color: '#fff8f0',
-                  fontFamily: "'Playfair Display', serif",
-                  fontWeight: 700,
-                  letterSpacing: '0.4em',
-                  fontSize: '0.7rem',
-                  textTransform: 'uppercase',
-                  boxShadow: '0 6px 20px rgba(122,29,46,0.5)',
-                }}
-              >
-                Visión 2030
-              </div>
-
               {/* Floating golden particles */}
               <div className="absolute inset-0 pointer-events-none overflow-hidden">
                 {[...Array(6)].map((_, i) => (
