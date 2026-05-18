@@ -47,7 +47,7 @@ const Hero = () => {
             />
           )}
           {/* Overlay */}
-          <div className="absolute inset-0 bg-gradient-to-b from-coffee-900/50 via-coffee-900/30 to-coffee-900/70" />
+          <div className="absolute inset-0 bg-gradient-to-b from-coffee-900/70 via-coffee-900/55 to-coffee-900/85" />
         </div>
       ))}
 
