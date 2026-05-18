@@ -2,8 +2,13 @@ import { useState, useCallback } from 'react';
 import { useTranslation } from 'react-i18next';
 import { processSteps } from '../../../mocks/holzen';
 
-// Solo los primeros 4 pasos
-const STEPS = processSteps.slice(0, 4);
+// Helper: build STEPS from i18n + mock images/icons
+const useSteps = (t: (k: string) => string) => [
+  { n: '01', title: t('process_step1_title'), subtitle: t('process_step1_subtitle'), desc: t('process_step1_desc'), tags: [t('process_step1_tag1'), t('process_step1_tag2')], image: processSteps[0].image },
+  { n: '02', title: t('process_step2_title'), subtitle: t('process_step2_subtitle'), desc: t('process_step2_desc'), tags: [t('process_step2_tag1'), t('process_step2_tag2')], image: processSteps[1].image },
+  { n: '03', title: t('process_step3_title'), subtitle: t('process_step3_subtitle'), desc: t('process_step3_desc'), tags: [t('process_step3_tag1'), t('process_step3_tag2')], image: processSteps[2].image },
+  { n: '04', title: t('process_step4_title'), subtitle: t('process_step4_subtitle'), desc: t('process_step4_desc'), tags: [t('process_step4_tag1'), t('process_step4_tag2')], image: processSteps[3].image },
+];
 
 const STEP_ICONS = [
   'ri-plant-line',
@@ -14,6 +19,7 @@ const STEP_ICONS = [
 
 const ProcessSection = () => {
   const { t } = useTranslation();
+  const STEPS = useSteps(t);
   const [active, setActive] = useState(0);
 
   const prev = useCallback(() => setActive((a) => (a - 1 + STEPS.length) % STEPS.length), []);

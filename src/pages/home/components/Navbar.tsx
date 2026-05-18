@@ -181,16 +181,6 @@ const Navbar = ({ cartCount, onCartOpen }: NavbarProps) => {
               )}
             </div>
 
-            <a
-              href="https://wa.me/51XXXXXXXXX?text=Hola,%20me%20interesa%20el%20café%20HOLZEN"
-              target="_blank"
-              rel="noopener noreferrer nofollow"
-              className="hidden md:flex items-center gap-2 text-sm text-gold border border-gold/40 hover:border-gold hover:bg-gold/10 transition-all px-4 py-2 rounded-full whitespace-nowrap font-sans tracking-wide"
-            >
-              <i className="ri-whatsapp-line" />
-              WhatsApp
-            </a>
-
             <button
               onClick={onCartOpen}
               className="relative w-9 h-9 flex items-center justify-center cursor-pointer"
@@ -246,15 +236,6 @@ const Navbar = ({ cartCount, onCartOpen }: NavbarProps) => {
               </button>
             ))}
           </div>
-          <a
-            href="https://wa.me/51XXXXXXXXX?text=Hola,%20me%20interesa%20el%20café%20HOLZEN"
-            target="_blank"
-            rel="noopener noreferrer nofollow"
-            className="mt-auto flex items-center justify-center gap-2 text-sm text-gold border border-gold/40 px-4 py-3 rounded-full"
-          >
-            <i className="ri-whatsapp-line" />
-            WhatsApp
-          </a>
         </div>
       </div>
     </>

@@ -8,10 +8,7 @@ const IMAGES = [
 
 const AUTOPLAY_MS = 4500;
 
-const MISION_PARAGRAPHS = [
-  `Construir una gran familia basada en la lealtad, la honestidad y la confianza mutua, uniendo fuerzas con los productores más comprometidos de Echarati para transformar sus vidas y hacer realidad sus sueños.`,
-  `Este es un gran proyecto donde apostamos y arriesgamos todo por ustedes, porque sabemos que su esfuerzo merece ser valorado. Nos protegemos mutuamente frente a un sistema injusto garantizando un precio fijo y digno, independiente de los mercados globales, para que nunca más nadie se aproveche de su trabajo. En este lazo sagrado, trabajamos unidos por un bien común: nuestra organización, Comparto tu Esperanza, se entrega por completo a cuidar de sus familias y a sanar las heridas del pasado, mientras junto con la aliada, la empresa Linaje del Inka, se encarga de abrir las puertas del mundo para exportar su arte.`,
-];
+
 
 const MisionSection = () => {
   const { t } = useTranslation();
@@ -79,13 +76,13 @@ const MisionSection = () => {
             {/* Header encima del carrusel */}
             <div className="mb-6">
               <p className="text-gold text-xs tracking-[0.4em] uppercase font-sans mb-3">
-                {t('farmers_eyebrow')}
+                {t('mision_eyebrow')}
               </p>
               <h2
                 className="font-serif text-5xl md:text-6xl text-cream mb-3"
                 style={{ fontWeight: 900 }}
               >
-                {t('mision_title', 'Misión')}
+                {t('mision_title')}
               </h2>
               <div
                 className="h-[2px] w-16"
@@ -105,7 +102,7 @@ const MisionSection = () => {
                 }}
               >
                 <i className="ri-drag-move-line text-sm" />
-                Desliza para ver más
+                {t('mision_badge_swipe')}
                 <span
                   className="absolute top-0 bottom-0 w-1/3 pointer-events-none"
                   style={{
@@ -192,7 +189,7 @@ const MisionSection = () => {
               transform: visible ? 'translateX(0)' : 'translateX(40px)',
             }}
           >
-            {MISION_PARAGRAPHS.map((para, i) => (
+            {[t('mision_paragraph_1'), t('mision_paragraph_2')].map((para, i) => (
               <div
                 key={i}
                 className="rounded-2xl p-6"

@@ -1,23 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
-const VISION_PARAGRAPHS = [
-  {
-    title: 'Echarati Internacional',
-    body: 'Convertir al cacao de Echarati en el referente de calidad e impacto social más reconocido a nivel internacional, logrando que cada productor sea protagonista de su propio éxito y exporte su historia al mundo.',
-    icon: 'ri-earth-line',
-  },
-  {
-    title: 'Nuestro Centro de Acopio',
-    body: 'En esta gran familia unida y próspera donde el cacao de Echarati será reconocido en el mundo entero, construiremos juntos nuestro propio centro de acopio para lograr una fermentación y un aroma superiores que demuestren que en nuestra tierra se produce el mejor cacao del Perú.',
-    icon: 'ri-home-heart-line',
-  },
-  {
-    title: 'Del Grano al Chocolate',
-    body: 'Lograremos expandir nuestros horizontes hasta transformar nuestro cacao en chocolate propio, multiplicando los frutos de este gran proyecto. Seremos el motor que transformará la vida en Echarati, demostrando que cuando una familia cree y camina unida, los sueños más grandes se hacen realidad.',
-    icon: 'ri-sparkling-2-line',
-  },
-];
+
 
 const VisionSection = () => {
   const { t } = useTranslation();
@@ -87,13 +71,13 @@ const VisionSection = () => {
             {/* Header arriba de la imagen */}
             <div className="mb-6">
               <p className="text-gold text-xs tracking-[0.4em] uppercase font-sans mb-3">
-                {t('vision_eyebrow', 'El futuro que construimos')}
+                {t('vision_eyebrow')}
               </p>
               <h2
                 className="font-serif text-5xl md:text-6xl text-cream mb-3"
                 style={{ fontWeight: 900 }}
               >
-                {t('vision_title', 'Visión')}
+                {t('vision_title')}
               </h2>
               <div
                 className="h-[2px] w-16"
@@ -161,7 +145,11 @@ const VisionSection = () => {
             />
 
             <div className="flex flex-col gap-6">
-              {VISION_PARAGRAPHS.map((item, i) => (
+              {([
+                { title: t('vision_card1_title'), body: t('vision_card1_body'), icon: 'ri-earth-line' },
+                { title: t('vision_card2_title'), body: t('vision_card2_body'), icon: 'ri-home-heart-line' },
+                { title: t('vision_card3_title'), body: t('vision_card3_body'), icon: 'ri-sparkling-2-line' },
+              ]).map((item, i) => (
                 <div
                   key={i}
                   ref={(el) => { cardRefs.current[i] = el; }}
