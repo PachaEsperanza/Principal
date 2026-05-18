@@ -72,8 +72,7 @@ const VisionSection = () => {
         playsInline
         className="absolute inset-0 w-full h-full object-cover pointer-events-none"
         src="/Home/videos/fondos3.mp4"
-      
-
+      />
       <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-12">
         <div className="grid lg:grid-cols-5 gap-10 items-center">
 
