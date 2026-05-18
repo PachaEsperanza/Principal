@@ -1,236 +1,258 @@
-import { useState } from 'react';
+import { useState, useCallback } from 'react';
 import { useTranslation } from 'react-i18next';
 import { processSteps } from '../../../mocks/holzen';
 
+// Solo los primeros 4 pasos
+const STEPS = processSteps.slice(0, 4);
+
+const STEP_ICONS = [
+  'ri-plant-line',
+  'ri-flask-line',
+  'ri-sun-line',
+  'ri-shield-check-line',
+];
+
 const ProcessSection = () => {
   const { t } = useTranslation();
-  const [hovered, setHovered] = useState<number | null>(null);
+  const [active, setActive] = useState(0);
+
+  const prev = useCallback(() => setActive((a) => (a - 1 + STEPS.length) % STEPS.length), []);
+  const next = useCallback(() => setActive((a) => (a + 1) % STEPS.length), []);
 
   return (
-    <section id="process" className="relative bg-coffee-900 py-14 px-6 overflow-hidden">
-      {/* Background */}
-      <div className="absolute inset-0">
-        <img
-          src="/Home/images/product1.jpeg"
-          alt="background"
-          className="w-full h-full object-cover object-center"
-        />
-        <div className="absolute inset-0 bg-coffee-900/92" />
-        <div className="absolute inset-0 bg-rose-950/35" />
-      </div>
+    <section id="process" className="relative py-16 md:py-20 overflow-hidden">
+      {/* Background base */}
+      <div className="absolute inset-0 z-0" style={{ background: '#1C1008' }} />
+      {/* Background texture */}
+      <div
+        className="absolute inset-0 z-0"
+        style={{
+          backgroundImage: "url('/Home/images/products-bg.jpeg')",
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          opacity: 0.38,
+        }}
+      />
+      {/* Dark overlay */}
+      <div
+        className="absolute inset-0 z-0"
+        style={{
+          background: 'linear-gradient(160deg, rgba(30,16,4,0.72) 0%, rgba(90,50,10,0.45) 50%, rgba(25,12,2,0.70) 100%)',
+        }}
+      />
 
-      <div className="relative max-w-7xl mx-auto">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 md:px-8">
         {/* Header */}
-        <div className="mb-10">
-          <p className="text-gold text-xs tracking-[0.4em] uppercase font-sans mb-3">{t('process_eyebrow')}</p>
-          <h2 className="font-serif text-3xl md:text-4xl text-cream leading-tight">
-            {t('process_title')} <em className="text-gold italic">{t('process_title_highlight')}</em>
+        <div className="text-center mb-12">
+          <div className="flex items-center justify-center gap-3 mb-4">
+            <span className="w-10 h-px" style={{ background: '#c9a96e' }} />
+            <span className="text-xs font-semibold tracking-[0.35em] uppercase" style={{ color: '#c9a96e' }}>
+              {t('process_eyebrow')}
+            </span>
+            <span className="w-10 h-px" style={{ background: '#c9a96e' }} />
+          </div>
+          <h2
+            className="text-4xl md:text-5xl font-bold"
+            style={{ fontFamily: "'Playfair Display', serif", color: '#F5E6D3' }}
+          >
+            {t('process_title')} <em style={{ color: '#c9a96e', fontStyle: 'italic' }}>{t('process_title_highlight')}</em>
           </h2>
         </div>
 
-        {/* DESKTOP — Horizontal accordion timeline */}
-        <div className="hidden md:flex gap-2 h-[480px]">
-          {processSteps.map((step, idx) => {
-            const isHovered = hovered === idx;
-            const isAnyHovered = hovered !== null;
+        {/* Carousel row */}
+        <div className="relative flex items-center justify-center gap-0">
 
-            return (
-              <div
-                key={step.n}
-                onMouseEnter={() => setHovered(idx)}
-                onMouseLeave={() => setHovered(null)}
-                className="relative rounded-2xl overflow-hidden cursor-pointer flex-shrink-0"
-                style={{
-                  flex: isHovered ? '4 1 0%' : isAnyHovered ? '0.6 1 0%' : '1 1 0%',
-                  transition: 'flex 0.55s cubic-bezier(0.4,0,0.2,1)',
-                }}
-              >
-                {/* Image */}
-                <img
-                  src={step.image}
-                  alt={step.title}
-                  className="absolute inset-0 w-full h-full object-cover object-center"
+          {/* Left arrow */}
+          <button
+            onClick={prev}
+            className="flex-shrink-0 w-10 h-10 flex items-center justify-center rounded-full cursor-pointer transition-all duration-200 hover:scale-110 mr-4"
+            style={{
+              background: 'rgba(201,169,110,0.15)',
+              border: '1.5px solid rgba(201,169,110,0.5)',
+            }}
+          >
+            <i className="ri-arrow-left-s-line text-xl" style={{ color: '#c9a96e' }} />
+          </button>
+
+          {/* Cards */}
+          <div className="flex items-center justify-center gap-3 flex-1 overflow-hidden">
+            {STEPS.map((step, i) => {
+              const isActive = i === active;
+              const dist = Math.abs(i - active);
+              const opacity = dist === 0 ? 1 : dist === 1 ? 0.65 : 0.35;
+
+              return (
+                <button
+                  key={step.n}
+                  onClick={() => setActive(i)}
+                  className={`relative flex-shrink-0 cursor-pointer transition-all duration-500 rounded-2xl overflow-hidden flex flex-col items-center justify-end ${!isActive ? 'hidden md:flex' : 'flex'}`}
                   style={{
-                    transform: isHovered ? 'scale(1.04)' : 'scale(1)',
-                    transition: 'transform 0.6s cubic-bezier(0.4,0,0.2,1)',
+                    width: isActive ? 'min(240px, 100%)' : dist === 1 ? '160px' : '130px',
+                    height: isActive ? '340px' : dist === 1 ? '230px' : '185px',
+                    opacity,
+                    border: isActive
+                      ? '2px solid rgba(201,169,110,0.9)'
+                      : '2px solid rgba(201,169,110,0.2)',
+                    boxShadow: isActive
+                      ? '0 0 32px rgba(201,169,110,0.25), inset 0 0 0 1px rgba(201,169,110,0.15)'
+                      : 'none',
+                    background: '#1C1008',
                   }}
-                />
+                >
+                  {/* Background image */}
+                  <img
+                    src={step.image}
+                    alt={step.title}
+                    className="absolute inset-0 w-full h-full object-cover transition-transform duration-700"
+                    style={{ transform: isActive ? 'scale(1.04)' : 'scale(1)' }}
+                  />
 
-                {/* Overlay */}
-                <div
-                  className="absolute inset-0 transition-all duration-500"
-                  style={{
-                    background: isHovered
-                      ? 'linear-gradient(to top, rgba(10,6,2,0.95) 0%, rgba(10,6,2,0.55) 50%, rgba(10,6,2,0.15) 100%)'
-                      : 'linear-gradient(to top, rgba(10,6,2,0.88) 0%, rgba(10,6,2,0.5) 60%, rgba(10,6,2,0.2) 100%)',
-                  }}
-                />
+                  {/* Gradient overlay */}
+                  <div
+                    className="absolute inset-0"
+                    style={{
+                      background: isActive
+                        ? 'linear-gradient(to top, rgba(20,10,2,0.95) 0%, rgba(20,10,2,0.4) 50%, rgba(20,10,2,0.1) 100%)'
+                        : 'linear-gradient(to top, rgba(20,10,2,0.85) 0%, rgba(20,10,2,0.5) 100%)',
+                    }}
+                  />
 
-                {/* Gold border glow on hover */}
-                <div
-                  className="absolute inset-0 rounded-2xl pointer-events-none transition-opacity duration-500"
-                  style={{
-                    boxShadow: `inset 0 0 0 1.5px ${step.color}${isHovered ? '80' : '00'}`,
-                    opacity: isHovered ? 1 : 0,
-                  }}
-                />
-
-                {/* Step number — always visible, top */}
-                <div className="absolute top-5 left-5 z-10">
-                  <span
-                    className="font-sans text-[10px] tracking-[0.35em] uppercase font-bold"
-                    style={{ color: step.color }}
+                  {/* Step number badge */}
+                  <div
+                    className="absolute top-3 right-3 w-6 h-6 flex items-center justify-center rounded-full text-xs font-bold z-10"
+                    style={{ background: '#7A1D2E', color: '#fff8f0' }}
                   >
-                    {t('process_step_label', { n: step.n })}
-                  </span>
-                </div>
+                    {i + 1}
+                  </div>
 
-                {/* Collapsed state — vertical title */}
-                <div
-                  className="absolute inset-0 flex items-end justify-start p-5 z-10 transition-opacity duration-300"
-                  style={{ opacity: isHovered ? 0 : 1, pointerEvents: isHovered ? 'none' : 'auto' }}
-                >
-                  <div className="flex flex-col gap-2">
+                  {/* Active: circular image highlight */}
+                  {isActive && (
                     <div
-                      className="w-8 h-8 flex items-center justify-center rounded-full flex-shrink-0"
-                      style={{ background: `${step.color}25`, border: `1px solid ${step.color}60` }}
+                      className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-[60%] w-20 h-20 rounded-full overflow-hidden z-10"
+                      style={{
+                        border: '2.5px solid rgba(201,169,110,0.85)',
+                        boxShadow: '0 0 20px rgba(201,169,110,0.4)',
+                      }}
                     >
-                      <i className={`${step.icon} text-sm`} style={{ color: step.color }} />
+                      <img
+                        src={step.image}
+                        alt={step.title}
+                        className="w-full h-full object-cover"
+                      />
                     </div>
-                    <h3 className="font-serif text-cream text-base leading-tight writing-vertical">
+                  )}
+
+                  {/* Icon (non-active) */}
+                  {!isActive && (
+                    <div
+                      className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-12 h-12 flex items-center justify-center rounded-full z-10"
+                      style={{
+                        background: 'rgba(201,169,110,0.12)',
+                        border: '1.5px solid rgba(201,169,110,0.45)',
+                      }}
+                    >
+                      <i className={`${STEP_ICONS[i]} text-xl`} style={{ color: '#c9a96e' }} />
+                    </div>
+                  )}
+
+                  {/* Text content */}
+                  <div className="relative z-10 w-full px-4 pb-5 text-center">
+                    <h4
+                      className="font-bold mb-2"
+                      style={{
+                        fontFamily: "'Playfair Display', serif",
+                        color: '#F5E6D3',
+                        fontSize: isActive ? '18px' : '13px',
+                      }}
+                    >
                       {step.title}
-                    </h3>
+                    </h4>
+                    {isActive && (
+                      <>
+                        <p className="text-xs leading-relaxed mb-3" style={{ color: '#B8A898' }}>
+                          {step.desc}
+                        </p>
+                        <div className="flex flex-wrap justify-center gap-1.5">
+                          {step.tags.map((tag) => (
+                            <span
+                              key={tag}
+                              className="font-sans text-[9px] tracking-widest uppercase px-2.5 py-0.5 rounded-full"
+                              style={{
+                                background: 'rgba(201,169,110,0.15)',
+                                border: '1px solid rgba(201,169,110,0.45)',
+                                color: '#c9a96e',
+                              }}
+                            >
+                              {tag}
+                            </span>
+                          ))}
+                        </div>
+                      </>
+                    )}
                   </div>
-                </div>
+                </button>
+              );
+            })}
+          </div>
 
-                {/* Expanded state — full info */}
-                <div
-                  className="absolute inset-0 flex flex-col justify-end p-7 z-10 transition-opacity duration-400"
-                  style={{
-                    opacity: isHovered ? 1 : 0,
-                    pointerEvents: isHovered ? 'auto' : 'none',
-                    transitionDelay: isHovered ? '0.15s' : '0s',
-                  }}
-                >
-                  {/* Timeline connector dot */}
-                  <div className="flex items-center gap-3 mb-5">
-                    <div
-                      className="w-10 h-10 flex items-center justify-center rounded-full flex-shrink-0"
-                      style={{ background: `${step.color}25`, border: `1px solid ${step.color}70` }}
-                    >
-                      <i className={`${step.icon} text-base`} style={{ color: step.color }} />
-                    </div>
-                    <div>
-                      <p className="text-cream/50 font-sans text-[10px] tracking-widest uppercase">{step.subtitle}</p>
-                    </div>
-                  </div>
-
-                  <h3 className="font-serif text-cream text-2xl md:text-3xl leading-tight mb-3">
-                    {step.title}
-                  </h3>
-                  <p className="text-cream/65 font-sans text-sm leading-relaxed mb-5 max-w-xs">
-                    {step.desc}
-                  </p>
-                  <div className="flex flex-wrap gap-2">
-                    {step.tags.map((tag) => (
-                      <span
-                        key={tag}
-                        className="font-sans text-[10px] tracking-widest uppercase px-3 py-1 rounded-full whitespace-nowrap"
-                        style={{
-                          background: `${step.color}18`,
-                          border: `1px solid ${step.color}50`,
-                          color: step.color,
-                        }}
-                      >
-                        {tag}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-              </div>
-            );
-          })}
+          {/* Right arrow */}
+          <button
+            onClick={next}
+            className="flex-shrink-0 w-10 h-10 flex items-center justify-center rounded-full cursor-pointer transition-all duration-200 hover:scale-110 ml-4"
+            style={{
+              background: 'rgba(201,169,110,0.15)',
+              border: '1.5px solid rgba(201,169,110,0.5)',
+            }}
+          >
+            <i className="ri-arrow-right-s-line text-xl" style={{ color: '#c9a96e' }} />
+          </button>
         </div>
 
-        {/* Timeline connector bar — desktop */}
-        <div className="hidden md:flex items-center gap-2 mt-5">
-          {processSteps.map((step, idx) => (
-            <div key={step.n} className="flex items-center flex-1">
-              <div
-                className="w-2.5 h-2.5 rounded-full flex-shrink-0 transition-all duration-300"
-                style={{
-                  background: hovered !== null && idx <= hovered ? step.color : 'rgba(255,255,255,0.15)',
-                  boxShadow: hovered === idx ? `0 0 10px ${step.color}90` : 'none',
-                  transform: hovered === idx ? 'scale(1.5)' : 'scale(1)',
-                }}
-              />
-              {idx < processSteps.length - 1 && (
-                <div
-                  className="flex-1 h-[1px] mx-1 transition-all duration-500"
-                  style={{
-                    background: hovered !== null && idx < hovered
-                      ? `linear-gradient(90deg, ${step.color}, ${processSteps[idx + 1].color})`
-                      : 'rgba(255,255,255,0.1)',
-                  }}
-                />
-              )}
-            </div>
-          ))}
-        </div>
-
-        <div className="hidden md:flex justify-between mt-2">
-          {processSteps.map((step, idx) => (
-            <div key={step.n} className="flex-1 text-center">
-              <span
-                className="font-sans text-[9px] tracking-widest uppercase transition-colors duration-300"
-                style={{ color: hovered === idx ? step.color : 'rgba(255,255,255,0.25)' }}
-              >
-                {step.title.split(' ')[0]}
-              </span>
-            </div>
+        {/* Dot navigation */}
+        <div className="flex justify-center gap-2 mt-8">
+          {STEPS.map((_, i) => (
+            <button
+              key={i}
+              onClick={() => setActive(i)}
+              className="cursor-pointer transition-all duration-300 rounded-full"
+              style={{
+                width: i === active ? '24px' : '7px',
+                height: '7px',
+                background: i === active ? '#7A1D2E' : 'rgba(201,169,110,0.3)',
+              }}
+            />
           ))}
         </div>
 
         {/* MOBILE — stacked cards */}
-        <div className="md:hidden flex flex-col gap-4">
-          {processSteps.map((step) => (
-            <div key={step.n} className="relative rounded-2xl overflow-hidden h-[220px]">
-              <img src={step.image} alt={step.title} className="absolute inset-0 w-full h-full object-cover object-center" />
+        <div className="md:hidden flex flex-col gap-4 mt-8">
+          {STEPS.map((step, i) => (
+            <div key={step.n} className="relative rounded-2xl overflow-hidden h-[200px]">
+              <img src={step.image} alt={step.title} className="absolute inset-0 w-full h-full object-cover" />
               <div
                 className="absolute inset-0"
-                style={{ background: 'linear-gradient(135deg, rgba(10,6,2,0.9) 0%, rgba(10,6,2,0.5) 60%, rgba(10,6,2,0.2) 100%)' }}
+                style={{ background: 'linear-gradient(135deg, rgba(10,6,2,0.92) 0%, rgba(10,6,2,0.5) 60%, rgba(10,6,2,0.2) 100%)' }}
               />
               <div
                 className="absolute inset-0 rounded-2xl pointer-events-none"
-                style={{ boxShadow: `inset 0 0 0 1.5px ${step.color}50` }}
+                style={{ boxShadow: 'inset 0 0 0 1.5px rgba(201,169,110,0.4)' }}
               />
               <div className="relative z-10 h-full flex flex-col justify-between p-5">
                 <div className="flex items-center gap-3">
                   <div
                     className="w-9 h-9 flex items-center justify-center rounded-full flex-shrink-0"
-                    style={{ background: `${step.color}25`, border: `1px solid ${step.color}60` }}
+                    style={{ background: 'rgba(201,169,110,0.2)', border: '1px solid rgba(201,169,110,0.5)' }}
                   >
-                    <i className={`${step.icon} text-sm`} style={{ color: step.color }} />
+                    <i className={`${STEP_ICONS[i]} text-sm`} style={{ color: '#c9a96e' }} />
                   </div>
-                  <span className="font-sans text-[10px] tracking-[0.3em] uppercase font-bold" style={{ color: step.color }}>
+                  <span className="font-sans text-[10px] tracking-[0.3em] uppercase font-bold" style={{ color: '#c9a96e' }}>
                     {t('process_step_label', { n: step.n })}
                   </span>
                 </div>
                 <div>
                   <p className="text-cream/50 font-sans text-[10px] tracking-widest uppercase mb-1">{step.subtitle}</p>
-                  <h3 className="font-serif text-cream text-xl leading-tight mb-2">{step.title}</h3>
-                  <p className="text-cream/60 font-sans text-xs leading-relaxed mb-3">{step.desc}</p>
-                  <div className="flex flex-wrap gap-1.5">
-                    {step.tags.map((tag) => (
-                      <span
-                        key={tag}
-                        className="font-sans text-[9px] tracking-widest uppercase px-2.5 py-0.5 rounded-full"
-                        style={{ background: `${step.color}18`, border: `1px solid ${step.color}40`, color: step.color }}
-                      >
-                        {tag}
-                      </span>
-                    ))}
-                  </div>
+                  <h3 className="font-serif text-cream text-lg leading-tight mb-1">{step.title}</h3>
+                  <p className="text-cream/60 font-sans text-xs leading-relaxed">{step.desc}</p>
                 </div>
               </div>
             </div>
