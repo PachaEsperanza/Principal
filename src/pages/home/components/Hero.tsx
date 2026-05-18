@@ -62,7 +62,7 @@ const Hero = () => {
             color: '#5C1422',
             fontWeight: 950,
             WebkitTextStroke: '0.5px #5C1422',
-            filter: 'drop-shadow(0 0 14px rgba(255,255,255,0.9)) drop-shadow(0 0 28px rgba(255,255,255,0.55)) drop-shadow(0 2px 8px rgba(0,0,0,0.7))',
+            filter: 'drop-shadow(0 2px 8px rgba(0,0,0,0.7))',
           }}
         >
           Comparto tu Esperanza
