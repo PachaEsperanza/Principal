@@ -326,7 +326,7 @@ const en = {
   vision_card2_title: "Our Collection Center",
   vision_card2_body: "In this great united and prosperous family where Echarati cacao will be recognized worldwide, we will build together our own collection center to achieve superior fermentation and aroma, proving that the best cacao in Peru is produced on our land.",
   vision_card3_title: "From Bean to Chocolate",
-  vision_card3_body: "We will expand our horizons until we transform our cacao into our own chocolate, multiplying the fruits of this great project. We will be the engine that transforms life in Echarati, showing that when a family believes and walks together, the greatest dreams come true.",
+  vision_card3_body: "We will expand our horizons until we transform our cacao into our own chocolate, multiplying the fruits of this great project in which we both take risks, betting our time, money and mutual trust from day one. We will be the engine that transforms life in Echarati, proving that when a family believes, looks out for one another and walks together, the greatest dreams come true and well-being arrives to stay forever in every home.",
   process_step1_title: "Cultivation",
   process_step1_subtitle: "Native high-altitude cacao",
   process_step1_desc: "Native Chuncho cacao grown at altitudes of 800-1200m in the valleys of Echarati.",

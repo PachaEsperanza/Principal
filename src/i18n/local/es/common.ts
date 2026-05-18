@@ -335,7 +335,7 @@ const es = {
   vision_card2_title: "Nuestro Centro de Acopio",
   vision_card2_body: "En esta gran familia unida y próspera donde el cacao de Echarati será reconocido en el mundo entero, construiremos juntos nuestro propio centro de acopio para lograr una fermentación y un aroma superiores que demuestren que en nuestra tierra se produce el mejor cacao del Perú.",
   vision_card3_title: "Del Grano al Chocolate",
-  vision_card3_body: "Lograremos expandir nuestros horizontes hasta transformar nuestro cacao en chocolate propio, multiplicando los frutos de este gran proyecto. Seremos el motor que transformará la vida en Echarati, demostrando que cuando una familia cree y camina unida, los sueños más grandes se hacen realidad.",
+  vision_card3_body: "Lograremos expandir nuestros horizontes hasta transformar nuestro cacao en chocolate propio, multiplicando los frutos de este gran proyecto donde ambos nos arriesgamos, apostando nuestro tiempo, dinero y confianza mutua desde el primer día. Seremos el motor que transformará la vida en Echarati, demostrando que cuando una familia cree, se la juega el uno por el otro y camina unida, los sueños más grandes se hacen realidad y el bienestar llega para quedarse para siempre en cada hogar.",
   process_step1_title: "Cultivo",
   process_step1_subtitle: "Cacao nativo de altura",
   process_step1_desc: "Cacao Chuncho nativo cultivado en altitudes de 800-1200m en los valles de Echarati.",

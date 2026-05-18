@@ -326,7 +326,7 @@ const cs = {
   vision_card2_title: "Naše sběrné centrum",
   vision_card2_body: "V této velké, jednotné a prosperující rodině, kde bude kakao z Echarati uznáváno po celém světě, společně vybudujeme naše vlastní sběrné centrum, abychom dosáhli vynikající fermentace a aroma a dokázali, že na naší zemi se vyrábí nejlepší kakao Peru.",
   vision_card3_title: "Od zrna k čokoládě",
-  vision_card3_body: "Rozšíříme naše obzory, dokud neproměníme naše kakao ve vlastní čokoládu a znásobíme plody tohoto velkého projektu. Budeme motorem, který promění život v Echarati a ukáže, že když rodina věří a kráčí společně, ty největší sny se stávají skutečností.",
+  vision_card3_body: "Rozšíříme naše obzory, dokud neproměníme naše kakao ve vlastní čokoládu a znásobíme plody tohoto velkého projektu, ve kterém oba riskujeme a od prvního dne sázíme svůj čas, peníze a vzájemnou důvěru. Budeme motorem, který promění život v Echarati a ukáže, že když rodina věří, stojí jeden při druhém a kráčí společně, ty největší sny se stávají skutečností a blahobyt přichází, aby zůstal navždy v každém domově.",
   process_step1_title: "Pěstování",
   process_step1_subtitle: "Původní vysokohorské kakao",
   process_step1_desc: "Původní kakao Chuncho pěstované ve výškách 800-1200m v údolích Echarati.",

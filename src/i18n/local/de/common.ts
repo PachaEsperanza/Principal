@@ -326,7 +326,7 @@ const de = {
   vision_card2_title: "Unsere Sammelstelle",
   vision_card2_body: "In dieser großen, vereinten und blühenden Familie, in der der Kakao aus Echarati weltweit anerkannt wird, werden wir gemeinsam unsere eigene Sammelstelle bauen, um eine überlegene Fermentation und ein überlegenes Aroma zu erzielen und zu beweisen, dass auf unserem Land der beste Kakao Perus produziert wird.",
   vision_card3_title: "Von der Bohne zur Schokolade",
-  vision_card3_body: "Wir werden unsere Horizonte erweitern, bis wir unseren Kakao in unsere eigene Schokolade verwandeln und so die Früchte dieses großen Projekts vervielfachen. Wir werden der Motor sein, der das Leben in Echarati verändert und zeigt, dass die größten Träume wahr werden, wenn eine Familie glaubt und gemeinsam geht.",
+  vision_card3_body: "Wir werden unsere Horizonte erweitern, bis wir unseren Kakao in unsere eigene Schokolade verwandeln und so die Früchte dieses großen Projekts vervielfachen, in dem wir beide alles wagen und vom ersten Tag an unsere Zeit, unser Geld und unser gegenseitiges Vertrauen einsetzen. Wir werden der Motor sein, der das Leben in Echarati verändert und zeigt, dass die größten Träume wahr werden und das Wohlergehen für immer in jedem Zuhause bleibt, wenn eine Familie glaubt, füreinander einsteht und gemeinsam geht.",
   process_step1_title: "Anbau",
   process_step1_subtitle: "Nativer Hochlandkakao",
   process_step1_desc: "Nativer Chuncho-Kakao, angebaut in Höhenlagen von 800-1200m in den Tälern von Echarati.",
