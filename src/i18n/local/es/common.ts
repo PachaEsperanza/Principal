@@ -95,14 +95,14 @@ const es = {
   contact_cert_adoption: 'Certificado de Adopción',
 
   // Footer
-  footer_tagline: 'Café premium de origen peruano.\nLima, Perú — Europa.',
+  footer_tagline: "Cacao Chuncho de Echarati,\nLa Convención · Perú.",
   footer_products: 'Productos',
-  footer_company: 'Empresa',
-  footer_philosophy: 'Nuestra Filosofía',
-  footer_farmers: 'Productores',
-  footer_process: 'Proceso',
+  footer_company: "Conoce",
+  footer_philosophy: "Nuestra Historia",
+  footer_farmers: "Productores",
+  footer_process: "Proceso",
   footer_contact: 'Contacto',
-  footer_copyright: '© 2025 HOLZEN · Legado Inca. Todos los derechos reservados.',
+  footer_copyright: "© 2026 Comparto tu Esperanza. Todos los derechos reservados.",
 
   // Reviews
   reviews_eyebrow: 'Voces del Mundo',

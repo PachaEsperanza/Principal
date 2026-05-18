@@ -95,14 +95,14 @@ const en = {
   contact_cert_adoption: 'Adoption Certificate',
 
   // Footer
-  footer_tagline: 'Premium single-origin Peruvian coffee.\nLima, Peru — Europe.',
+  footer_tagline: "Chuncho cacao from Echarati,\nLa Convención · Peru.",
   footer_products: 'Products',
-  footer_company: 'Company',
-  footer_philosophy: 'Our Philosophy',
-  footer_farmers: 'Farmers',
-  footer_process: 'Process',
+  footer_company: "About",
+  footer_philosophy: "Our Story",
+  footer_farmers: "Producers",
+  footer_process: "Process",
   footer_contact: 'Contact',
-  footer_copyright: '© 2025 HOLZEN · Legado Inca. All rights reserved.',
+  footer_copyright: "© 2026 Comparto tu Esperanza. All rights reserved.",
 
   // Reviews
   reviews_eyebrow: 'Voices from the World',

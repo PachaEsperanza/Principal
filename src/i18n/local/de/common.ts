@@ -95,14 +95,14 @@ const de = {
   contact_cert_adoption: 'Adoptionszertifikat',
 
   // Footer
-  footer_tagline: 'Premium-Kaffee aus peruanischem Ursprung.\nLima, Peru — Europa.',
+  footer_tagline: "Chuncho-Kakao aus Echarati,\nLa Convención · Peru.",
   footer_products: 'Produkte',
-  footer_company: 'Unternehmen',
-  footer_philosophy: 'Unsere Philosophie',
-  footer_farmers: 'Bauern',
-  footer_process: 'Prozess',
+  footer_company: "Über uns",
+  footer_philosophy: "Unsere Geschichte",
+  footer_farmers: "Produzenten",
+  footer_process: "Prozess",
   footer_contact: 'Kontakt',
-  footer_copyright: '© 2025 HOLZEN · Legado Inca. Alle Rechte vorbehalten.',
+  footer_copyright: "© 2026 Comparto tu Esperanza. Alle Rechte vorbehalten.",
 
   // Reviews
   reviews_eyebrow: 'Stimmen aus der Welt',

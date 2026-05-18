@@ -95,14 +95,14 @@ const cs = {
   contact_cert_adoption: 'Certifikát adopce',
 
   // Footer
-  footer_tagline: 'Prémiová káva z peruánského původu.\nLima, Peru — Evropa.',
+  footer_tagline: "Kakao Chuncho z Echarati,\nLa Convención · Peru.",
   footer_products: 'Produkty',
-  footer_company: 'Společnost',
-  footer_philosophy: 'Naše filozofie',
-  footer_farmers: 'Farmáři',
-  footer_process: 'Proces',
+  footer_company: "O nás",
+  footer_philosophy: "Náš příběh",
+  footer_farmers: "Producenti",
+  footer_process: "Proces",
   footer_contact: 'Kontakt',
-  footer_copyright: '© 2025 HOLZEN · Legado Inca. Všechna práva vyhrazena.',
+  footer_copyright: "© 2026 Comparto tu Esperanza. Všechna práva vyhrazena.",
 
   // Reviews
   reviews_eyebrow: 'Hlasy ze světa',
