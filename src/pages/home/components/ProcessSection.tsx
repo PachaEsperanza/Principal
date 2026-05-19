@@ -50,17 +50,17 @@ const ProcessSection = () => {
         {/* Header */}
         <div className="text-center mb-12">
           <div className="flex items-center justify-center gap-3 mb-4">
-            <span className="w-10 h-px" style={{ background: '#A3D977' }} />
-            <span className="text-sm tracking-[0.35em] uppercase" style={{ color: '#A3D977', fontFamily: "'Playfair Display', serif", fontWeight: 900, filter: 'drop-shadow(0 1px 4px rgba(0,0,0,0.6))' }}>
+            <span className="w-10 h-px" style={{ background: '#7EC820' }} />
+            <span className="tracking-[0.35em] uppercase" style={{ color: '#7EC820', fontFamily: "'Playfair Display', serif", fontWeight: 900, fontSize: 'clamp(0.9rem, 1.8vw, 1.2rem)', filter: 'drop-shadow(0 1px 6px rgba(0,0,0,0.7))' }}>
               {t('process_eyebrow')}
             </span>
-            <span className="w-10 h-px" style={{ background: '#A3D977' }} />
+            <span className="w-10 h-px" style={{ background: '#7EC820' }} />
           </div>
           <h2
-            className="text-4xl md:text-5xl"
+            className="text-5xl md:text-6xl"
             style={{ fontFamily: "'Playfair Display', serif", color: '#F5E6D3', fontWeight: 900 }}
           >
-            {t('process_title')} <em style={{ color: '#C9A84C', fontStyle: 'italic', filter: 'drop-shadow(0 2px 6px rgba(0,0,0,0.6))', WebkitTextStroke: '0.4px #C9A84C', fontWeight: 950 }}>{t('process_title_highlight')}</em>
+            {t('process_title')} <em style={{ color: '#D4A843', fontStyle: 'italic', filter: 'drop-shadow(0 2px 8px rgba(212,168,67,0.5))', WebkitTextStroke: '0.4px #D4A843', fontWeight: 950 }}>{t('process_title_highlight')}</em>
           </h2>
         </div>
 
