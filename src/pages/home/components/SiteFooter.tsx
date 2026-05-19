@@ -13,7 +13,7 @@ const SiteFooter = () => {
 
   return (
     <footer style={{ position: 'relative', overflow: 'hidden' }} className="pt-16 pb-8 px-6">
-      <div className="absolute inset-0" style={{ backgroundImage: "url('/Home/images/reviews-bg.jpg')", backgroundSize: 'cover', backgroundPosition: 'center', opacity: 0.65 }} />
+      <div className="absolute inset-0" style={{ backgroundImage: "url('/Home/images/products-bg.jpg')", backgroundSize: 'cover', backgroundPosition: 'center', opacity: 0.65 }} />
       <div className="absolute inset-0" style={{ background: 'linear-gradient(160deg, rgba(26,10,4,0.55) 0%, rgba(42,18,6,0.45) 100%)' }} />
       <div className="relative z-10 max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 pb-10" style={{ borderBottom: '1px solid rgba(201,168,76,0.2)' }}>
         <div>
@@ -26,7 +26,7 @@ const SiteFooter = () => {
               fontSize: 'clamp(1.4rem, 2.6vw, 2rem)',
               letterSpacing: '0.04em',
               WebkitTextStroke: '0.4px #5C1422',
-              filter: 'drop-shadow(0 0 10px rgba(255,255,255,0.7)) drop-shadow(0 2px 6px rgba(0,0,0,0.5))',
+              filter: 'drop-shadow(0 2px 6px rgba(0,0,0,0.5))',
             }}
           >
             Comparto tu Esperanza
