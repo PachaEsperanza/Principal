@@ -42,7 +42,7 @@ const ProcessSection = () => {
       <div
         className="absolute inset-0 z-0"
         style={{
-          background: 'linear-gradient(160deg, rgba(63,13,23,0.48) 0%, rgba(122,29,46,0.38) 50%, rgba(63,13,23,0.5) 100%)',
+          background: 'linear-gradient(160deg, rgba(42,24,10,0.58) 0%, rgba(30,18,8,0.62) 50%, rgba(42,24,10,0.56) 100%)',
         }}
       />
 
