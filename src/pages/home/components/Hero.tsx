@@ -59,7 +59,8 @@ const Hero = () => {
         <h1
           className="font-serif text-[clamp(2rem,5.5vw,4.5rem)] leading-none tracking-[0.1em] uppercase mb-4 inline-block"
           style={{
-            color: '#5C1422',
+            color: '#D4A843',
+            textShadow: '0 0 40px rgba(212,168,67,0.5), 0 2px 8px rgba(0,0,0,0.6)',
             fontWeight: 950,
             WebkitTextStroke: '0.5px #5C1422',
             filter: 'drop-shadow(0 2px 8px rgba(0,0,0,0.7))',

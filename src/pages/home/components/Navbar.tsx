@@ -65,8 +65,9 @@ const Navbar = ({ cartCount, onCartOpen }: NavbarProps) => {
     <>
       <nav
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-          scrolled ? 'bg-coffee-900/95 backdrop-blur-sm border-b border-gold/10' : 'bg-transparent'
+          scrolled ? 'backdrop-blur-sm border-b border-gold/10' : 'bg-transparent'
         }`}
+        style={{ background: scrolled ? 'rgba(60,10,20,0.97)' : 'transparent' }}
       >
         <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
           <button
