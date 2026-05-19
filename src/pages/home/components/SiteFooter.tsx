@@ -20,12 +20,12 @@ const SiteFooter = () => {
           <div
             className="font-serif uppercase mb-3"
             style={{
-              color: '#5C1422',
+              color: '#C9A84C',
               fontFamily: "'Playfair Display', serif",
               fontWeight: 900,
               fontSize: 'clamp(1.4rem, 2.6vw, 2rem)',
               letterSpacing: '0.04em',
-              WebkitTextStroke: '0.4px #5C1422',
+              WebkitTextStroke: '0.4px #C9A84C',
               filter: 'drop-shadow(0 2px 6px rgba(0,0,0,0.5))',
             }}
           >
