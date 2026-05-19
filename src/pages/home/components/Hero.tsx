@@ -68,7 +68,7 @@ const Hero = () => {
         >
           Comparto tu Esperanza
         </h1>
-        <p className="font-serif font-black text-[clamp(0.85rem,2.3vw,1.9rem)] leading-tight tracking-[0.08em] text-cream uppercase mb-8 whitespace-pre-line">
+        <p className="font-serif font-black text-[clamp(0.85rem,2.3vw,1.9rem)] leading-tight tracking-[0.08em] text-cream uppercase mb-8 whitespace-pre-line pl-1 md:pl-2">
           {t('hero_subtitle')}
         </p>
         <p className="max-w-xl text-cream/70 text-sm md:text-base font-serif leading-relaxed mb-10">
