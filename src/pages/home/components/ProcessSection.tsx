@@ -29,21 +29,20 @@ const ProcessSection = () => {
     <section id="process" className="relative py-16 md:py-20 overflow-hidden">
       {/* Background base */}
       <div className="absolute inset-0 z-0" style={{ background: '#1C1008' }} />
-      {/* Background texture */}
-      <div
-        className="absolute inset-0 z-0"
-        style={{
-          backgroundImage: "url('/Home/images/fondos.jpeg')",
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          opacity: 0.65,
-        }}
+      {/* Background video */}
+      <video
+        autoPlay
+        muted
+        loop
+        playsInline
+        className="absolute inset-0 w-full h-full object-cover z-0 pointer-events-none"
+        src="/Home/videos/fondo.mp4"
       />
       {/* Dark overlay */}
       <div
         className="absolute inset-0 z-0"
         style={{
-          background: 'linear-gradient(160deg, rgba(63,13,23,0.22) 0%, rgba(122,29,46,0.15) 50%, rgba(63,13,23,0.22) 100%)',
+          background: 'linear-gradient(160deg, rgba(63,13,23,0.42) 0%, rgba(122,29,46,0.32) 50%, rgba(63,13,23,0.45) 100%)',
         }}
       />
 
