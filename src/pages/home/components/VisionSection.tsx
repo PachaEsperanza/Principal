@@ -197,7 +197,7 @@ const VisionSection = () => {
                         {item.title}
                       </h3>
                     </div>
-                    <p className="font-serif text-cream/85 text-sm md:text-base leading-relaxed">
+                    <p className="font-serif text-cream/85 text-xs md:text-sm leading-relaxed">
                       {item.body}
                     </p>
                   </div>

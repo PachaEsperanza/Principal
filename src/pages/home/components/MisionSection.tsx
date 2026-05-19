@@ -58,7 +58,7 @@ const MisionSection = () => {
       <div
         className="absolute inset-0 pointer-events-none"
         style={{
-          background: 'linear-gradient(160deg, rgba(63,13,23,0.38) 0%, rgba(40,18,8,0.42) 60%, rgba(63,13,23,0.35) 100%)',
+          background: 'linear-gradient(160deg, rgba(42,24,10,0.52) 0%, rgba(30,18,8,0.56) 60%, rgba(42,24,10,0.50) 100%)',
         }}
       />
 
@@ -203,7 +203,7 @@ const MisionSection = () => {
                   className="ri-double-quotes-l text-gold/40 block mb-3"
                   style={{ fontSize: '1.6rem' }}
                 />
-                <p className="font-serif text-cream/90 text-sm md:text-base leading-relaxed">
+                <p className="font-serif text-cream/90 text-xs md:text-sm leading-relaxed">
                   {para}
                 </p>
               </div>
