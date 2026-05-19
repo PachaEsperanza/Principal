@@ -56,8 +56,11 @@ const Hero = () => {
         <p className="text-gold text-xs tracking-[0.4em] uppercase font-serif mb-4 opacity-90">
           {t('hero_eyebrow')}
         </p>
+        <p className="font-serif font-black text-[clamp(0.85rem,2.3vw,1.9rem)] leading-tight tracking-[0.08em] text-cream uppercase mb-4 whitespace-pre-line pl-1 md:pl-2">
+          {t('hero_subtitle')}
+        </p>
         <h1
-          className="font-serif text-[clamp(2rem,5.5vw,4.5rem)] leading-none tracking-[0.1em] uppercase mb-4 inline-block"
+          className="font-serif text-[clamp(2rem,5.5vw,4.5rem)] leading-none tracking-[0.1em] uppercase mb-8 inline-block"
           style={{
             color: '#D4A843',
             textShadow: '0 0 40px rgba(212,168,67,0.5), 0 2px 8px rgba(0,0,0,0.6)',
@@ -68,9 +71,6 @@ const Hero = () => {
         >
           Comparto tu Esperanza
         </h1>
-        <p className="font-serif font-black text-[clamp(0.85rem,2.3vw,1.9rem)] leading-tight tracking-[0.08em] text-cream uppercase mb-8 whitespace-pre-line pl-1 md:pl-2">
-          {t('hero_subtitle')}
-        </p>
         <p className="max-w-xl text-cream/70 text-sm md:text-base font-serif leading-relaxed mb-10">
           {t('hero_desc')}
         </p>
