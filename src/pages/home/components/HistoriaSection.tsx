@@ -112,12 +112,11 @@ const HistoriaSection = () => {
   return (
     <section id="historia" ref={sectionRef} className="relative w-full overflow-hidden" style={{ minHeight: '600px' }}>
 
-      {/* Video fondo */}
-      <video autoPlay muted loop playsInline
-        className="absolute inset-0 w-full h-full object-cover pointer-events-none"
-        style={{ zIndex: 0 }}>
-        <source src="/Home/videos/video4.mp4" type="video/mp4" />
-      </video>
+      {/* Fondo imagen */}
+      <div
+        className="absolute inset-0 bg-center bg-cover pointer-events-none"
+        style={{ backgroundImage: 'url(/Home/images/fondos.jpg)', zIndex: 0 }}
+      />
 
       {/* Overlay */}
       <div className="absolute inset-0 pointer-events-none" style={{
