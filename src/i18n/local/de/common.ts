@@ -358,8 +358,7 @@ const de = {
     "Da traf ich eine Entscheidung, die mein Leben veränderte. Ich kehrte nach Peru zurück mit einer klaren Mission: die Brücke zu bauen, die niemand gebaut hatte. Eine Brücke zwischen den Menschen, die mit ihren Händen etwas Außergewöhnliches produzieren, und der Welt, die es verdient, es zu kennen. So entstanden zwei Projekte, die für mich eines sind."
   ],
   historia_cards2: [
-    "Es entstand, weil ich verstand, dass Armut nicht nur Geldmangel ist. Oft ist es Mangel an Chancen, Unterstützung, Bildung und jemandem, der an sie glaubt.",
-    "Die NGO existiert, um Familien zu begleiten, ihre Kinder zu unterstützen und ihnen etwas zurückzugeben, das sie oft verloren haben: Hoffnung und Würde. Denn niemand sollte sich unsichtbar fühlen."
+    "Es entstand, weil ich verstand, dass Armut nicht nur Geldmangel ist. Oft ist es Mangel an Chancen, Unterstützung, Bildung und jemandem, der an sie glaubt. Die NGO existiert, um Familien zu begleiten, ihre Kinder zu unterstützen und ihnen etwas zurückzugeben, das sie oft verloren haben: Hoffnung und Würde. Denn niemand sollte sich unsichtbar fühlen."
   ],
   historia_cards3: [
     "Es entstand, weil ich auch etwas Grundlegendes verstand: Helfen bedeutet nicht, zu verschenken. Helfen bedeutet, nachhaltige und echte Chancen zu schaffen. Es bedeutet, der Welt den wahren Wert unserer Bauern, unseres Chuncho Organic Kakao, unserer Kultur und der außergewöhnlichen Arbeit in Peru zu zeigen.",

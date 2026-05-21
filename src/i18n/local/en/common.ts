@@ -358,8 +358,7 @@ const en = {
     "It was then that I made a decision that changed my life. I returned to Peru with a clear mission: to build the bridge that no one had built. A bridge between the people who produce something extraordinary with their hands and the world that deserves to know it. That is how two projects were born that, for me, are one."
   ],
   historia_cards2: [
-    "It was born because I understood that poverty is not just a lack of money. Many times it is a lack of opportunities, support, education and someone who believes in them.",
-    "The NGO exists to accompany families, support their children and give back something they have often lost: hope and dignity. Because no one should feel invisible."
+    "It was born because I understood that poverty is not just a lack of money. Many times it is a lack of opportunities, support, education and someone who believes in them. The NGO exists to accompany families, support their children and give back something they have often lost: hope and dignity. Because no one should feel invisible."
   ],
   historia_cards3: [
     "It was born because I also understood something fundamental: helping does not mean giving. Helping means creating sustainable and real opportunities. It means showing the world the true value of our farmers, our Chuncho Organic Cacao, our culture and the extraordinary work that exists in Peru.",

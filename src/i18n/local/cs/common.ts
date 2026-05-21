@@ -358,8 +358,7 @@ const cs = {
     "Tehdy jsem učinila rozhodnutí, které změnilo můj život. Vrátila jsem se do Peru s jasným posláním: postavit most, který nikdo nepostavil. Most mezi lidmi, kteří svýma rukama vyrábějí něco mimořádného, a světem, který si zaslouží to poznat. Tak vznikly dva projekty, které jsou pro mě jedním."
   ],
   historia_cards2: [
-    "Vzniklo proto, že jsem pochopila, že chudoba není jen nedostatek peněz. Mnohokrát je to nedostatek příležitostí, podpory, vzdělání a někoho, kdo v ně věří.",
-    "NGO existuje, aby doprovázela rodiny, podporovala jejich děti a vrátila jim něco, co často ztratily: naději a důstojnost. Protože nikdo by se neměl cítit neviditelný."
+    "Vzniklo proto, že jsem pochopila, že chudoba není jen nedostatek peněz. Mnohokrát je to nedostatek příležitostí, podpory, vzdělání a někoho, kdo v ně věří. NGO existuje, aby doprovázela rodiny, podporovala jejich děti a vrátila jim něco, co často ztratily: naději a důstojnost. Protože nikdo by se neměl cítit neviditelný."
   ],
   historia_cards3: [
     "Vzniklo proto, že jsem také pochopila něco základního: pomáhat neznamená dávat. Pomáhat znamená vytvářet udržitelné a skutečné příležitosti. Znamená ukázat světu skutečnou hodnotu našich zemědělců, našeho Chuncho Organic kakaa, naší kultury a mimořádné práce, která existuje v Peru.",

@@ -367,8 +367,7 @@ const es = {
     "Fue entonces cuando tomé una decisión que cambió mi vida. Regresé a Perú con una misión clara: construir el puente que nadie había construido. Un puente entre las personas que producen algo extraordinario con sus manos y el mundo que merece conocerlo. Así nacieron dos proyectos que, para mí, son uno solo."
   ],
   historia_cards2: [
-    "Nació porque entendí que la pobreza no es solo falta de dinero. Muchas veces es falta de oportunidades, de apoyo, de educación y de alguien que crea en ellos.",
-    "La ONG existe para acompañar a las familias, apoyar a sus hijos y devolverles algo que muchas veces han perdido: esperanza y dignidad. Porque nadie debería sentirse invisible."
+    "Nació porque entendí que la pobreza no es solo falta de dinero. Muchas veces es falta de oportunidades, de apoyo, de educación y de alguien que crea en ellos. La ONG existe para acompañar a las familias, apoyar a sus hijos y devolverles algo que muchas veces han perdido: esperanza y dignidad. Porque nadie debería sentirse invisible."
   ],
   historia_cards3: [
     "Nació porque también entendí algo fundamental: ayudar no significa regalar. Ayudar significa crear oportunidades sostenibles y reales. Significa mostrarle al mundo el verdadero valor de nuestros agricultores, de nuestro Cacao Chuncho Orgánico, de nuestra cultura y del trabajo extraordinario que existe en el Perú.",
