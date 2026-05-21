@@ -10,6 +10,7 @@ import VisionSection from './components/VisionSection';
 // import ImpactSlider from './components/ImpactSlider';
 // import Reviews from './components/Reviews';
 import Farmers from './components/Farmers';
+import HistoriaSection from './components/HistoriaSection';
 import ProcessSection from './components/ProcessSection';
 // import ContactSection from './components/ContactSection';
 import SiteFooter from './components/SiteFooter';
@@ -68,6 +69,7 @@ const HomePage = () => {
       />
       <Hero />
       <Farmers />
+      <HistoriaSection />
       <Manifesto />
       <MisionSection />
       <VisionSection />

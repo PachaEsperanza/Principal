@@ -356,6 +356,27 @@ const es = {
   process_step4_desc: "Secado solar en camas africanas elevadas. Sin secado artificial que altere el perfil sensorial del grano.",
   process_step4_tag1: "Solar",
   process_step4_tag2: "Camas africanas",
+  historia_eyebrow: "Nuestra historia",
+  historia_title_line1: "La historia detrás",
+  historia_title_line2: "de este sueño",
+  historia_cards1: [
+    "Siempre tuve en mi corazón la necesidad de ayudar a las personas. Quizás por eso decidí estudiar Derecho, porque soñaba con defender a quienes más lo necesitaban. Aunque la vida tomó otro camino y no pude terminar la carrera, ese deseo nunca desapareció. Al contrario… con los años creció aún más dentro de mí.",
+    "Desde pequeña conocí realidades que me marcaron profundamente. Recuerdo visitar comunidades donde las familias sobrevivían con muy poco, donde el esfuerzo diario apenas alcanzaba para alimentar a sus hijos y donde muchas personas trabajaban toda su vida sin recibir el valor que realmente merecían. Y mientras veía todo eso, había algo dentro de mí que me decía que no era justo.",
+    "En Navidad llevaba regalos, ropa y pequeños detalles. Pero con el tiempo entendí algo muy importante: un regalo puede traer felicidad por un momento… pero no cambia una vida. Y yo no quería ayudar solo por un instante. Yo quería crear oportunidades reales. Quería ayudar a construir un futuro diferente.",
+    "Años después viajé a Europa y viví en Alemania. Ahí pude ver una realidad completamente distinta. Vi cómo cambia la vida de las personas cuando existen oportunidades, apoyo, educación y acceso a mercados justos. Y mientras más conocía Europa, más pensaba en mi país: Perú. Pensaba en nuestros agricultores. Pensaba en nuestras familias trabajadoras. Pensaba en el inmenso talento que existe en nuestras comunidades y que el mundo todavía no conoce ni valora como debería.",
+    "Fue entonces cuando tomé una decisión que cambió mi vida. Regresé a Perú con una misión clara: construir el puente que nadie había construido. Un puente entre las personas que producen algo extraordinario con sus manos y el mundo que merece conocerlo. Así nacieron dos proyectos que, para mí, son uno solo."
+  ],
+  historia_cards2: [
+    "Nació porque entendí que la pobreza no es solo falta de dinero. Muchas veces es falta de oportunidades, de apoyo, de educación y de alguien que crea en ellos.",
+    "La ONG existe para acompañar a las familias, apoyar a sus hijos y devolverles algo que muchas veces han perdido: esperanza y dignidad. Porque nadie debería sentirse invisible."
+  ],
+  historia_cards3: [
+    "Nació porque también entendí algo fundamental: ayudar no significa regalar. Ayudar significa crear oportunidades sostenibles y reales. Significa mostrarle al mundo el verdadero valor de nuestros agricultores, de nuestro Cacao Chuncho Orgánico, de nuestra cultura y del trabajo extraordinario que existe en el Perú.",
+    "Por eso decidí crear una empresa exportadora con presencia en Europa. No para impresionar a nadie, sino porque quería abrir puertas reales. Porque quería que nuestros productos llegaran lejos y fueran reconocidos por la calidad y el valor humano que existe detrás de cada cosecha.",
+    "Hoy ese camino ya empezó a abrirse. Ya existen contactos y clientes en Europa interesados en Cacao Chuncho Orgánico peruano de alta calidad. Y gracias a nuestra presencia en República Checa, podemos asegurar procesos, calidad y distribución hacia distintos países de Europa.",
+    "Yo creo profundamente en este proyecto. Creo en las familias. Creo en los agricultores. Creo en el talento que existe en nuestras comunidades. Y creo tanto en esta visión, que estoy invirtiendo en ella todos los ahorros de mi vida. Porque no lo veo como un negocio más. Lo veo como una oportunidad de transformar vidas, abrir caminos y hacer realidad sueños que durante muchos años parecían imposibles.",
+    "Sueño con ver a nuestros productores reconocidos internacionalmente. Sueño con que el mundo conozca la calidad extraordinaria del Cacao Chuncho Orgánico peruano y, sobre todo, las historias humanas que existen detrás de cada producto. Porque esto no se trata de lástima. Se trata de dignidad. La ONG cuida a las familias. La empresa cuida su trabajo y su futuro económico. Una protege el corazón de las personas. La otra abre las puertas para que puedan crecer con independencia, orgullo y oportunidades reales. Porque al final, mi sueño nunca fue simplemente exportar productos. Mi sueño siempre fue cambiar vidas. Y hoy quiero hacerlo junto a ustedes."
+  ],
 };
 
 export default es;

@@ -347,6 +347,27 @@ const cs = {
   process_step4_desc: "Sluneční sušení na vyvýšených afrických ložích. Bez umělého sušení, které by měnilo senzorický profil zrna.",
   process_step4_tag1: "Solární",
   process_step4_tag2: "Africká lože",
+  historia_eyebrow: "Náš příběh",
+  historia_title_line1: "Příběh za tímto",
+  historia_title_line2: "snem",
+  historia_cards1: [
+    "Vždy jsem v srdci měla potřebu pomáhat lidem. Možná proto jsem se rozhodla studovat právo, protože jsem snila o obhajobě těch, kteří to nejvíce potřebovali. Přestože život šel jiným směrem a studium jsem nedokončila, tato touha nikdy nezmizela. Naopak… s léty rostla v mém nitru ještě silněji.",
+    "Od malička jsem znala reality, které mě hluboce poznamenaly. Pamatuji si návštěvy komunit, kde rodiny přežívaly s velmi málem, kde každodenní úsilí sotva stačilo nakrmit jejich děti a kde mnoho lidí pracovalo celý život, aniž by dostali hodnotu, kterou skutečně zasloužili. A zatímco jsem to všechno viděla, něco uvnitř mi říkalo, že to není spravedlivé.",
+    "O Vánocích jsem nosila dárky, oblečení a malé pozornosti. Ale postupem času jsem pochopila něco velmi důležitého: dárek může přinést štěstí na chvíli… ale nezmění život. A já jsem nechtěla pomáhat jen na okamžik. Chtěla jsem vytvářet skutečné příležitosti. Chtěla jsem pomoci budovat jinou budoucnost.",
+    "O léta později jsem cestovala do Evropy a žila v Německu. Tam jsem mohla vidět zcela odlišnou realitu. Viděla jsem, jak se mění život lidí, když existují příležitosti, podpora, vzdělání a přístup ke spravedlivým trhům. A čím více jsem poznávala Evropu, tím více jsem myslela na svou zemi: Peru. Myslela jsem na naše zemědělce. Myslela jsem na naše pracující rodiny. Myslela jsem na obrovský talent v našich komunitách, který svět stále nezná ani neocení tak, jak by měl.",
+    "Tehdy jsem učinila rozhodnutí, které změnilo můj život. Vrátila jsem se do Peru s jasným posláním: postavit most, který nikdo nepostavil. Most mezi lidmi, kteří svýma rukama vyrábějí něco mimořádného, a světem, který si zaslouží to poznat. Tak vznikly dva projekty, které jsou pro mě jedním."
+  ],
+  historia_cards2: [
+    "Vzniklo proto, že jsem pochopila, že chudoba není jen nedostatek peněz. Mnohokrát je to nedostatek příležitostí, podpory, vzdělání a někoho, kdo v ně věří.",
+    "NGO existuje, aby doprovázela rodiny, podporovala jejich děti a vrátila jim něco, co často ztratily: naději a důstojnost. Protože nikdo by se neměl cítit neviditelný."
+  ],
+  historia_cards3: [
+    "Vzniklo proto, že jsem také pochopila něco základního: pomáhat neznamená dávat. Pomáhat znamená vytvářet udržitelné a skutečné příležitosti. Znamená ukázat světu skutečnou hodnotu našich zemědělců, našeho Chuncho Organic kakaa, naší kultury a mimořádné práce, která existuje v Peru.",
+    "Proto jsem se rozhodla založit exportní společnost s přítomností v Evropě. Ne aby imponovala, ale protože jsem chtěla otevírat skutečné dveře. Protože jsem chtěla, aby naše produkty dosáhly daleko a byly uznávány pro kvalitu a lidskou hodnotu za každou sklizní.",
+    "Dnes se tato cesta již začala otevírat. Již existují kontakty a klienti v Evropě, kteří mají zájem o vysoce kvalitní peruánské Chuncho Organic kakao. A díky naší přítomnosti v České republice můžeme zajistit procesy, kvalitu a distribuci do různých zemí Evropy.",
+    "Hluboce věřím v tento projekt. Věřím v rodiny. Věřím v zemědělce. Věřím v talent v našich komunitách. A věřím v tuto vizi natolik, že do ní investuji všechny své celoživotní úspory. Protože to nevidím jako další podnikání. Vidím to jako příležitost transformovat životy, otevírat cesty a uskutečňovat sny, které se po mnoho let zdály nemožné.",
+    "Sním o tom, vidět naše producenty mezinárodně uznávané. Sním o tom, aby svět poznal mimořádnou kvalitu peruánského Chuncho Organic kakaa a především lidské příběhy za každým produktem. Protože nejde o lítost. Jde o důstojnost. NGO pečuje o rodiny. Společnost pečuje o jejich práci a ekonomickou budoucnost. Jedna chrání srdce lidí. Druhá otevírá dveře, aby mohli růst s nezávislostí, hrdostí a skutečnými příležitostmi. Protože nakonec můj sen nebyl jen exportovat produkty. Můj sen byl vždy měnit životy. A dnes to chci dělat společně s vámi."
+  ],
 };
 
 export default cs;

@@ -347,6 +347,27 @@ const en = {
   process_step4_desc: "Solar drying on raised African beds. No artificial drying that alters the sensory profile of the bean.",
   process_step4_tag1: "Solar",
   process_step4_tag2: "African beds",
+  historia_eyebrow: "Our story",
+  historia_title_line1: "The story behind",
+  historia_title_line2: "this dream",
+  historia_cards1: [
+    "I always had in my heart the need to help people. Perhaps that is why I decided to study Law, because I dreamed of defending those who needed it most. Although life took another path and I could not finish my degree, that desire never disappeared. On the contrary… over the years it grew even stronger within me.",
+    "From a young age I knew realities that marked me deeply. I remember visiting communities where families survived with very little, where daily effort barely covered feeding their children and where many people worked their whole lives without receiving the value they truly deserved. And while I saw all of this, something inside me said it was not fair.",
+    "At Christmas I would bring gifts, clothes and small details. But over time I understood something very important: a gift can bring happiness for a moment… but it does not change a life. And I did not want to help just for an instant. I wanted to create real opportunities. I wanted to help build a different future.",
+    "Years later I traveled to Europe and lived in Germany. There I could see a completely different reality. I saw how life changes when opportunities, support, education and access to fair markets exist. And the more I got to know Europe, the more I thought about my country: Peru. I thought about our farmers. I thought about our working families. I thought about the immense talent that exists in our communities and that the world still does not know or value as it should.",
+    "It was then that I made a decision that changed my life. I returned to Peru with a clear mission: to build the bridge that no one had built. A bridge between the people who produce something extraordinary with their hands and the world that deserves to know it. That is how two projects were born that, for me, are one."
+  ],
+  historia_cards2: [
+    "It was born because I understood that poverty is not just a lack of money. Many times it is a lack of opportunities, support, education and someone who believes in them.",
+    "The NGO exists to accompany families, support their children and give back something they have often lost: hope and dignity. Because no one should feel invisible."
+  ],
+  historia_cards3: [
+    "It was born because I also understood something fundamental: helping does not mean giving. Helping means creating sustainable and real opportunities. It means showing the world the true value of our farmers, our Chuncho Organic Cacao, our culture and the extraordinary work that exists in Peru.",
+    "That is why I decided to create an export company with a presence in Europe. Not to impress anyone, but because I wanted to open real doors. Because I wanted our products to reach far and be recognized for the quality and human value that exists behind every harvest.",
+    "Today that path has already begun to open. There are already contacts and clients in Europe interested in high-quality Peruvian Chuncho Organic Cacao. And thanks to our presence in the Czech Republic, we can ensure processes, quality and distribution to different countries in Europe.",
+    "I deeply believe in this project. I believe in families. I believe in farmers. I believe in the talent that exists in our communities. And I believe so much in this vision that I am investing all my life savings in it. Because I do not see it as just another business. I see it as an opportunity to transform lives, open paths and make dreams come true that for many years seemed impossible.",
+    "I dream of seeing our producers recognized internationally. I dream of the world knowing the extraordinary quality of Peruvian Chuncho Organic Cacao and, above all, the human stories that exist behind each product. Because this is not about pity. It is about dignity. The NGO takes care of families. The company takes care of their work and economic future. One protects the hearts of people. The other opens the doors so they can grow with independence, pride and real opportunities. Because in the end, my dream was never simply to export products. My dream has always been to change lives. And today I want to do it together with you."
+  ],
 };
 
 export default en;

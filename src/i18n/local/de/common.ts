@@ -347,6 +347,27 @@ const de = {
   process_step4_desc: "Sonnentrocknung auf erhöhten afrikanischen Betten. Keine künstliche Trocknung, die das Sinnesprofil verändert.",
   process_step4_tag1: "Solar",
   process_step4_tag2: "Afrikanische Betten",
+  historia_eyebrow: "Unsere Geschichte",
+  historia_title_line1: "Die Geschichte hinter",
+  historia_title_line2: "diesem Traum",
+  historia_cards1: [
+    "Ich hatte immer das Bedürfnis in meinem Herzen, Menschen zu helfen. Vielleicht deshalb entschied ich mich, Jura zu studieren, weil ich davon träumte, diejenigen zu verteidigen, die es am meisten brauchten. Obwohl das Leben einen anderen Weg nahm und ich das Studium nicht abschließen konnte, verschwand dieser Wunsch nie. Im Gegenteil… mit den Jahren wuchs er noch stärker in mir.",
+    "Schon von klein auf kannte ich Realitäten, die mich tief prägten. Ich erinnere mich an Besuche in Gemeinschaften, wo Familien mit sehr wenig überlebten, wo die tägliche Mühe kaum reichte, ihre Kinder zu ernähren, und wo viele Menschen ihr ganzes Leben arbeiteten, ohne den Wert zu erhalten, den sie wirklich verdienten. Und während ich all das sah, sagte mir etwas in mir, dass es nicht gerecht war.",
+    "Zu Weihnachten brachte ich Geschenke, Kleidung und kleine Details. Aber mit der Zeit verstand ich etwas sehr Wichtiges: Ein Geschenk kann für einen Moment Freude bringen… aber es verändert kein Leben. Und ich wollte nicht nur für einen Augenblick helfen. Ich wollte echte Chancen schaffen. Ich wollte helfen, eine andere Zukunft aufzubauen.",
+    "Jahre später reiste ich nach Europa und lebte in Deutschland. Dort konnte ich eine völlig andere Realität sehen. Ich sah, wie sich das Leben von Menschen verändert, wenn Chancen, Unterstützung, Bildung und Zugang zu fairen Märkten vorhanden sind. Und je mehr ich Europa kennenlernte, desto mehr dachte ich an mein Land: Peru. Ich dachte an unsere Bauern. Ich dachte an unsere arbeitenden Familien. Ich dachte an das immense Talent in unseren Gemeinschaften, das die Welt noch immer nicht kennt oder so schätzt, wie es sollte.",
+    "Da traf ich eine Entscheidung, die mein Leben veränderte. Ich kehrte nach Peru zurück mit einer klaren Mission: die Brücke zu bauen, die niemand gebaut hatte. Eine Brücke zwischen den Menschen, die mit ihren Händen etwas Außergewöhnliches produzieren, und der Welt, die es verdient, es zu kennen. So entstanden zwei Projekte, die für mich eines sind."
+  ],
+  historia_cards2: [
+    "Es entstand, weil ich verstand, dass Armut nicht nur Geldmangel ist. Oft ist es Mangel an Chancen, Unterstützung, Bildung und jemandem, der an sie glaubt.",
+    "Die NGO existiert, um Familien zu begleiten, ihre Kinder zu unterstützen und ihnen etwas zurückzugeben, das sie oft verloren haben: Hoffnung und Würde. Denn niemand sollte sich unsichtbar fühlen."
+  ],
+  historia_cards3: [
+    "Es entstand, weil ich auch etwas Grundlegendes verstand: Helfen bedeutet nicht, zu verschenken. Helfen bedeutet, nachhaltige und echte Chancen zu schaffen. Es bedeutet, der Welt den wahren Wert unserer Bauern, unseres Chuncho Organic Kakao, unserer Kultur und der außergewöhnlichen Arbeit in Peru zu zeigen.",
+    "Deshalb beschloss ich, ein Exportunternehmen mit Präsenz in Europa zu gründen. Nicht um jemanden zu beeindrucken, sondern weil ich echte Türen öffnen wollte. Weil ich wollte, dass unsere Produkte weit reichen und für die Qualität und den menschlichen Wert hinter jeder Ernte anerkannt werden.",
+    "Heute hat sich dieser Weg bereits zu öffnen begonnen. Es gibt bereits Kontakte und Kunden in Europa, die an hochwertigem peruanischen Chuncho Organic Kakao interessiert sind. Und dank unserer Präsenz in der Tschechischen Republik können wir Prozesse, Qualität und Distribution in verschiedene europäische Länder sicherstellen.",
+    "Ich glaube tief an dieses Projekt. Ich glaube an Familien. Ich glaube an Bauern. Ich glaube an das Talent in unseren Gemeinschaften. Und ich glaube so sehr an diese Vision, dass ich all meine Ersparnisse investiere. Weil ich es nicht als weiteres Unternehmen sehe. Ich sehe es als Chance, Leben zu verändern, Wege zu öffnen und Träume wahr werden zu lassen, die jahrelang unmöglich schienen.",
+    "Ich träume davon, unsere Produzenten international anerkannt zu sehen. Ich träume davon, dass die Welt die außergewöhnliche Qualität des peruanischen Chuncho Organic Kakao kennt und vor allem die menschlichen Geschichten hinter jedem Produkt. Denn es geht nicht um Mitleid. Es geht um Würde. Die NGO kümmert sich um Familien. Das Unternehmen kümmert sich um ihre Arbeit und wirtschaftliche Zukunft. Eine schützt die Herzen der Menschen. Die andere öffnet Türen, damit sie mit Unabhängigkeit, Stolz und echten Chancen wachsen können. Denn letztendlich war mein Traum nie nur Produkte zu exportieren. Mein Traum war immer, Leben zu verändern. Und heute möchte ich es gemeinsam mit euch tun."
+  ],
 };
 
 export default de;
