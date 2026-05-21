@@ -179,7 +179,7 @@ const HistoriaSection = () => {
       </div>
 
       {/* Frase final a lo ancho */}
-      <div style={{ zIndex: 2, position: 'relative', padding: '2rem 2.5rem 2.5rem', textAlign: 'center' }}>
+      <div style={{ zIndex: 2, position: 'relative', padding: '4rem 2.5rem 2.5rem', textAlign: 'center' }}>
         <p style={{
           fontFamily: "'Playfair Display', serif",
           fontStyle: 'italic',
