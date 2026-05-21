@@ -244,15 +244,15 @@ export interface Farmer {
 
 export const farmers: Farmer[] = [
   {
-    tag: 'Echarati · La Convención',
+    tag: 'Cusco',
     tagIcon: 'ri-seedling-line',
     name: 'Segundo Herrera',
-    location: 'Echarati, Quillabamba · 1,400 msnm',
-    story: "Productor de cacao Chuncho en Echarati, en el corazón de La Convención. Apostó por mantener la variedad nativa cuando todos cambiaban a híbridos, convencido de que el cacao fino de aroma peruano merecía llegar al mundo con su nombre y su historia.",
+    location: 'Cusco · 1,400 msnm',
+    story: "Productor de cacao Chuncho Orgánico en Cusco. Apostó por mantener la variedad nativa cuando todos cambiaban a híbridos, convencido de que el cacao fino de aroma peruano merecía llegar al mundo con su nombre y su historia.",
     image: '/Home/images/farmer4.jpeg',
     index: '01',
     stat: '100%',
-    statLabel: 'cacao Chuncho nativo',
+    statLabel: 'cacao Chuncho Orgánico nativo',
   },
 ];
 
@@ -262,8 +262,8 @@ export const processSteps = [
     icon: 'ri-seedling-line',
     title: 'Cultivo',
     subtitle: 'Cacao nativo de altura',
-    desc: 'Cacao Chuncho nativo cultivado en altitudes de 800-1200m en los valles de Echarati.',
-    tags: ['Cacao Chuncho', '800-1200m'],
+    desc: 'Cacao Chuncho Orgánico nativo cultivado en altitudes de 800-1200m en los valles de Cusco.',
+    tags: ['Cacao Chuncho Orgánico', '800-1200m'],
     image: '/Home/images/segundo-work.jpeg',
     color: '#c9a96e',
   },
