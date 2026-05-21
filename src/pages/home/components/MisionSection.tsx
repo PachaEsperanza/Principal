@@ -181,7 +181,7 @@ const MisionSection = () => {
             </div>
           </div>
 
-          {/* RIGHT — dos cuadros con los párrafos de la misión */}
+          {/* RIGHT — frase + dos cuadros con los párrafos de la misión */}
           <div
             className="transition-all duration-700 delay-200 flex flex-col gap-5 lg:pt-36"
             style={{
@@ -189,6 +189,14 @@ const MisionSection = () => {
               transform: visible ? 'translateX(0)' : 'translateX(40px)',
             }}
           >
+            {/* Frase tagline */}
+            <p
+              className="font-serif text-3xl md:text-4xl italic font-black leading-snug"
+              style={{ color: '#7A1D2E', textShadow: '0 1px 4px rgba(0,0,0,0.3)' }}
+            >
+              {t('mision_tagline')}
+            </p>
+
             {[t('mision_paragraph_1'), t('mision_paragraph_2')].map((para, i) => (
               <div
                 key={i}

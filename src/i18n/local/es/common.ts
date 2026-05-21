@@ -384,6 +384,7 @@ const es = {
   nav_process: "Proceso",
   historia_press: "Presiona una flecha para seguir leyendo",
   historia_frase: "Todo gran cambio comienza cuando alguien decide creer.",
+  mision_tagline: "Desde las montañas del Cusco hacia el mundo: un proyecto que busca cambiar vidas.",
 };
 
 export default es;

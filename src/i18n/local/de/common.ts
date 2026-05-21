@@ -375,6 +375,7 @@ const de = {
   nav_process: "Prozess",
   historia_press: "Pfeil drücken um weiterzulesen",
   historia_frase: "Jede große Veränderung beginnt, wenn jemand beschließt zu glauben.",
+  mision_tagline: "Von den Bergen Cuscos in die Welt: ein Projekt, das Leben verändern will.",
 };
 
 export default de;

@@ -375,6 +375,7 @@ const en = {
   nav_process: "Process",
   historia_press: "Press an arrow to keep reading",
   historia_frase: "Every great change begins when someone decides to believe.",
+  mision_tagline: "From the mountains of Cusco to the world: a project that seeks to change lives.",
 };
 
 export default en;

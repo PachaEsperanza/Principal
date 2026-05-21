@@ -375,6 +375,7 @@ const cs = {
   nav_process: "Proces",
   historia_press: "Stiskni šipku pro čtení dál",
   historia_frase: "Každá velká změna začíná, když se někdo rozhodne věřit.",
+  mision_tagline: "Z hor Cusca do světa: projekt, který chce měnit životy.",
 };
 
 export default cs;
