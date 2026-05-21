@@ -248,7 +248,7 @@ export const farmers: Farmer[] = [
     tagIcon: 'ri-seedling-line',
     name: 'Segundo Herrera',
     location: 'Cusco · 1,400 msnm',
-    story: "Productor de cacao Chuncho Orgánico en Cusco. Apostó por mantener la variedad nativa cuando todos cambiaban a híbridos, convencido de que el cacao fino de aroma peruano merecía llegar al mundo con su nombre y su historia.",
+    story: "Productor de cacao Chuncho Orgánico en Cusco. Apostó por mantener la variedad nativa cuando todos cambiaban a híbridos, convencido de que el Cacao Chuncho Orgánico fino de aroma peruano merecía llegar al mundo con su nombre y su historia.",
     image: '/Home/images/farmer4.jpeg',
     index: '01',
     stat: '100%',
