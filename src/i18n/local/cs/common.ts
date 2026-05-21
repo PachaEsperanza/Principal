@@ -7,9 +7,9 @@ const cs = {
   nav_contact: 'Kontakt',
 
   // Hero
-  hero_eyebrow: "Kakao Chuncho · La Convención · Peru",
+  hero_eyebrow: "Kakao Chuncho · Cusco · Peru",
   hero_subtitle: "Toto není jen kakao.\nJe to slib:\nuž nikdy nebudou zapomenuti.",
-  hero_desc: "Chuncho kakao z Echarati, La Convención, Cusco. Sklizeno rodinami, které znovu uvěřily, a přeměněno v zrna čisté naděje. Z naší pobočky v České republice otevíráme náruč Evropě, abychom doručili tento suchý poklad a zajistili, že každý kout kontinentu obdrží jejich jména, jejich boj a jejich příběhy neporušené.",
+  hero_desc: "Kakao Chuncho z Cusca. Sklízeno rodinami, které znovu uvěřily, a proměněno v zrna čisté naděje. Z naší pobočky v České republice otevíráme náruč Evropě, abychom dodali tento sušený poklad a zajistili, že každý kout kontinentu obdrží jejich jména, boj a příběhy nedotčené.",
   hero_cta_primary: 'VYTVOŘIT DOPAD',
   hero_cta_secondary: 'Naši farmáři',
 
@@ -95,7 +95,7 @@ const cs = {
   contact_cert_adoption: 'Certifikát adopce',
 
   // Footer
-  footer_tagline: "Kakao Chuncho z Echarati,\nLa Convención · Peru.",
+  footer_tagline: "Kakao Chuncho z Cusca · Peru.",
   footer_products: 'Produkty',
   footer_company: "O nás",
   footer_philosophy: "Náš příběh",
