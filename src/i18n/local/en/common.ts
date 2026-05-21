@@ -7,9 +7,9 @@ const en = {
   nav_contact: 'Contact',
 
   // Hero
-  hero_eyebrow: "Chuncho Cacao · Cusco · Peru",
+  hero_eyebrow: "Chuncho Cacao · La Convención · Peru",
   hero_subtitle: "This is not just cacao.\nIt is a promise:\nthey will never be forgotten.",
-  hero_desc: "Chuncho cacao from Cusco. Harvested by families who believed again and transformed into beans of pure hope. From our branch in the Czech Republic, we open our arms to Europe to deliver this dry treasure, ensuring that every corner of the continent receives their names, their struggle, and their stories intact.",
+  hero_desc: "Chuncho Cacao from Echarati, La Convención, Cusco. Harvested by families who chose to believe again and transformed into grains of pure hope. From our branch in the Czech Republic, we open our arms to Europe to deliver this dry treasure, ensuring every corner of the continent receives their names, their struggle and their stories intact.",
   hero_cta_primary: 'MAKE AN IMPACT',
   hero_cta_secondary: 'Our Farmers',
 
@@ -31,7 +31,7 @@ const en = {
   manifesto_title_highlight: "dreams real.",
   manifesto_tab_historia: 'Story',
   manifesto_tab_mision: 'Mission',
-  mision_title: 'Mission',
+  mision_title: 'The place we want to build',
   manifesto_tab_impacto: 'Impact',
   manifesto_historia: "There is a deep Peru that beats with strength in the silence of its mountains. There, in the valleys of Echarati (La Convención), farmers whom the system forgot care with devotion for Chuncho cacao, healing a land struck by abandonment and unfair prices. These producers are the soul of resistance; men and farming families who rose with pure courage against empty promises and intermediaries who exploited them. With the wind against them and no State to support them, they chose not to surrender, turning pain into pride and choosing dignity as the only path to protect their roots. COMPARTO_TU_ESPERANZA is the embrace that unites that tireless courage with you. We create this bridge so that, on the other side of the ocean, every ounce of chocolate you taste ceases to be a simple pleasure and becomes an embrace in return — a real investment in the lives of those who give everything for their land. Choosing this cacao is not just a matter of good taste; it is to look them in the eye, recognize their worth, and commit to rebuilding a sacred legacy that they, against all odds, chose to save.",
   manifesto_mision: "To inspire purposeful consumption through the excellence of Peruvian coffee. At HOLZEN, we transform the act of enjoying a cup into a meaningful investment, uniting resilient producers with global consumers under a standard of elegance, transparency and human dignity.",
@@ -44,9 +44,9 @@ const en = {
   manifesto_map_legend: '{{count}} active farmers on the map · Tap a point to learn their story',
 
   // Farmers
-  farmers_eyebrow: "Behind every bean",
-  farmers_title: "Families who cultivate hope",
-  farmers_desc: "Real people with stories of struggle, resilience, and purpose. Every cup carries their name.",
+  farmers_eyebrow: 'Behind every bean',
+  farmers_title: 'Our Farmers',
+  farmers_desc: 'Real people with stories of struggle, resilience, and purpose. Every cup carries their name.',
   farmers_see_story: 'See story',
   farmers_tap_close: 'Tap to close',
 
@@ -95,7 +95,7 @@ const en = {
   contact_cert_adoption: 'Adoption Certificate',
 
   // Footer
-  footer_tagline: "Chuncho cacao from Cusco · Peru.",
+  footer_tagline: "Chuncho cacao from Echarati,\nLa Convención · Peru.",
   footer_products: 'Products',
   footer_company: "About",
   footer_philosophy: "Our Story",
@@ -314,7 +314,7 @@ const en = {
   emp_adoption_submit: 'GENERATE IMPACT',
 
   // === Mision/Vision/Process (auto-added) ===
-  mision_title: "Mission",
+  mision_title: 'The place we want to build',
   mision_eyebrow: "Our promise",
   mision_badge_swipe: "Swipe to see more",
   mision_paragraph_1: "To build a great family based on loyalty, honesty and mutual trust, joining forces with the most committed producers of Echarati to transform their lives and make their dreams come true.",

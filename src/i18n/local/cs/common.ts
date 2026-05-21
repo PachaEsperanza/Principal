@@ -7,9 +7,9 @@ const cs = {
   nav_contact: 'Kontakt',
 
   // Hero
-  hero_eyebrow: "Kakao Chuncho · Cusco · Peru",
+  hero_eyebrow: "Kakao Chuncho · La Convención · Peru",
   hero_subtitle: "Toto není jen kakao.\nJe to slib:\nuž nikdy nebudou zapomenuti.",
-  hero_desc: "Kakao Chuncho z Cusca. Sklízeno rodinami, které znovu uvěřily, a proměněno v zrna čisté naděje. Z naší pobočky v České republice otevíráme náruč Evropě, abychom dodali tento sušený poklad a zajistili, že každý kout kontinentu obdrží jejich jména, boj a příběhy nedotčené.",
+  hero_desc: "Chuncho kakao z Echarati, La Convención, Cusco. Sklizeno rodinami, které znovu uvěřily, a přeměněno v zrna čisté naděje. Z naší pobočky v České republice otevíráme náruč Evropě, abychom doručili tento suchý poklad a zajistili, že každý kout kontinentu obdrží jejich jména, jejich boj a jejich příběhy neporušené.",
   hero_cta_primary: 'VYTVOŘIT DOPAD',
   hero_cta_secondary: 'Naši farmáři',
 
@@ -31,7 +31,7 @@ const cs = {
   manifesto_title_highlight: "sny.",
   manifesto_tab_historia: 'Příběh',
   manifesto_tab_mision: 'Mise',
-  mision_title: 'Poslání',
+  mision_title: 'Místo, které chceme vybudovat',
   manifesto_tab_impacto: 'Dopad',
   manifesto_historia: "Existuje hluboké Peru, které bije silou v tichu svých hor. Tam, v údolích Echarati (La Convención), zemědělci, na něž systém zapomněl, s oddaností pečují o kakao Chuncho a léčí zemi zasaženou opuštěním a nespravedlivými cenami. Tito producenti jsou duší odporu; muži a venkovské rodiny, kteří povstali s ryzí odvahou proti prázdným slibům a překupníkům, kteří je vykořisťovali. Proti větru a bez státu, který by je podpořil, se rozhodli nevzdat, proměnili bolest v hrdost a zvolili důstojnost jako jedinou cestu k ochraně svých kořenů. COMPARTO_TU_ESPERANZA je objetí, které spojuje tuto neúnavnou odvahu s tebou. Vytváříme tento most proto, aby každá unce čokolády, kterou na druhé straně oceánu ochutnáš, přestala být pouhým potěšením a stala se objetím na oplátku — skutečnou investicí do životů těch, kteří dávají vše pro svou zemi. Vybrat si toto kakao není jen otázkou dobrého vkusu; je to pohled jim do očí, uznání jejich hodnoty a závazek k obnově posvátného odkazu, který se oni navzdory všemu rozhodli zachránit.",
   manifesto_mision: "Inspirovat smysluplnou spotřebu prostřednictvím excelence peruánské kávy. V HOLZEN proměňujeme okamžik vychutnávání šálku v investici s významem, spojujíce odolné pěstitele s globálními spotřebiteli pod standardem elegance, transparentnosti a lidské důstojnosti.",
@@ -44,9 +44,9 @@ const cs = {
   manifesto_map_legend: '{{count}} aktivních farmářů na mapě · Klepněte na bod a poznejte jejich příběh',
 
   // Farmers
-  farmers_eyebrow: "Za každým zrnem",
-  farmers_title: "Rodiny, které pěstují naději",
-  farmers_desc: "Skuteční lidé s příběhy boje, odolnosti a smyslu. Každý šálek nese jejich jméno.",
+  farmers_eyebrow: 'Za každým zrnem',
+  farmers_title: 'Naši farmáři',
+  farmers_desc: 'Skuteční lidé s příběhy boje, odolnosti a účelu. Každý šálek nese jejich jméno.',
   farmers_see_story: 'Zobrazit příběh',
   farmers_tap_close: 'Klepněte pro zavření',
 
@@ -95,7 +95,7 @@ const cs = {
   contact_cert_adoption: 'Certifikát adopce',
 
   // Footer
-  footer_tagline: "Kakao Chuncho z Cusca · Peru.",
+  footer_tagline: "Kakao Chuncho z Echarati,\nLa Convención · Peru.",
   footer_products: 'Produkty',
   footer_company: "O nás",
   footer_philosophy: "Náš příběh",
@@ -314,7 +314,7 @@ const cs = {
   emp_adoption_submit: 'VYTVOŘIT DOPAD',
 
   // === Mision/Vision/Process (auto-added) ===
-  mision_title: "Mise",
+  mision_title: 'Místo, které chceme vybudovat',
   mision_eyebrow: "Náš slib",
   mision_badge_swipe: "Posuňte pro více",
   mision_paragraph_1: "Vybudovat velkou rodinu založenou na věrnosti, čestnosti a vzájemné důvěře, spojit síly s nejoddanějšími producenty z Echarati a proměnit jejich životy a uskutečnit jejich sny.",

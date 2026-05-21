@@ -7,9 +7,9 @@ const es = {
   nav_contact: 'Contacto',
 
   // Hero
-  hero_eyebrow: "Cacao Chuncho · Cusco · Perú",
+  hero_eyebrow: "Cacao Chuncho · La Convención · Perú",
   hero_subtitle: "Esto no es solo cacao.\nEs la promesa\nde que nunca más serán olvidados.",
-  hero_desc: "Cacao Chuncho de Cusco. Cosechado por familias que volvieron a creer y transformado en granos de pura esperanza. Desde nuestra sucursal en la República Checa, abrimos los brazos a Europa para entregar este tesoro seco, asegurando que cada rincón del continente reciba sus nombres, su lucha y sus historias intactas.",
+  hero_desc: "Cacao Chuncho de Echarati, La Convención, Cusco. Cosechado por familias que volvieron a creer y transformado en granos de pura esperanza. Desde nuestra sucursal en la República Checa, abrimos los brazos a Europa para entregar este tesoro seco, asegurando que cada rincón del continente reciba sus nombres, su lucha y sus historias intactas.",
   hero_cta_primary: 'GENERAR IMPACTO',
   hero_cta_secondary: 'Nuestros Productores',
 
@@ -31,7 +31,7 @@ const es = {
   manifesto_title_highlight: "sueños.",
   manifesto_tab_historia: 'Historia',
   manifesto_tab_mision: 'Misión',
-  mision_title: 'Misión',
+  mision_title: 'El lugar que queremos construir',
   manifesto_tab_impacto: 'Impacto',
   manifesto_historia: "Existe un Perú profundo que late con fuerza en el silencio de sus montañas. Allí, en los valles de Echarati (La Convención), agricultores que el sistema olvidó cuidan con devoción el cacao Chuncho, sanando una tierra golpeada por el abandono y los precios injustos. Estos productores son el alma de la resistencia; hombres y familias campesinas que se levantaron con puro coraje frente a promesas vacías e intermediarios que los explotaron. Con el viento en contra y sin un Estado que los respalde, decidieron no rendirse, transformando el dolor en orgullo y eligiendo la dignidad como el único camino para proteger sus raíces. COMPARTO_TU_ESPERANZA es el abrazo que une esa valentía incansable contigo. Creamos este puente para que, al otro lado del océano, cada onza de chocolate que pruebes deje de ser un simple placer y se convierta en un abrazo de vuelta, en una inversión real en la vida de quienes lo dan todo por su tierra. Elegir este cacao no es solo un asunto de buen gusto; es mirarlos a los ojos, reconocer su valor y comprometerse con la reconstrucción de un legado sagrado que ellos, contra todo pronóstico, decidieron salvar.",
   manifesto_mision: "Inspirar un consumo con propósito a través de la excelencia del café peruano. En HOLZEN, transformamos el acto de disfrutar una taza en una inversión con significado, uniendo a productores resilientes con consumidores globales bajo un estándar de elegancia, transparencia y dignidad humana.",
@@ -44,9 +44,9 @@ const es = {
   manifesto_map_legend: '{{count}} productores activos en el mapa · Toca un punto para conocer su historia',
 
   // Farmers
-  farmers_eyebrow: "Detrás de cada grano",
-  farmers_title: "Familias que cultivan esperanza",
-  farmers_desc: "Personas reales con historias de lucha, resiliencia y propósito. Cada taza lleva su nombre.",
+  farmers_eyebrow: 'Detrás de cada grano',
+  farmers_title: 'Nuestros Productores',
+  farmers_desc: 'Personas reales con historias de lucha, resiliencia y propósito. Cada taza lleva su nombre.',
   farmers_see_story: 'Ver historia',
   farmers_tap_close: 'Toca para cerrar',
 
@@ -95,7 +95,7 @@ const es = {
   contact_cert_adoption: 'Certificado de Adopción',
 
   // Footer
-  footer_tagline: "Cacao Chuncho de Cusco · Perú.",
+  footer_tagline: "Cacao Chuncho de Echarati,\nLa Convención · Perú.",
   footer_products: 'Productos',
   footer_company: "Conoce",
   footer_philosophy: "Nuestra Historia",
@@ -323,7 +323,7 @@ const es = {
   emp_adoption_submit: 'GENERAR IMPACTO',
 
   // === Mision/Vision/Process (auto-added) ===
-  mision_title: "Misión",
+  mision_title: 'El lugar que queremos construir',
   mision_eyebrow: "Nuestra promesa",
   mision_badge_swipe: "Desliza para ver más",
   mision_paragraph_1: "Construir una gran familia basada en la lealtad, la honestidad y la confianza mutua, uniendo fuerzas con los productores más comprometidos de Echarati para transformar sus vidas y hacer realidad sus sueños.",

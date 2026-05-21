@@ -7,9 +7,9 @@ const de = {
   nav_contact: 'Kontakt',
 
   // Hero
-  hero_eyebrow: "Chuncho-Kakao · Cusco · Peru",
+  hero_eyebrow: "Chuncho-Kakao · La Convención · Peru",
   hero_subtitle: "Das ist nicht nur Kakao.\nEs ist ein Versprechen:\nsie werden nie vergessen.",
-  hero_desc: "Chuncho-Kakao aus Cusco. Geerntet von Familien, die wieder zu glauben begannen, und verwandelt in Bohnen reiner Hoffnung. Von unserer Niederlassung in der Tschechischen Republik öffnen wir Europa die Arme, um diesen trockenen Schatz zu liefern und sicherzustellen, dass jeder Winkel des Kontinents ihre Namen, ihren Kampf und ihre Geschichten unversehrt erhält.",
+  hero_desc: "Chuncho-Kakao aus Echarati, La Convención, Cusco. Geerntet von Familien, die wieder zu glauben begannen, und in Körner reiner Hoffnung verwandelt. Von unserer Niederlassung in der Tschechischen Republik öffnen wir Europa die Arme, um diesen trockenen Schatz zu liefern und sicherzustellen, dass jeder Winkel des Kontinents ihre Namen, ihren Kampf und ihre Geschichten unversehrt erhält.",
   hero_cta_primary: 'WIRKUNG ERZIELEN',
   hero_cta_secondary: 'Unsere Bauern',
 
@@ -31,7 +31,7 @@ const de = {
   manifesto_title_highlight: "Träume verwirklichen.",
   manifesto_tab_historia: 'Geschichte',
   manifesto_tab_mision: 'Mission',
-  mision_title: 'Mission',
+  mision_title: 'Der Ort, den wir aufbauen wollen',
   manifesto_tab_impacto: 'Wirkung',
   manifesto_historia: "Es gibt ein tiefes Peru, das mit Kraft in der Stille seiner Berge schlägt. Dort, in den Tälern von Echarati (La Convención), pflegen Bauern, die das System vergessen hat, mit Hingabe den Chuncho-Kakao und heilen ein Land, das von Vernachlässigung und ungerechten Preisen geschlagen wurde. Diese Produzenten sind die Seele des Widerstands; Männer und bäuerliche Familien, die mit reinem Mut gegen leere Versprechen und sie ausbeutende Zwischenhändler aufstanden. Mit Gegenwind und ohne staatliche Unterstützung beschlossen sie, nicht aufzugeben, verwandelten Schmerz in Stolz und wählten Würde als einzigen Weg, ihre Wurzeln zu schützen. COMPARTO_TU_ESPERANZA ist die Umarmung, die diesen unermüdlichen Mut mit dir verbindet. Wir schaffen diese Brücke, damit jede Unze Schokolade, die du auf der anderen Seite des Ozeans kostest, nicht mehr nur ein einfacher Genuss ist, sondern eine Umarmung zurück — eine echte Investition in das Leben derer, die alles für ihr Land geben. Diesen Kakao zu wählen, ist nicht nur eine Frage des guten Geschmacks; es bedeutet, ihnen in die Augen zu sehen, ihren Wert anzuerkennen und sich zum Wiederaufbau eines heiligen Vermächtnisses zu verpflichten, das sie gegen alle Widrigkeiten zu retten beschlossen.",
   manifesto_mision: "Bewussten Konsum durch die Exzellenz des peruanischen Kaffees inspirieren. Bei HOLZEN verwandeln wir das Genießen einer Tasse in eine bedeutungsvolle Investition und verbinden widerstandsfähige Produzenten mit globalen Konsumenten unter einem Standard von Eleganz, Transparenz und menschlicher Würde.",
@@ -44,9 +44,9 @@ const de = {
   manifesto_map_legend: '{{count}} aktive Bauern auf der Karte · Tippe auf einen Punkt, um ihre Geschichte zu erfahren',
 
   // Farmers
-  farmers_eyebrow: "Hinter jeder Bohne",
-  farmers_title: "Familien, die Hoffnung anbauen",
-  farmers_desc: "Echte Menschen mit Geschichten von Kampf, Widerstandskraft und Ziel. Jede Tasse trägt ihren Namen.",
+  farmers_eyebrow: 'Hinter jedem Korn',
+  farmers_title: 'Unsere Bauern',
+  farmers_desc: 'Echte Menschen mit Geschichten von Kampf, Resilienz und Zweck. Jede Tasse trägt ihren Namen.',
   farmers_see_story: 'Geschichte sehen',
   farmers_tap_close: 'Tippen zum Schließen',
 
@@ -95,7 +95,7 @@ const de = {
   contact_cert_adoption: 'Adoptionszertifikat',
 
   // Footer
-  footer_tagline: "Chuncho-Kakao aus Cusco · Peru.",
+  footer_tagline: "Chuncho-Kakao aus Echarati,\nLa Convención · Peru.",
   footer_products: 'Produkte',
   footer_company: "Über uns",
   footer_philosophy: "Unsere Geschichte",
@@ -314,7 +314,7 @@ const de = {
   emp_adoption_submit: 'IMPACT GENERIEREN',
 
   // === Mision/Vision/Process (auto-added) ===
-  mision_title: "Mission",
+  mision_title: 'Der Ort, den wir aufbauen wollen',
   mision_eyebrow: "Unser Versprechen",
   mision_badge_swipe: "Wische für mehr",
   mision_paragraph_1: "Eine große Familie aufzubauen, die auf Loyalität, Ehrlichkeit und gegenseitigem Vertrauen basiert, indem wir die Kräfte mit den engagiertesten Produzenten von Echarati bündeln, um ihr Leben zu verändern und ihre Träume zu verwirklichen.",
