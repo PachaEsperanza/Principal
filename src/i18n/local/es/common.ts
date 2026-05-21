@@ -51,7 +51,7 @@ const es = {
   farmers_tap_close: 'Toca para cerrar',
 
   // Process
-  process_eyebrow: 'Nuestro Proceso',
+  process_eyebrow: 'La historia detrás de cada cosecha',
   process_title: 'De la parcela a',
   process_step_label: 'Paso {{n}}',
 
@@ -215,7 +215,7 @@ const es = {
   emp_impact_card3: 'Niños con educación',
   emp_impact_card4: 'Plantas preservadas',
 
-  emp_process_eyebrow: 'Proceso',
+  emp_process_eyebrow: 'La historia detrás de cada cosecha',
   emp_process_title: 'De la parcela a tu negocio',
   emp_process_desc: 'Controlamos cada etapa del proceso para garantizar calidad y trazabilidad.',
   emp_process_step1_title: 'Cosecha selectiva',
@@ -328,7 +328,7 @@ const es = {
   mision_badge_swipe: "Desliza para ver más",
   mision_paragraph_1: "Construir una gran familia basada en la lealtad, la honestidad y la confianza mutua, uniendo fuerzas con los productores más comprometidos de Echarati para transformar sus vidas y hacer realidad sus sueños.",
   mision_paragraph_2: "Este es un gran proyecto donde apostamos y arriesgamos todo por ustedes, porque sabemos que su esfuerzo merece ser valorado. Nos protegemos mutuamente frente a un sistema injusto garantizando un precio fijo y digno, independiente de los mercados globales, para que nunca más nadie se aproveche de su trabajo. En este lazo sagrado, trabajamos unidos por un bien común: nuestra organización, Comparto tu Esperanza, se entrega por completo a cuidar de sus familias y a sanar las heridas del pasado, mientras junto con la aliada, la empresa Linaje del Inka, se encarga de abrir las puertas del mundo para exportar su arte.",
-  vision_title: "Visión",
+  vision_title: 'La historia que queremos cambiar',
   vision_eyebrow: "El futuro que construimos",
   vision_card1_title: "Echarati Internacional",
   vision_card1_body: "Convertir al cacao de Echarati en el referente de calidad e impacto social más reconocido a nivel internacional, logrando que cada productor sea protagonista de su propio éxito y exporte su historia al mundo. Para lograrlo, como la gran familia que somos, adoptaremos juntos los cuidados y normas que la Unión Europea nos pide, garantizando que nuestro cacao Chuncho sea impecable y único en el extranjero.",

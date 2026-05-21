@@ -51,7 +51,7 @@ const ProcessSection = () => {
         <div className="text-center mb-12">
           <div className="flex items-center justify-center gap-3 mb-4">
             <span className="w-10 h-px" style={{ background: '#7EC820' }} />
-            <span className="tracking-[0.35em] uppercase" style={{ color: '#7EC820', fontFamily: "'Playfair Display', serif", fontWeight: 900, fontSize: 'clamp(1.4rem, 2.6vw, 1.9rem)', filter: 'drop-shadow(0 1px 6px rgba(0,0,0,0.7))' }}>
+            <span className="tracking-[0.35em] uppercase" style={{ color: '#7EC820', fontFamily: "'Playfair Display', serif", fontWeight: 900, fontSize: 'clamp(1.6rem, 3vw, 2.2rem)', filter: 'drop-shadow(0 1px 6px rgba(0,0,0,0.7))' }}>
               {t('process_eyebrow')}
             </span>
             <span className="w-10 h-px" style={{ background: '#7EC820' }} />

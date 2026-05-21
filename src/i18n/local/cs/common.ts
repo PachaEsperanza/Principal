@@ -51,7 +51,7 @@ const cs = {
   farmers_tap_close: 'Klepněte pro zavření',
 
   // Process
-  process_eyebrow: 'Náš proces',
+  process_eyebrow: 'Příběh za každou sklizní',
   process_title: 'Od farmy na',
   process_step_label: 'Krok {{n}}',
 
@@ -211,7 +211,7 @@ const cs = {
   emp_impact_card2: 'USD pro producenta',
   emp_impact_card3: 'Děti ve vzdělání',
   emp_impact_card4: 'Zachráněné rostliny',
-  emp_process_eyebrow: 'Proces',
+  emp_process_eyebrow: 'Příběh za každou sklizní',
   emp_process_title: 'Od farmy k vašemu podnikání',
   emp_process_desc: 'Kontrolujeme každý krok pro zaručení kvality a sledovatelnosti.',
   emp_process_step1_title: 'Selektivní sklizeň',
@@ -319,7 +319,7 @@ const cs = {
   mision_badge_swipe: "Posuňte pro více",
   mision_paragraph_1: "Vybudovat velkou rodinu založenou na věrnosti, čestnosti a vzájemné důvěře, spojit síly s nejoddanějšími producenty z Echarati a proměnit jejich životy a uskutečnit jejich sny.",
   mision_paragraph_2: "Toto je velký projekt, ve kterém pro vás riskujeme všechno, protože víme, že vaše úsilí si zaslouží uznání. Chráníme se navzájem před nespravedlivým systémem zaručením pevné a důstojné ceny nezávislé na globálních trzích, aby už nikdy nikdo nevyužíval vaši práci. V tomto posvátném poutu pracujeme společně pro společné dobro: naše organizace, Comparto tu Esperanza, se plně věnuje péči o vaše rodiny a hojení ran minulosti, zatímco náš partner, společnost Linaje del Inka, otevírá dveře světa pro export vašeho umění.",
-  vision_title: "Vize",
+  vision_title: 'Příběh, který chceme změnit',
   vision_eyebrow: "Budoucnost, kterou stavíme",
   vision_card1_title: "Echarati ve světě",
   vision_card1_body: "Ucinit z kakaa z Echarati mezinarodne nejuznavaneji referenci kvality a socialniho dopadu, aby se kazdy producent stal hlavnim hrdinou sveho uspechu a vyvazel svuj pribeh do sveta. Abychom toho dosahli, jako velka rodina, kterou jsme, spolecne prijmeme pece a normy, ktere po nas pozaduje Evropska unie, a zarucime, ze nase kakao Chuncho bude v zahranici bezchybne a jedinecne.",

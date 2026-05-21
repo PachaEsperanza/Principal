@@ -51,7 +51,7 @@ const de = {
   farmers_tap_close: 'Tippen zum Schließen',
 
   // Process
-  process_eyebrow: 'Unser Prozess',
+  process_eyebrow: 'Die Geschichte hinter jeder Ernte',
   process_title: 'Vom Feld auf',
   process_step_label: 'Schritt {{n}}',
 
@@ -211,7 +211,7 @@ const de = {
   emp_impact_card2: 'USD an Produzenten',
   emp_impact_card3: 'Kinder in Bildung',
   emp_impact_card4: 'Pflanzen erhalten',
-  emp_process_eyebrow: 'Prozess',
+  emp_process_eyebrow: 'Die Geschichte hinter jeder Ernte',
   emp_process_title: 'Von der Farm zu Ihrem Unternehmen',
   emp_process_desc: 'Wir kontrollieren jeden Schritt für Qualität und Rückverfolgbarkeit.',
   emp_process_step1_title: 'Selektive Ernte',
@@ -319,7 +319,7 @@ const de = {
   mision_badge_swipe: "Wische für mehr",
   mision_paragraph_1: "Eine große Familie aufzubauen, die auf Loyalität, Ehrlichkeit und gegenseitigem Vertrauen basiert, indem wir die Kräfte mit den engagiertesten Produzenten von Echarati bündeln, um ihr Leben zu verändern und ihre Träume zu verwirklichen.",
   mision_paragraph_2: "Dies ist ein großes Projekt, bei dem wir alles für euch wagen, weil wir wissen, dass eure Anstrengung Wertschätzung verdient. Wir schützen uns gegenseitig vor einem ungerechten System, indem wir einen festen und würdigen Preis garantieren, unabhängig von den globalen Märkten, damit niemand jemals wieder eure Arbeit ausnutzt. In diesem heiligen Band arbeiten wir gemeinsam für ein gemeinsames Ziel: Unsere Organisation, Comparto tu Esperanza, widmet sich ganz der Pflege eurer Familien und der Heilung der Wunden der Vergangenheit, während unser Partner, das Unternehmen Linaje del Inka, die Türen der Welt öffnet, um eure Kunst zu exportieren.",
-  vision_title: "Vision",
+  vision_title: 'Die Geschichte, die wir verändern wollen',
   vision_eyebrow: "Die Zukunft, die wir aufbauen",
   vision_card1_title: "Echarati international",
   vision_card1_body: "Den Kakao aus Echarati zum international anerkanntesten Massstab fur Qualitat und soziale Wirkung zu machen, damit jeder Produzent zum Protagonisten seines eigenen Erfolges wird und seine Geschichte in die Welt exportiert. Um dies zu erreichen, werden wir als die grosse Familie, die wir sind, gemeinsam die Anforderungen und Normen der Europaischen Union ubernehmen und sicherstellen, dass unser Chuncho-Kakao im Ausland makellos und einzigartig ist.",

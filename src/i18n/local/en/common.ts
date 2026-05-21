@@ -51,7 +51,7 @@ const en = {
   farmers_tap_close: 'Tap to close',
 
   // Process
-  process_eyebrow: 'Our Process',
+  process_eyebrow: 'The story behind every harvest',
   process_title: 'From the farm to',
   process_step_label: 'Step {{n}}',
 
@@ -211,7 +211,7 @@ const en = {
   emp_impact_card2: 'USD to producer',
   emp_impact_card3: 'Children educated',
   emp_impact_card4: 'Plants preserved',
-  emp_process_eyebrow: 'Process',
+  emp_process_eyebrow: 'The story behind every harvest',
   emp_process_title: 'From the farm to your business',
   emp_process_desc: 'We control every step to guarantee quality and traceability.',
   emp_process_step1_title: 'Selective harvest',
@@ -319,7 +319,7 @@ const en = {
   mision_badge_swipe: "Swipe to see more",
   mision_paragraph_1: "To build a great family based on loyalty, honesty and mutual trust, joining forces with the most committed producers of Echarati to transform their lives and make their dreams come true.",
   mision_paragraph_2: "This is a great project where we bet and risk everything for you, because we know your effort deserves to be valued. We protect each other against an unfair system by guaranteeing a fixed and dignified price, independent of global markets, so that no one ever takes advantage of your work again. In this sacred bond, we work together for a common good: our organization, Comparto tu Esperanza, dedicates itself entirely to caring for your families and healing the wounds of the past, while our partner, the company Linaje del Inka, takes care of opening the doors of the world to export your art.",
-  vision_title: "Vision",
+  vision_title: 'The story we want to change',
   vision_eyebrow: "The future we are building",
   vision_card1_title: "Echarati Goes Global",
   vision_card1_body: "To make Echarati cacao the most internationally recognized reference for quality and social impact, ensuring that every producer is the protagonist of their own success and exports their story to the world. To achieve this, as the great family we are, we will together adopt the standards and care that the European Union requires of us, guaranteeing that our Chuncho cacao is impeccable and unique abroad.",
