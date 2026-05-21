@@ -79,7 +79,7 @@ const MisionSection = () => {
                 {t('mision_eyebrow')}
               </p>
               <h2
-                className="font-serif text-4xl md:text-5xl text-cream mb-3 max-w-sm"
+                className="font-serif text-4xl md:text-5xl text-cream mb-3 max-w-md"
                 style={{ fontWeight: 900, lineHeight: 1.15 }}
               >
                 {t('mision_title')}
