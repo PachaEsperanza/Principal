@@ -56,7 +56,7 @@ const Hero = () => {
         <p className="text-gold text-sm tracking-[0.2em] uppercase font-serif font-black mb-4 opacity-90">
           {t('hero_eyebrow')}
         </p>
-        <p className="font-serif font-black text-[clamp(0.85rem,2.3vw,1.9rem)] leading-tight tracking-[0.08em] text-cream uppercase mb-4 whitespace-pre-line pl-1 md:pl-2">
+        <p className="font-serif font-black text-[clamp(0.75rem,1.6vw,1.25rem)] leading-tight tracking-[0.08em] text-cream uppercase mb-4 whitespace-pre-line pl-1 md:pl-2">
           {t('hero_subtitle')}
         </p>
         <h1
