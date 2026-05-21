@@ -44,9 +44,9 @@ const en = {
   manifesto_map_legend: '{{count}} active farmers on the map · Tap a point to learn their story',
 
   // Farmers
-  farmers_eyebrow: 'Behind every bean',
-  farmers_title: 'Our Farmers',
-  farmers_desc: 'Real people with stories of struggle, resilience, and purpose. Every cup carries their name.',
+  farmers_eyebrow: "Behind every bean",
+  farmers_title: "Families who cultivate hope",
+  farmers_desc: "Real people with stories of struggle, resilience, and purpose. Every cup carries their name.",
   farmers_see_story: 'See story',
   farmers_tap_close: 'Tap to close',
 

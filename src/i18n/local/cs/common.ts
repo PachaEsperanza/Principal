@@ -44,9 +44,9 @@ const cs = {
   manifesto_map_legend: '{{count}} aktivních farmářů na mapě · Klepněte na bod a poznejte jejich příběh',
 
   // Farmers
-  farmers_eyebrow: 'Za každým zrnem',
-  farmers_title: 'Naši farmáři',
-  farmers_desc: 'Skuteční lidé s příběhy boje, odolnosti a účelu. Každý šálek nese jejich jméno.',
+  farmers_eyebrow: "Za každým zrnem",
+  farmers_title: "Rodiny, které pěstují naději",
+  farmers_desc: "Skuteční lidé s příběhy boje, odolnosti a smyslu. Každý šálek nese jejich jméno.",
   farmers_see_story: 'Zobrazit příběh',
   farmers_tap_close: 'Klepněte pro zavření',
 

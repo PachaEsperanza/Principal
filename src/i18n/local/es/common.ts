@@ -44,9 +44,9 @@ const es = {
   manifesto_map_legend: '{{count}} productores activos en el mapa · Toca un punto para conocer su historia',
 
   // Farmers
-  farmers_eyebrow: 'Detrás de cada grano',
-  farmers_title: 'Nuestros Productores',
-  farmers_desc: 'Personas reales con historias de lucha, resiliencia y propósito. Cada taza lleva su nombre.',
+  farmers_eyebrow: "Detrás de cada grano",
+  farmers_title: "Familias que cultivan esperanza",
+  farmers_desc: "Personas reales con historias de lucha, resiliencia y propósito. Cada taza lleva su nombre.",
   farmers_see_story: 'Ver historia',
   farmers_tap_close: 'Toca para cerrar',
 

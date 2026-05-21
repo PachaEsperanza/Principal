@@ -44,9 +44,9 @@ const de = {
   manifesto_map_legend: '{{count}} aktive Bauern auf der Karte · Tippe auf einen Punkt, um ihre Geschichte zu erfahren',
 
   // Farmers
-  farmers_eyebrow: 'Hinter jedem Korn',
-  farmers_title: 'Unsere Bauern',
-  farmers_desc: 'Echte Menschen mit Geschichten von Kampf, Resilienz und Zweck. Jede Tasse trägt ihren Namen.',
+  farmers_eyebrow: "Hinter jeder Bohne",
+  farmers_title: "Familien, die Hoffnung anbauen",
+  farmers_desc: "Echte Menschen mit Geschichten von Kampf, Widerstandskraft und Ziel. Jede Tasse trägt ihren Namen.",
   farmers_see_story: 'Geschichte sehen',
   farmers_tap_close: 'Tippen zum Schließen',
 
