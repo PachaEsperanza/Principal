@@ -72,11 +72,11 @@ const ProcessSection = () => {
             onClick={prev}
             className="flex-shrink-0 w-10 h-10 flex items-center justify-center rounded-full cursor-pointer transition-all duration-200 hover:scale-110 mr-4"
             style={{
-              background: 'rgba(122,29,46,0.15)',
-              border: '1.5px solid rgba(122,29,46,0.5)',
+              background: 'rgba(180,130,40,0.35)',
+              border: '1.5px solid rgba(201,168,76,0.6)',
             }}
           >
-            <i className="ri-arrow-left-s-line text-xl" style={{ color: '#7A1D2E' }} />
+            <i className="ri-arrow-left-s-line text-xl" style={{ color: '#C9A84C' }} />
           </button>
 
           {/* Cards */}
@@ -99,7 +99,7 @@ const ProcessSection = () => {
                       ? '2px solid rgba(122,29,46,0.95)'
                       : '2px solid rgba(122,29,46,0.2)',
                     boxShadow: isActive
-                      ? '0 0 32px rgba(122,29,46,0.55), 0 0 22px rgba(255,255,255,0.55), 0 0 50px rgba(255,255,255,0.25), inset 0 0 0 1px rgba(122,29,46,0.3)'
+                      ? '0 0 32px rgba(122,29,46,0.55), inset 0 0 0 1px rgba(122,29,46,0.3)'
                       : '0 0 14px rgba(255,255,255,0.18)',
                     background: '#1C1008',
                   }}
@@ -133,7 +133,7 @@ const ProcessSection = () => {
                   {/* Active: circular image highlight */}
                   {isActive && (
                     <div
-                      className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-[85%] w-20 h-20 rounded-full overflow-hidden z-10"
+                      className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-[60%] w-20 h-20 rounded-full overflow-hidden z-10"
                       style={{
                         border: '2.5px solid rgba(122,29,46,0.85)',
                         boxShadow: '0 0 20px rgba(122,29,46,0.55), 0 0 14px rgba(255,255,255,0.35)',
@@ -210,11 +210,11 @@ const ProcessSection = () => {
             onClick={next}
             className="flex-shrink-0 w-10 h-10 flex items-center justify-center rounded-full cursor-pointer transition-all duration-200 hover:scale-110 ml-4"
             style={{
-              background: 'rgba(122,29,46,0.15)',
-              border: '1.5px solid rgba(122,29,46,0.5)',
+              background: 'rgba(180,130,40,0.35)',
+              border: '1.5px solid rgba(201,168,76,0.6)',
             }}
           >
-            <i className="ri-arrow-right-s-line text-xl" style={{ color: '#7A1D2E' }} />
+            <i className="ri-arrow-right-s-line text-xl" style={{ color: '#C9A84C' }} />
           </button>
         </div>
 
@@ -231,41 +231,6 @@ const ProcessSection = () => {
                 background: i === active ? 'linear-gradient(135deg, #3F0D17, #7A1D2E, #3F0D17)' : 'rgba(122,29,46,0.3)',
               }}
             />
-          ))}
-        </div>
-
-        {/* MOBILE — stacked cards */}
-        <div className="md:hidden flex flex-col gap-4 mt-8">
-          {STEPS.map((step, i) => (
-            <div key={step.n} className="relative rounded-2xl overflow-hidden h-[200px]">
-              <img src={step.image} alt={step.title} className="absolute inset-0 w-full h-full object-cover" />
-              <div
-                className="absolute inset-0"
-                style={{ background: 'linear-gradient(135deg, rgba(10,6,2,0.92) 0%, rgba(10,6,2,0.5) 60%, rgba(10,6,2,0.2) 100%)' }}
-              />
-              <div
-                className="absolute inset-0 rounded-2xl pointer-events-none"
-                style={{ boxShadow: 'inset 0 0 0 1.5px rgba(122,29,46,0.4)' }}
-              />
-              <div className="relative z-10 h-full flex flex-col justify-between p-5">
-                <div className="flex items-center gap-3">
-                  <div
-                    className="w-9 h-9 flex items-center justify-center rounded-full flex-shrink-0"
-                    style={{ background: 'rgba(122,29,46,0.2)', border: '1px solid rgba(122,29,46,0.5)' }}
-                  >
-                    <i className={`${STEP_ICONS[i]} text-sm`} style={{ color: '#7A1D2E' }} />
-                  </div>
-                  <span className="text-[10px] tracking-[0.3em] uppercase" style={{ color: '#7A1D2E', fontFamily: "'Playfair Display', serif", fontWeight: 800 }}>
-                    {t('process_step_label', { n: step.n })}
-                  </span>
-                </div>
-                <div>
-                  <p className="text-cream/50 text-[10px] tracking-widest uppercase mb-1" style={{ fontFamily: "'Playfair Display', serif", fontWeight: 600 }}>{step.subtitle}</p>
-                  <h3 className="font-serif text-cream text-lg leading-tight mb-1" style={{ fontWeight: 800 }}>{step.title}</h3>
-                  <p className="text-cream/70 text-xs leading-relaxed" style={{ fontFamily: "'Playfair Display', serif", fontWeight: 500 }}>{step.desc}</p>
-                </div>
-              </div>
-            </div>
           ))}
         </div>
       </div>
