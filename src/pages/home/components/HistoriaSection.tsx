@@ -78,17 +78,17 @@ const Carrusel = ({ cards, pressLabel }: { cards: string[]; pressLabel: string }
   );
 };
 
-// ── Subtítulo dorado ──────────────────────────────────────────────────────────
+// ── Subtítulo dorado más grande y más amarillo ────────────────────────────────
 const GoldenTitle = ({ text }: { text: string }) => (
   <div style={{ margin: '1.2rem 0 0.7rem' }}>
     <p style={{
       fontFamily: "'Playfair Display',serif", fontWeight: 900,
-      fontSize: 'clamp(1rem, 2.2vw, 1.35rem)', letterSpacing: '0.06em',
-      background: 'linear-gradient(90deg,#C9A84C,#f0d080,#C9A84C)',
+      fontSize: 'clamp(1.2rem, 2.6vw, 1.7rem)', letterSpacing: '0.06em',
+      background: 'linear-gradient(90deg,#f0d060,#ffe060,#f0d060)',
       WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent',
       backgroundClip: 'text', lineHeight: 1.2,
     }}>{text}</p>
-    <div style={{ height: '2px', width: '40px', background: 'linear-gradient(90deg,#C9A84C,transparent)', marginTop: '0.3rem' }} />
+    <div style={{ height: '2px', width: '40px', background: 'linear-gradient(90deg,#f0d060,transparent)', marginTop: '0.3rem' }} />
   </div>
 );
 
@@ -109,30 +109,35 @@ const HistoriaSection = () => {
   const cards3: string[] = t('historia_cards3', { returnObjects: true }) as string[];
   const pressLabel: string = t('historia_press');
 
+  const fadeLeft: React.CSSProperties = {
+    opacity: visible ? 1 : 0,
+    transform: visible ? 'translateX(0)' : 'translateX(-30px)',
+    transition: 'opacity 0.7s ease, transform 0.7s ease',
+  };
+  const fadeRight: React.CSSProperties = {
+    opacity: visible ? 1 : 0,
+    transform: visible ? 'translateX(0)' : 'translateX(30px)',
+    transition: 'opacity 0.7s ease 0.2s, transform 0.7s ease 0.2s',
+  };
+
   return (
     <section id="historia" ref={sectionRef} className="relative w-full overflow-hidden" style={{ minHeight: '600px' }}>
 
-      {/* Fondo imagen */}
-      <div
-        className="absolute inset-0 bg-center bg-cover pointer-events-none"
-        style={{ backgroundImage: 'url(/Home/images/fondos.jpg)', zIndex: 0 }}
-      />
-
-      {/* Overlay */}
+      {/* Fondo */}
+      <div className="absolute inset-0 bg-center bg-cover pointer-events-none"
+        style={{ backgroundImage: 'url(/Home/images/fondos.jpg)', zIndex: 0 }} />
       <div className="absolute inset-0 pointer-events-none" style={{
         background: 'linear-gradient(160deg,rgba(15,5,2,0.38) 0%,rgba(8,3,1,0.44) 60%,rgba(15,5,2,0.36) 100%)',
         zIndex: 1,
       }} />
 
       <div className="relative max-w-7xl mx-auto px-6 md:px-12 lg:px-16 py-16" style={{ zIndex: 2 }}>
+
+        {/* ── Fila superior: bloque historia (izq) + COMPARTO (der) ── */}
         <div className="grid lg:grid-cols-2 gap-10 items-start">
 
-          {/* ── LEFT: texto ── */}
-          <div style={{
-            opacity: visible ? 1 : 0,
-            transform: visible ? 'translateX(0)' : 'translateX(-30px)',
-            transition: 'opacity 0.7s ease, transform 0.7s ease',
-          }}>
+          {/* LEFT: eyebrow + título + carrusel historia */}
+          <div style={fadeLeft}>
             <p style={{ color: '#C9A84C', fontSize: '0.85rem', letterSpacing: '0.35em', textTransform: 'uppercase', fontFamily: "'Playfair Display', serif", fontWeight: 800, marginBottom: '0.7rem', textShadow: '0 1px 6px rgba(0,0,0,0.3)' }}>
               {t('historia_eyebrow')}
             </p>
@@ -144,49 +149,36 @@ const HistoriaSection = () => {
               {t('historia_title_line1')}<br />{t('historia_title_line2')}
             </h2>
             <div style={{ height: '2px', width: '60px', background: 'linear-gradient(90deg,#7A1D2E,transparent)', marginBottom: '1.2rem' }} />
-
-            {/* Bloque 1 */}
             <Carrusel cards={cards1} pressLabel={pressLabel} />
+          </div>
 
-            {/* COMPARTO TU ESPERANZA */}
+          {/* RIGHT: COMPARTO TU ESPERANZA */}
+          <div style={fadeRight}>
             <GoldenTitle text="COMPARTO TU ESPERANZA" />
             <Carrusel cards={cards2} pressLabel={pressLabel} />
           </div>
 
-          {/* ── RIGHT: imagen arriba + SALKANTAY abajo ── */}
-          <div style={{
-            opacity: visible ? 1 : 0,
-            transform: visible ? 'translateX(0)' : 'translateX(30px)',
-            transition: 'opacity 0.7s ease 0.2s, transform 0.7s ease 0.2s',
-          }}>
-            {/* Imagen */}
-            <div style={{
-              borderRadius: '1.25rem', overflow: 'hidden',
-              border: '1px solid rgba(201,168,76,0.2)',
-              boxShadow: '0 8px 40px rgba(0,0,0,0.5)',
-              marginBottom: '0',
-            }}>
-              <img src="/Home/images/fondito.png" alt="La historia detrás del sueño"
-                style={{ width: '100%', objectFit: 'cover', display: 'block', maxHeight: '420px' }} />
-            </div>
+        </div>
 
-            {/* SALKANTAY ANDINO debajo de la imagen */}
+        {/* ── Fila inferior: SALKANTAY centrado ── */}
+        <div className="flex flex-col items-center mt-10" style={{
+          opacity: visible ? 1 : 0,
+          transition: 'opacity 0.7s ease 0.3s',
+        }}>
+          <div style={{ width: '100%', maxWidth: '620px' }}>
             <GoldenTitle text="SALKANTAY ANDINO" />
             <Carrusel cards={cards3} pressLabel={pressLabel} />
           </div>
-
         </div>
 
-        {/* Frase final centrada */}
+        {/* Frase final */}
         <div style={{ textAlign: 'center', marginTop: '3rem', paddingBottom: '1rem' }}>
           <p style={{
             fontFamily: "'Playfair Display', serif",
-            fontStyle: 'italic',
-            fontWeight: 700,
+            fontStyle: 'italic', fontWeight: 700,
             fontSize: 'clamp(1.2rem, 2.8vw, 2rem)',
             color: 'rgba(255,248,240,0.92)',
-            letterSpacing: '0.03em',
-            lineHeight: 1.3,
+            letterSpacing: '0.03em', lineHeight: 1.3,
             textShadow: '0 2px 12px rgba(0,0,0,0.6)',
           }}>
             "{t('historia_frase')}"
@@ -194,7 +186,6 @@ const HistoriaSection = () => {
         </div>
 
       </div>
-
     </section>
   );
 };
