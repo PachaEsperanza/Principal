@@ -152,8 +152,8 @@ const HistoriaSection = () => {
             <Carrusel cards={cards1} pressLabel={pressLabel} />
           </div>
 
-          {/* RIGHT: COMPARTO TU ESPERANZA — alineado al botón guinda izquierdo */}
-          <div style={{ ...fadeRight, paddingTop: 'calc(0.7rem + 1.1em + 0.4rem + clamp(1.8rem,3.5vw,2.8rem) * 2.4 + 1.2rem + 2.4rem)' }}>
+          {/* RIGHT: COMPARTO TU ESPERANZA — alineado a la card izquierda */}
+          <div style={{ ...fadeRight, paddingTop: '9rem' }}>
             <GoldenTitle text="COMPARTO TU ESPERANZA" />
             <Carrusel cards={cards2} pressLabel={pressLabel} />
           </div>
