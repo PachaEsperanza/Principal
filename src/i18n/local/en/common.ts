@@ -386,6 +386,7 @@ const en = {
     "I do not want to build a project where only a company grows. I want to build a project where we all grow together. Where every producer feels proud of what they do, where their children can see that their parents' work is admired and respected even outside Peru.",
     "I want this project to become a real opportunity to transform lives, open doors and prove that from the mountains and communities of Cusco one of the world's finest cacaos can be born. This is not just about exporting cacao. This is about bringing our history, our culture and our identity to the entire world. And I want to do it together with you. Because I am convinced of one thing: When people work together as one great family, with purpose, dignity and heart… they can create something truly"
   ],
+  unidos_press: "Press an arrow to keep reading",
 };
 
 export default en;

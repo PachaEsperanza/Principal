@@ -386,6 +386,7 @@ const de = {
     "Ich möchte kein Projekt aufbauen, in dem nur ein Unternehmen wächst. Ich möchte ein Projekt aufbauen, in dem wir alle gemeinsam wachsen. Wo jeder Produzent stolz auf seine Arbeit ist, wo seine Kinder sehen können, dass die Arbeit ihrer Eltern sogar außerhalb Perus bewundert und respektiert wird.",
     "Ich möchte, dass dieses Projekt zu einer echten Chance wird, Leben zu verändern, Türen zu öffnen und zu beweisen, dass aus den Bergen und Gemeinschaften Cuscos einer der besten Kakaos der Welt entstehen kann. Das ist nicht nur Kakao-Export. Das bedeutet, unsere Geschichte, unsere Kultur und unsere Identität in die ganze Welt zu tragen. Und ich möchte es gemeinsam mit Ihnen tun. Denn ich bin von einer Sache überzeugt: Wenn Menschen als große Familie zusammenarbeiten, mit Zweck, Würde und Herz… können sie etwas wirklich"
   ],
+  unidos_press: "Pfeil drücken um weiterzulesen",
 };
 
 export default de;

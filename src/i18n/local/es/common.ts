@@ -395,6 +395,7 @@ const es = {
     "No quiero construir un proyecto donde solo crezca una empresa. Quiero construir un proyecto donde crezcamos todos juntos. Donde cada productor se sienta orgulloso de lo que hace, donde sus hijos puedan ver que el trabajo de sus padres es admirado y respetado incluso fuera del Perú.",
     "Quiero que este proyecto se convierta en una oportunidad real para transformar vidas, abrir puertas y demostrar que desde las montañas y comunidades del Cusco puede nacer uno de los mejores cacaos del mundo. Esto no es solo exportar cacao. Esto es llevar nuestra historia, nuestra cultura y nuestra identidad al mundo entero. Y quiero hacerlo junto a ustedes. Porque estoy convencida de algo: Cuando las personas trabajan unidas como una gran familia, con propósito, dignidad y corazón… pueden crear algo verdaderamente"
   ],
+  unidos_press: "Presiona una flecha para seguir leyendo",
 };
 
 export default es;

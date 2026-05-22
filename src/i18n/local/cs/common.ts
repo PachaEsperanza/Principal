@@ -386,6 +386,7 @@ const cs = {
     "Nechci budovat projekt, kde roste jen firma. Chci budovat projekt, kde rosteme všichni společně. Kde se každý producent cítí hrdý na to, co dělá, kde jeho děti mohou vidět, že práce jejich rodičů je obdivována a respektována i mimo Peru.",
     "Chci, aby se tento projekt stal skutečnou příležitostí transformovat životy, otevírat dveře a dokázat, že z hor a komunit Cusca se může zrodit jedno z nejlepších kakaa na světě. Nejde jen o export kakaa. Jde o přenesení naší historie, naší kultury a naší identity do celého světa. A chci to udělat společně s vámi. Protože jsem přesvědčena o jedné věci: Když lidé pracují společně jako velká rodina, s účelem, důstojností a srdcem… mohou vytvořit něco skutečně"
   ],
+  unidos_press: "Stiskni šipku pro čtení dál",
 };
 
 export default cs;

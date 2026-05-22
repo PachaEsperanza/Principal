@@ -44,14 +44,10 @@ export default function UnidosSection() {
       className="relative py-24 overflow-hidden"
       style={{ background: '#0f0805' }}
     >
-      {/* Fondo */}
+      {/* Fondo sin overlay */}
       <div
         className="absolute inset-0 bg-center bg-cover pointer-events-none"
-        style={{ backgroundImage: 'url(/Home/images/cards.png)', opacity: 0.45 }}
-      />
-      <div
-        className="absolute inset-0 pointer-events-none"
-        style={{ background: 'linear-gradient(to bottom, rgba(10,5,2,0.55) 0%, rgba(10,5,2,0.35) 50%, rgba(10,5,2,0.70) 100%)' }}
+        style={{ backgroundImage: 'url(/Home/images/cards.png)' }}
       />
 
       <div className="relative z-10 max-w-7xl mx-auto px-6">
@@ -70,6 +66,25 @@ export default function UnidosSection() {
             {t('unidos_title')}
           </h2>
           <div style={{ height: '2px', width: '60px', background: 'linear-gradient(90deg, #7A1D2E, transparent)', margin: '0.8rem auto 0' }} />
+
+          {/* Botón guinda */}
+          <div style={{ marginTop: '1.2rem' }}>
+            <span style={{
+              display: 'inline-flex', alignItems: 'center', gap: '0.5rem',
+              background: 'linear-gradient(135deg, #5A0D1E 0%, #7A1D2E 100%)',
+              color: '#fff',
+              fontFamily: "'Playfair Display', serif",
+              fontWeight: 700,
+              fontSize: '0.78rem',
+              letterSpacing: '0.06em',
+              padding: '0.45rem 1.2rem',
+              borderRadius: '9999px',
+              boxShadow: '0 0 14px rgba(122,29,46,0.5)',
+            }}>
+              <i className="ri-arrow-left-right-line" style={{ fontSize: '0.8rem' }} />
+              {t('unidos_press')}
+            </span>
+          </div>
         </div>
 
         {/* Carrusel */}
