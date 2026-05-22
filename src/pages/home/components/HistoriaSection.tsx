@@ -84,9 +84,10 @@ const GoldenTitle = ({ text }: { text: string }) => (
     <p style={{
       fontFamily: "'Playfair Display',serif", fontWeight: 900,
       fontSize: 'clamp(1.2rem, 2.6vw, 1.7rem)', letterSpacing: '0.06em',
-      background: 'linear-gradient(90deg,#FFD700,#FFE44D,#FFD700)',
+      background: 'linear-gradient(90deg,#FFD700,#FFEE00,#FFD700)',
       WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent',
       backgroundClip: 'text', lineHeight: 1.2,
+      filter: 'drop-shadow(0 0 8px rgba(255,215,0,0.6))',
     }}>{text}</p>
     <div style={{ height: '2px', width: '40px', background: 'linear-gradient(90deg,#FFD700,transparent)', marginTop: '0.3rem' }} />
   </div>
