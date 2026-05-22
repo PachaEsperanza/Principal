@@ -53,9 +53,6 @@ export default function UnidosSection() {
       <div className="relative z-10 max-w-7xl mx-auto px-6">
         {/* Header */}
         <div className="text-center mb-14">
-          <p style={{ color: '#C9A84C', fontSize: '0.7rem', letterSpacing: '0.4em', textTransform: 'uppercase', fontFamily: 'sans-serif', marginBottom: '0.75rem' }}>
-            {t('unidos_eyebrow')}
-          </p>
           <h2 style={{
             fontFamily: "'Playfair Display', serif",
             fontWeight: 900,

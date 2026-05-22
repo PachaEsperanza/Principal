@@ -41,7 +41,7 @@ const Carrusel = ({ cards, pressLabel }: { cards: string[]; pressLabel: string }
           <span style={{
             display: 'inline-flex', alignItems: 'center', gap: '0.4rem',
             background: 'linear-gradient(135deg,#5A0D1E 0%,#7A1D2E 100%)',
-            color: '#fff', fontSize: '0.66rem', fontFamily: 'sans-serif',
+            color: '#fff', fontSize: '0.72rem', fontFamily: "'Playfair Display', serif", fontWeight: 700,
             letterSpacing: '0.07em', padding: '0.28rem 0.8rem',
             borderRadius: '9999px', boxShadow: '0 0 10px rgba(122,29,46,0.4)',
           }}>
