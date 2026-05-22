@@ -52,7 +52,7 @@ export default function UnidosSection() {
       {/* Overlay mínimo marrón */}
       <div
         className="absolute inset-0 pointer-events-none"
-        style={{ background: 'rgba(40,18,6,0.18)' }}
+        style={{ background: 'rgba(40,18,6,0.32)' }}
       />
 
       <div className="relative z-10 max-w-7xl mx-auto px-6">
@@ -63,8 +63,8 @@ export default function UnidosSection() {
             fontFamily: "'Playfair Display', serif",
             fontStyle: 'italic',
             fontWeight: 800,
-            fontSize: 'clamp(1.3rem, 2.8vw, 2.8rem)',
-            color: '#7A1D2E',
+            fontSize: 'clamp(1.1rem, 2.2vw, 2.2rem)',
+            color: '#C9A84C',
             lineHeight: 1.25,
             marginBottom: '1.2rem',
             textShadow: '0 1px 6px rgba(0,0,0,0.25)',
