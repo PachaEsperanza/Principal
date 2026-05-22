@@ -153,7 +153,7 @@ const HistoriaSection = () => {
           </div>
 
           {/* RIGHT: COMPARTO TU ESPERANZA — alineado a la card izquierda */}
-          <div style={{ ...fadeRight, paddingTop: '7rem' }}>
+          <div style={fadeRight} className="lg:pt-[8.5rem]">
             <GoldenTitle text="COMPARTO TU ESPERANZA" />
             <Carrusel cards={cards2} pressLabel={pressLabel} />
           </div>
