@@ -53,9 +53,6 @@ const Hero = () => {
 
       {/* Content */}
       <div className="relative z-10 h-full flex flex-col items-start justify-center text-left px-6 md:px-16 max-w-4xl">
-        <p className="text-gold text-sm tracking-[0.2em] uppercase font-serif font-black mb-4 opacity-90">
-          {t('hero_eyebrow')}
-        </p>
         <p className="font-serif font-black text-[clamp(0.75rem,1.6vw,1.25rem)] leading-tight tracking-[0.08em] text-cream uppercase mb-4 whitespace-pre-line pl-1 md:pl-2">
           {t('hero_subtitle')}
         </p>
@@ -69,10 +66,36 @@ const Hero = () => {
             filter: 'drop-shadow(0 2px 6px rgba(0,0,0,0.6))',
           }}
         >
-          Comparto <em style={{ fontStyle: 'italic', fontSize: '0.82em', fontWeight: 950, color: '#D4A843', WebkitTextStroke: '0.4px #D4A843', filter: 'drop-shadow(0 2px 8px rgba(212,168,67,0.5))', textTransform: 'lowercase' }}>tu</em> Esperanza
+          Comparto<em style={{ fontStyle: 'italic', fontSize: '0.82em', fontWeight: 950, color: '#D4A843', WebkitTextStroke: '0.4px #D4A843', filter: 'drop-shadow(0 2px 8px rgba(212,168,67,0.5))', textTransform: 'lowercase', letterSpacing: '-0.02em', marginLeft: '0.18em' }}>tu</em> Esperanza
         </h1>
-        <p className="max-w-xl text-cream/70 text-sm md:text-base font-serif leading-relaxed mb-10">
-          {t('hero_desc')}
+        <p className="max-w-xl font-serif leading-relaxed mb-10">
+          {(() => {
+            const desc = t('hero_desc');
+            const dotIdx = desc.indexOf('.');
+            const firstSentence = dotIdx !== -1 ? desc.slice(0, dotIdx) + ', Perú.' : desc;
+            const rest = dotIdx !== -1 ? desc.slice(dotIdx + 1).trimStart() : '';
+            return (
+              <>
+                <span style={{
+                  display: 'block',
+                  color: '#D4A843',
+                  fontWeight: 900,
+                  fontSize: 'clamp(0.82rem, 1.55vw, 1.05rem)',
+                  letterSpacing: '0.12em',
+                  textTransform: 'uppercase',
+                  WebkitTextStroke: '0.3px #D4A843',
+                  textShadow: '0 0 18px rgba(212,168,67,0.5)',
+                  marginBottom: '0.45rem',
+                  lineHeight: 1.2,
+                }}>
+                  {firstSentence}
+                </span>
+                <span style={{ color: 'rgba(245,230,211,0.7)', fontSize: 'clamp(0.75rem, 1.3vw, 0.95rem)' }}>
+                  {rest}
+                </span>
+              </>
+            );
+          })()}
         </p>
         <div className="flex flex-col sm:flex-row gap-4">
           <button
