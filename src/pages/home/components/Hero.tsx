@@ -63,10 +63,10 @@ const Hero = () => {
           className="font-serif text-[clamp(2rem,5.5vw,4.5rem)] leading-none tracking-[0.1em] uppercase mb-8 inline-block"
           style={{
             color: '#D4A843',
-            textShadow: '0 0 40px rgba(212,168,67,0.5), 0 2px 8px rgba(0,0,0,0.6)',
+            textShadow: '0 0 30px rgba(212,168,67,0.4)',
             fontWeight: 950,
-            WebkitTextStroke: '0.5px #5C1422',
-            filter: 'drop-shadow(0 2px 8px rgba(0,0,0,0.7))',
+            WebkitTextStroke: '0.3px #D4A843',
+            filter: 'drop-shadow(0 2px 6px rgba(0,0,0,0.6))',
           }}
         >
           Comparto tu Esperanza
