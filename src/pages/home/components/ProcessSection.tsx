@@ -60,7 +60,7 @@ const ProcessSection = () => {
             className="text-3xl md:text-4xl"
             style={{ fontFamily: "'Playfair Display', serif", color: '#F5E6D3', fontWeight: 900 }}
           >
-            {t('process_title')} <em style={{ color: '#D4A843', fontStyle: 'italic', filter: 'drop-shadow(0 2px 8px rgba(212,168,67,0.5))', WebkitTextStroke: '0.4px #D4A843', fontWeight: 950 }}>{t('process_title_highlight')}</em>
+            {t('process_title')} <em style={{ color: '#D4A843', fontStyle: 'italic', textShadow: '0 0 30px rgba(212,168,67,0.7), 0 0 12px rgba(212,168,67,0.5)', filter: 'drop-shadow(0 2px 10px rgba(212,168,67,0.7))', WebkitTextStroke: '0.3px #D4A843', fontWeight: 950 }}>{t('process_title_highlight')}</em>
           </h2>
         </div>
 

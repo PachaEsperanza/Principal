@@ -69,7 +69,7 @@ const Hero = () => {
             filter: 'drop-shadow(0 2px 6px rgba(0,0,0,0.6))',
           }}
         >
-          Comparto tu Esperanza
+          Comparto <em style={{ fontStyle: 'italic', fontSize: '0.82em', fontWeight: 950, color: '#D4A843', WebkitTextStroke: '0.4px #D4A843', filter: 'drop-shadow(0 2px 8px rgba(212,168,67,0.5))', textTransform: 'lowercase' }}>tu</em> Esperanza
         </h1>
         <p className="max-w-xl text-cream/70 text-sm md:text-base font-serif leading-relaxed mb-10">
           {t('hero_desc')}
