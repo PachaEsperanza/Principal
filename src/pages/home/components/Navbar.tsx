@@ -44,12 +44,12 @@ const Navbar = ({ cartCount, onCartOpen }: NavbarProps) => {
   }, []);
 
   const links = [
-    { key: 'manifesto',  label: t('nav_about') },
-    { key: 'historia',   label: t('nav_historia') },
-    { key: 'mision',     label: t('nav_mision') },
-    { key: 'vision',     label: t('nav_vision') },
-    { key: 'farmers',    label: t('nav_farmers') },
-    { key: 'process',    label: t('nav_process') },
+    { key: 'manifesto',  label: t('manifesto_eyebrow') },
+    { key: 'historia',   label: `${t('historia_title_line1')} ${t('historia_title_line2')}` },
+    { key: 'mision',     label: t('mision_title') },
+    { key: 'vision',     label: t('vision_title') },
+    { key: 'farmers',    label: t('farmers_title') },
+    { key: 'process',    label: t('process_eyebrow') },
   ];
 
   const changeLanguage = (code: string) => {
@@ -69,12 +69,12 @@ const Navbar = ({ cartCount, onCartOpen }: NavbarProps) => {
         <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-end gap-6">
 
           {/* Links desktop */}
-          <ul className="hidden md:flex items-center gap-6">
+          <ul className="hidden md:flex items-center gap-3">
             {links.map((l) => (
               <li key={l.key}>
                 <button
                   onClick={() => scrollTo(l.key)}
-                  className="text-cream/80 hover:text-gold transition-colors text-xs tracking-widest uppercase font-serif font-bold cursor-pointer whitespace-nowrap"
+                  className="text-cream/80 hover:text-gold transition-colors uppercase font-serif font-bold cursor-pointer text-center leading-tight" style={{ fontSize: "0.58rem", letterSpacing: "0.05em", maxWidth: "88px", whiteSpace: "normal" }}
                 >
                   {l.label}
                 </button>
