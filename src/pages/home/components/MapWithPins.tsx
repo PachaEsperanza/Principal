@@ -23,7 +23,7 @@ const mapPins: MapPin[] = [
     name: 'Segundo Herrera',
     altitude: '1,400 m.s.n.m',
     storyTitle: 'El cacao Chuncho Orgánico de Segundo',
-    story: "Productor de cacao Chuncho Orgánico en Cusco, en el corazón de Cusco. Apostó por mantener la variedad nativa cuando todos cambiaban a híbridos.",
+    story: "Productor de cacao Chuncho Orgánico en Cusco, en el corazón del Cusco. Apostó por mantener la variedad nativa cuando todos cambiaban a híbridos.",
     image: '/Home/images/farmer4.jpeg',
     familyImage: '/Home/images/farmer5.jpg',
     familyCaption: "Cacao Chuncho Orgánico con nombre y origen",

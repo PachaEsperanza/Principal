@@ -262,7 +262,7 @@ export const processSteps = [
     icon: 'ri-seedling-line',
     title: 'Cultivo',
     subtitle: 'Cacao Chuncho Orgánico nativo de altura',
-    desc: 'Cacao Chuncho Orgánico nativo cultivado en altitudes de 800-1200m en los valles de Cusco.',
+    desc: 'Cacao Chuncho Orgánico nativo cultivado en altitudes de 800-1200m en los valles del Cusco.',
     tags: ['Cacao Chuncho Orgánico', '800-1200m'],
     image: '/Home/images/segundo-work.jpeg',
     color: '#c9a96e',
