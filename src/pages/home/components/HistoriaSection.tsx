@@ -82,12 +82,13 @@ const Carrusel = ({ cards, pressLabel }: { cards: string[]; pressLabel: string }
 const GoldenTitle = ({ text, children }: { text?: string; children?: ReactNode }) => (
   <div style={{ margin: '1.2rem 0 0.7rem' }}>
     <p style={{
-      fontFamily: "'Cormorant Garamond',serif", fontWeight: 700,
+      fontFamily: "'Cormorant Garamond',serif", fontWeight: 900,
       fontSize: 'clamp(1.2rem, 2.6vw, 1.7rem)', letterSpacing: '0.02em',
       textTransform: 'uppercase',
       background: 'linear-gradient(90deg,#FFD700,#FFEE00,#FFD700)',
       WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent',
       backgroundClip: 'text', lineHeight: 1.2,
+      WebkitTextStroke: '0.6px #FFD700',
     }}>{children || text}</p>
     <div style={{ height: '2px', width: '40px', background: 'linear-gradient(90deg,#FFD700,transparent)', marginTop: '0.3rem' }} />
   </div>
@@ -141,7 +142,7 @@ const HistoriaSection = () => {
           textAlign: 'center',
           background: 'linear-gradient(90deg,#FFD700,#FFEE00,#FFD700)',
           WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text',
-          WebkitTextStroke: '0.4px #FFD700',
+          WebkitTextStroke: '0.6px #FFD700',
         }}>
           {t('historia_eyebrow')}
         </p>
