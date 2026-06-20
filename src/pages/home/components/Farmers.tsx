@@ -118,9 +118,9 @@ const Farmers = () => {
 
         {/* Header */}
         <div className="text-center mb-10">
-          <p className="text-gold text-xs tracking-[0.4em] uppercase font-serif font-black mb-3">{t('farmers_eyebrow')}</p>
-          <h2 className="font-serif text-3xl md:text-4xl text-cream font-black mb-2">{t('farmers_title')}</h2>
-          <p className="text-cream/70 font-serif text-sm mt-2 max-w-md mx-auto leading-relaxed">
+          <p className="text-gold text-xs tracking-[0.4em] uppercase font-black mb-3" style={{ fontFamily: "'Cormorant Garamond', serif" }}>{t('farmers_eyebrow')}</p>
+          <h2 className="text-3xl md:text-4xl text-cream font-black mb-2" style={{ fontFamily: "'Cormorant Garamond', serif" }}>{t('farmers_title')}</h2>
+          <p className="text-cream/70 text-sm mt-2 max-w-md mx-auto leading-relaxed" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
             {t('farmers_desc')}
           </p>
         </div>
