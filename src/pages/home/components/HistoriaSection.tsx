@@ -82,7 +82,7 @@ const Carrusel = ({ cards, pressLabel }: { cards: string[]; pressLabel: string }
 const GoldenTitle = ({ text, children }: { text?: string; children?: ReactNode }) => (
   <div style={{ margin: '1.2rem 0 0.7rem' }}>
     <p style={{
-      fontFamily: "'Cormorant Garamond',serif", fontWeight: 500,
+      fontFamily: "'Cormorant Garamond',serif", fontWeight: 700,
       fontSize: 'clamp(1.2rem, 2.6vw, 1.7rem)', letterSpacing: '0.02em',
       textTransform: 'uppercase',
       background: 'linear-gradient(90deg,#FFD700,#FFEE00,#FFD700)',
@@ -135,7 +135,14 @@ const HistoriaSection = () => {
       <div className="relative max-w-7xl mx-auto px-6 md:px-12 lg:px-16 py-16" style={{ zIndex: 2 }}>
 
         {/* Eyebrow centrado arriba */}
-        <p style={{ color: '#D4A843', fontSize: '0.85rem', letterSpacing: '0.35em', textTransform: 'uppercase', fontFamily: "'Cormorant Garamond', serif", fontWeight: 900, marginBottom: '1.5rem', textShadow: '0 0 18px rgba(212,168,67,0.6), 0 1px 6px rgba(0,0,0,0.3)', WebkitTextStroke: '0.3px #D4A843', textAlign: 'center' }}>
+        <p style={{
+          fontSize: '0.85rem', letterSpacing: '0.35em', textTransform: 'uppercase',
+          fontFamily: "'Cormorant Garamond', serif", fontWeight: 900, marginBottom: '1.5rem',
+          textAlign: 'center',
+          background: 'linear-gradient(90deg,#FFD700,#FFEE00,#FFD700)',
+          WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text',
+          WebkitTextStroke: '0.4px #FFD700',
+        }}>
           {t('historia_eyebrow')}
         </p>
 
