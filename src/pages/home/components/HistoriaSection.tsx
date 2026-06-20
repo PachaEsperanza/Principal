@@ -146,6 +146,7 @@ const HistoriaSection = () => {
               fontFamily: "'Cormorant Garamond',serif", fontWeight: 900,
               fontSize: 'clamp(1.8rem,3.5vw,2.8rem)', color: '#fff8f0',
               lineHeight: 1.15, marginBottom: '0.4rem', maxWidth: '480px',
+              textTransform: 'uppercase',
             }}>
               {t('historia_title_line1')}<br />{t('historia_title_line2')}
             </h2>
