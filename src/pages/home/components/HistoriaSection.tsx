@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef, type ReactNode } from 'react';
 import { useTranslation } from 'react-i18next';
 
 // ── Carrusel manual ───────────────────────────────────────────────────────────
@@ -79,16 +79,16 @@ const Carrusel = ({ cards, pressLabel }: { cards: string[]; pressLabel: string }
 };
 
 // ── Subtítulo dorado más grande y más amarillo ────────────────────────────────
-const GoldenTitle = ({ text }: { text: string }) => (
+const GoldenTitle = ({ text, children }: { text?: string; children?: ReactNode }) => (
   <div style={{ margin: '1.2rem 0 0.7rem' }}>
     <p style={{
-      fontFamily: "'Playfair Display',serif", fontWeight: 900,
-      fontSize: 'clamp(1.2rem, 2.6vw, 1.7rem)', letterSpacing: '0.06em',
+      fontFamily: "'Cormorant Garamond',serif", fontWeight: 500,
+      fontSize: 'clamp(1.2rem, 2.6vw, 1.7rem)', letterSpacing: '0.02em',
+      textTransform: 'uppercase',
       background: 'linear-gradient(90deg,#FFD700,#FFEE00,#FFD700)',
       WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent',
       backgroundClip: 'text', lineHeight: 1.2,
-      filter: 'drop-shadow(0 0 8px rgba(255,215,0,0.6))',
-    }}>{text}</p>
+    }}>{children || text}</p>
     <div style={{ height: '2px', width: '40px', background: 'linear-gradient(90deg,#FFD700,transparent)', marginTop: '0.3rem' }} />
   </div>
 );
@@ -158,7 +158,9 @@ const HistoriaSection = () => {
 
           {/* RIGHT: COMPARTO TU ESPERANZA — alineado a la card izquierda */}
           <div style={fadeRight} className="lg:pt-[8.5rem]">
-            <GoldenTitle text="COMPARTO TU ESPERANZA" />
+            <GoldenTitle>
+              Comparto<em style={{ fontStyle: 'italic', textTransform: 'lowercase', letterSpacing: '-0.02em', marginLeft: '0.18em' }}>tu</em> Esperanza
+            </GoldenTitle>
             <Carrusel cards={cards2} pressLabel={pressLabel} />
           </div>
 
