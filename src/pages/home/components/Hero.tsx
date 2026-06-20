@@ -57,16 +57,17 @@ const Hero = () => {
           {t('hero_subtitle')}
         </p>
         <h1
-          className="font-serif text-[clamp(2rem,5.5vw,4.5rem)] leading-none tracking-[0.1em] uppercase mb-8 inline-block"
+          className="text-[clamp(2.1rem,5.8vw,4.7rem)] leading-none tracking-[0.22em] uppercase mb-8 inline-block"
           style={{
+            fontFamily: "'Cormorant Garamond', serif",
             color: '#D4A843',
             textShadow: '0 0 30px rgba(212,168,67,0.4)',
-            fontWeight: 950,
+            fontWeight: 500,
             WebkitTextStroke: '0.3px #D4A843',
             filter: 'drop-shadow(0 2px 6px rgba(0,0,0,0.6))',
           }}
         >
-          Comparto<em style={{ fontStyle: 'italic', fontSize: '0.82em', fontWeight: 950, color: '#D4A843', WebkitTextStroke: '0.4px #D4A843', filter: 'drop-shadow(0 2px 8px rgba(212,168,67,0.5))', textTransform: 'lowercase', letterSpacing: '-0.02em', marginLeft: '0.18em' }}>tu</em> Esperanza
+          Comparto<em style={{ fontStyle: 'italic', fontSize: '0.82em', fontWeight: 500, color: '#D4A843', WebkitTextStroke: '0.4px #D4A843', filter: 'drop-shadow(0 2px 8px rgba(212,168,67,0.5))', textTransform: 'lowercase', letterSpacing: '-0.02em', marginLeft: '0.18em' }}>tu</em> Esperanza
         </h1>
         <p className="max-w-xl font-serif leading-relaxed mb-10">
           {(() => {
