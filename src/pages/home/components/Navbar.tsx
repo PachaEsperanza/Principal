@@ -101,18 +101,18 @@ const Navbar = ({ cartCount, onCartOpen }: NavbarProps) => {
                 </linearGradient>
               </defs>
               <g className="pole-pe">
-                <line x1="10" y1="48" x2="46" y2="20" stroke="url(#goldGrad)" strokeWidth="3.2" strokeLinecap="round"/>
+                <line x1="20" y1="48" x2="68" y2="4" stroke="url(#goldGrad)" strokeWidth="3.2" strokeLinecap="round"/>
               </g>
               <g className="pole-cz">
-                <line x1="78" y1="48" x2="42" y2="20" stroke="url(#goldGrad)" strokeWidth="3.2" strokeLinecap="round"/>
+                <line x1="68" y1="48" x2="20" y2="4" stroke="url(#goldGrad)" strokeWidth="3.2" strokeLinecap="round"/>
               </g>
-              <circle cx="10" cy="48" r="3.5" fill="#D4A843"/>
-              <circle cx="78" cy="48" r="3.5" fill="#D4A843"/>
+              <circle cx="20" cy="48" r="3.5" fill="#D4A843"/>
+              <circle cx="68" cy="48" r="3.5" fill="#D4A843"/>
             </svg>
-            <div className="flag-pe" style={{ position:'absolute', top:8, left:2, transformOrigin:'left center' }}>
+            <div className="flag-pe" style={{ position:'absolute', top:0, left:2, transformOrigin:'left center' }}>
               <img src="https://flagcdn.com/w40/pe.png" alt="Peru" style={{ width:36, height:24, borderRadius:2, objectFit:'cover', boxShadow:'0 1px 4px rgba(0,0,0,0.4)' }} />
             </div>
-            <div className="flag-cz" style={{ position:'absolute', top:8, right:2, transformOrigin:'right center' }}>
+            <div className="flag-cz" style={{ position:'absolute', top:0, right:2, transformOrigin:'right center' }}>
               <img src="https://flagcdn.com/w40/cz.png" alt="Czech Republic" style={{ width:36, height:24, borderRadius:2, objectFit:'cover', boxShadow:'0 1px 4px rgba(0,0,0,0.4)' }} />
             </div>
           </div>
@@ -157,18 +157,18 @@ const Navbar = ({ cartCount, onCartOpen }: NavbarProps) => {
                   </linearGradient>
                 </defs>
                 <g className="pole-pe">
-                  <line x1="7" y1="34" x2="31" y2="14" stroke="url(#goldGradM)" strokeWidth="2.8" strokeLinecap="round"/>
+                  <line x1="14" y1="34" x2="46" y2="3" stroke="url(#goldGradM)" strokeWidth="2.8" strokeLinecap="round"/>
                 </g>
                 <g className="pole-cz">
-                  <line x1="53" y1="34" x2="29" y2="14" stroke="url(#goldGradM)" strokeWidth="2.8" strokeLinecap="round"/>
+                  <line x1="46" y1="34" x2="14" y2="3" stroke="url(#goldGradM)" strokeWidth="2.8" strokeLinecap="round"/>
                 </g>
-                <circle cx="7" cy="34" r="3" fill="#D4A843"/>
-                <circle cx="53" cy="34" r="3" fill="#D4A843"/>
+                <circle cx="14" cy="34" r="3" fill="#D4A843"/>
+                <circle cx="46" cy="34" r="3" fill="#D4A843"/>
               </svg>
-              <div className="flag-pe" style={{ position:'absolute', top:6, left:0, transformOrigin:'left center' }}>
+              <div className="flag-pe" style={{ position:'absolute', top:0, left:7, transformOrigin:'left center' }}>
                 <img src="https://flagcdn.com/w40/pe.png" alt="Peru" style={{ width:24, height:16, borderRadius:2, objectFit:'cover', boxShadow:'0 1px 3px rgba(0,0,0,0.4)' }} />
               </div>
-              <div className="flag-cz" style={{ position:'absolute', top:6, right:0, transformOrigin:'right center' }}>
+              <div className="flag-cz" style={{ position:'absolute', top:0, right:7, transformOrigin:'right center' }}>
                 <img src="https://flagcdn.com/w40/cz.png" alt="Czech" style={{ width:24, height:16, borderRadius:2, objectFit:'cover', boxShadow:'0 1px 3px rgba(0,0,0,0.4)' }} />
               </div>
             </div>
