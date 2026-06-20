@@ -159,14 +159,14 @@ const Manifesto = () => {
                   {parts[1] && (
                     <>
                       <p
-                        className="font-serif font-black leading-tight mb-4 inline-block"
+                        className="leading-tight mb-4 inline-block uppercase"
                         style={{
-                          fontSize: 'clamp(1.6rem, 3.5vw, 2.4rem)',
-                          letterSpacing: '-0.01em',
+                          fontFamily: "'Cormorant Garamond', serif",
+                          fontSize: 'clamp(1.5rem, 3.3vw, 2.3rem)',
+                          letterSpacing: '0.08em',
+                          fontWeight: 500,
                           color: '#D4A843',
                           WebkitTextStroke: '0.3px #D4A843',
-                          textShadow: '0 0 30px rgba(212,168,67,0.4)',
-                          filter: 'drop-shadow(0 2px 6px rgba(0,0,0,0.6))',
                         }}
                       >
                         Comparto tu Esperanza
