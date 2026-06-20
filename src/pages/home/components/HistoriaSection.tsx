@@ -139,11 +139,11 @@ const HistoriaSection = () => {
 
           {/* LEFT: eyebrow + título + carrusel historia */}
           <div style={fadeLeft}>
-            <p style={{ color: '#D4A843', fontSize: '0.85rem', letterSpacing: '0.35em', textTransform: 'uppercase', fontFamily: "'Playfair Display', serif", fontWeight: 900, marginBottom: '0.7rem', textShadow: '0 0 18px rgba(212,168,67,0.6), 0 1px 6px rgba(0,0,0,0.3)', WebkitTextStroke: '0.3px #D4A843' }}>
+            <p style={{ color: '#D4A843', fontSize: '0.85rem', letterSpacing: '0.35em', textTransform: 'uppercase', fontFamily: "'Cormorant Garamond', serif", fontWeight: 900, marginBottom: '0.7rem', textShadow: '0 0 18px rgba(212,168,67,0.6), 0 1px 6px rgba(0,0,0,0.3)', WebkitTextStroke: '0.3px #D4A843' }}>
               {t('historia_eyebrow')}
             </p>
             <h2 style={{
-              fontFamily: "'Playfair Display',serif", fontWeight: 900,
+              fontFamily: "'Cormorant Garamond',serif", fontWeight: 900,
               fontSize: 'clamp(1.8rem,3.5vw,2.8rem)', color: '#fff8f0',
               lineHeight: 1.15, marginBottom: '0.4rem', maxWidth: '480px',
             }}>
