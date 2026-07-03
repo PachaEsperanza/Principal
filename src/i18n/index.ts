@@ -1,25 +1,19 @@
-const modules = import.meta.glob('./*/*.ts', { eager: true });
+import i18n from 'i18next';
+import { initReactI18next } from 'react-i18next';
+import LanguageDetector from 'i18next-browser-languagedetector';
+import messages from './local/index';
 
-const messages: Record<string, { translation: Record<string, string> }> = {};
+i18n
+  .use(LanguageDetector)
+  .use(initReactI18next)
+  .init({
+    lng: 'es',
+    fallbackLng: 'en',
+    debug: false,
+    resources: messages,
+    interpolation: {
+      escapeValue: false,
+    },
+  });
 
-Object.keys(modules).forEach((path) => {
-  const match = path.match(/\.\/([^/]+)\/([^/]+)\.ts$/);
-  if (match) {
-    const [, lang] = match;
-    const module = modules[path] as { default?: Record<string, string> };
-    
-    if (!messages[lang]) {
-      messages[lang] = { translation: {} };
-    }
-    
-    // 合并翻译内容
-    if (module.default) {
-      messages[lang].translation = {
-        ...messages[lang].translation,
-        ...module.default
-      };
-    }
-  }
-});
-
-export default messages; 
+export default i18n;
