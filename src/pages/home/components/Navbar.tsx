@@ -81,39 +81,14 @@ const Navbar = ({ cartCount, onCartOpen }: NavbarProps) => {
             ))}
           </ul>
 
-          {/* Banderas desktop con astas cruzadas */}
-          <div className="hidden md:flex items-center" style={{ width: 88, height: 48, position: 'relative' }}>
+                    {/* Banderas desktop */}
+          <div className="hidden md:flex items-center gap-1.5">
             <style>{`
-              @keyframes wave-pe { 0%,100%{transform:rotate(-8deg) scale(1.03)} 50%{transform:rotate(-4deg) scale(0.97)} }
-              @keyframes wave-cz { 0%,100%{transform:rotate(8deg) scale(1.03)} 50%{transform:rotate(4deg) scale(0.97)} }
-              @keyframes pole-sway { 0%,100%{transform:rotate(0deg)} 50%{transform:rotate(1deg)} }
-              .pole-pe { animation: pole-sway 2.4s ease-in-out infinite; transform-origin: center bottom; }
-              .pole-cz { animation: pole-sway 2.4s ease-in-out infinite reverse; transform-origin: center bottom; }
-              .flag-pe { animation: wave-pe 2s ease-in-out infinite; transform-origin: left center; }
-              .flag-cz { animation: wave-cz 2s ease-in-out infinite; transform-origin: right center; }
+              @keyframes wave-pe { 0%,100%{transform:rotate(-6deg)} 50%{transform:rotate(-2deg)} }
+              @keyframes wave-cz { 0%,100%{transform:rotate(6deg)} 50%{transform:rotate(2deg)} }
             `}</style>
-            <svg width="88" height="48" viewBox="0 0 88 48" fill="none" xmlns="http://www.w3.org/2000/svg" style={{overflow:'visible'}}>
-              <defs>
-                <linearGradient id="goldGrad" x1="0" y1="0" x2="0" y2="1">
-                  <stop offset="0%" stopColor="#D4A843"/>
-                  <stop offset="100%" stopColor="#8B6914"/>
-                </linearGradient>
-              </defs>
-              <g className="pole-pe">
-                <line x1="20" y1="48" x2="68" y2="4" stroke="url(#goldGrad)" strokeWidth="3.2" strokeLinecap="round"/>
-              </g>
-              <g className="pole-cz">
-                <line x1="68" y1="48" x2="20" y2="4" stroke="url(#goldGrad)" strokeWidth="3.2" strokeLinecap="round"/>
-              </g>
-              <circle cx="20" cy="48" r="3.5" fill="#D4A843"/>
-              <circle cx="68" cy="48" r="3.5" fill="#D4A843"/>
-            </svg>
-            <div className="flag-pe" style={{ position:'absolute', top:0, left:2, transformOrigin:'left center' }}>
-              <img src="https://flagcdn.com/w40/pe.png" alt="Peru" style={{ width:36, height:24, borderRadius:2, objectFit:'cover', boxShadow:'0 1px 4px rgba(0,0,0,0.4)' }} />
-            </div>
-            <div className="flag-cz" style={{ position:'absolute', top:0, right:2, transformOrigin:'right center' }}>
-              <img src="https://flagcdn.com/w40/cz.png" alt="Czech Republic" style={{ width:36, height:24, borderRadius:2, objectFit:'cover', boxShadow:'0 1px 4px rgba(0,0,0,0.4)' }} />
-            </div>
+            <img src="https://flagcdn.com/w40/pe.png" alt="Peru" className="w-9 h-6 rounded-sm object-cover shadow-sm" style={{ animation: 'wave-pe 2s ease-in-out infinite', transformOrigin: 'left center' }} />
+            <img src="https://flagcdn.com/w40/cz.png" alt="Czech Republic" className="w-9 h-6 rounded-sm object-cover shadow-sm" style={{ animation: 'wave-cz 2s ease-in-out infinite', transformOrigin: 'right center' }} />
           </div>
 
           {/* Selector idioma desktop */}
@@ -147,29 +122,9 @@ const Navbar = ({ cartCount, onCartOpen }: NavbarProps) => {
 
           {/* Mobile: banderas + idioma + hamburguesa */}
           <div className="md:hidden flex items-center gap-2">
-            <div style={{ width: 60, height: 34, position: 'relative', flexShrink: 0 }}>
-              <svg width="60" height="34" viewBox="0 0 60 34" fill="none" xmlns="http://www.w3.org/2000/svg" style={{overflow:'visible',position:'absolute',top:0,left:0}}>
-                <defs>
-                  <linearGradient id="goldGradM" x1="0" y1="0" x2="0" y2="1">
-                    <stop offset="0%" stopColor="#D4A843"/>
-                    <stop offset="100%" stopColor="#8B6914"/>
-                  </linearGradient>
-                </defs>
-                <g className="pole-pe">
-                  <line x1="14" y1="34" x2="46" y2="3" stroke="url(#goldGradM)" strokeWidth="2.8" strokeLinecap="round"/>
-                </g>
-                <g className="pole-cz">
-                  <line x1="46" y1="34" x2="14" y2="3" stroke="url(#goldGradM)" strokeWidth="2.8" strokeLinecap="round"/>
-                </g>
-                <circle cx="14" cy="34" r="3" fill="#D4A843"/>
-                <circle cx="46" cy="34" r="3" fill="#D4A843"/>
-              </svg>
-              <div className="flag-pe" style={{ position:'absolute', top:0, left:7, transformOrigin:'left center' }}>
-                <img src="https://flagcdn.com/w40/pe.png" alt="Peru" style={{ width:24, height:16, borderRadius:2, objectFit:'cover', boxShadow:'0 1px 3px rgba(0,0,0,0.4)' }} />
-              </div>
-              <div className="flag-cz" style={{ position:'absolute', top:0, right:7, transformOrigin:'right center' }}>
-                <img src="https://flagcdn.com/w40/cz.png" alt="Czech" style={{ width:24, height:16, borderRadius:2, objectFit:'cover', boxShadow:'0 1px 3px rgba(0,0,0,0.4)' }} />
-              </div>
+            <div className="flex items-center gap-1">
+              <img src="https://flagcdn.com/w40/pe.png" alt="Peru" className="w-6 h-4 rounded-sm object-cover" style={{ animation: 'wave-pe 2s ease-in-out infinite', transformOrigin: 'left center' }} />
+              <img src="https://flagcdn.com/w40/cz.png" alt="Czech" className="w-6 h-4 rounded-sm object-cover" style={{ animation: 'wave-cz 2s ease-in-out infinite', transformOrigin: 'right center' }} />
             </div>
 
             <div ref={mobileLangRef} className="relative">
