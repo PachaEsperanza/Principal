@@ -44,12 +44,11 @@ const Navbar = ({ cartCount, onCartOpen }: NavbarProps) => {
   }, []);
 
   const links = [
-    { key: 'manifesto',  label: t('manifesto_eyebrow') },
-    { key: 'historia',   label: `${t('historia_title_line1')} ${t('historia_title_line2')}` },
-    { key: 'mision',     label: t('mision_title') },
-    { key: 'vision',     label: t('vision_title') },
-    { key: 'farmers',    label: t('farmers_title') },
-    { key: 'process',    label: t('process_eyebrow') },
+    { key: 'manifesto', label: 'Filosofía' },
+    { key: 'historia',  label: 'El Sueño' },
+    { key: 'mision',    label: 'El Propósito' },
+    { key: 'farmers',   label: 'Nuestras Familias' },
+    { key: 'process',   label: 'Cada Cosecha' },
   ];
 
   const changeLanguage = (code: string) => {
