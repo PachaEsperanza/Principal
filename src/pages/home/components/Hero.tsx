@@ -62,12 +62,12 @@ const Hero = () => {
             fontFamily: "'Josefin Sans', sans-serif",
             color: '#D4A843',
             textShadow: '0 0 30px rgba(212,168,67,0.4)',
-            fontWeight: 500,
-            WebkitTextStroke: '0.3px #D4A843',
+            fontWeight: 300,
+            
             filter: 'drop-shadow(0 2px 6px rgba(0,0,0,0.6))',
           }}
         >
-          Comparto<em style={{ fontStyle: 'italic', fontSize: '0.82em', fontWeight: 500, color: '#D4A843', WebkitTextStroke: '0.4px #D4A843', filter: 'drop-shadow(0 2px 8px rgba(212,168,67,0.5))', textTransform: 'lowercase', letterSpacing: '-0.02em', marginLeft: '0.18em' }}>tu</em> Esperanza
+          Comparto<em style={{ fontStyle: 'italic', fontSize: '0.82em', fontWeight: 300, color: '#D4A843', filter: 'drop-shadow(0 2px 8px rgba(212,168,67,0.5))', textTransform: 'lowercase', letterSpacing: '-0.02em', marginLeft: '0.18em' }}>tu</em> Esperanza
         </h1>
         <p className="max-w-xl leading-relaxed mb-10" style={{ fontFamily: "'Josefin Sans', sans-serif" }}>
           {(() => {
@@ -85,7 +85,7 @@ const Hero = () => {
                   fontSize: 'clamp(0.82rem, 1.55vw, 1.05rem)',
                   letterSpacing: '0.12em',
                   textTransform: 'uppercase',
-                  WebkitTextStroke: '0.3px #D4A843',
+                  
                   textShadow: '0 0 18px rgba(212,168,67,0.5)',
                   marginBottom: '0.45rem',
                   lineHeight: 1.2,
