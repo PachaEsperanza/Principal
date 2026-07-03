@@ -1,23 +1,23 @@
 export const heroSlides = [
   {
     type: 'video' as const,
-    src: '/Home/videos/hero4.mp4',
+    src: '/Principal/videos/hero4.mp4',
   },
   {
     type: 'video' as const,
-    src: '/Home/videos/hero5.mp4',
+    src: '/Principal/videos/hero5.mp4',
   },
   {
     type: 'image' as const,
-    src: '/Home/images/hero1.jpg',
+    src: '/Principal/images/hero1.jpg',
   },
   {
     type: 'image' as const,
-    src: '/Home/images/hero2.jpeg',
+    src: '/Principal/images/hero2.jpeg',
   },
   {
     type: 'image' as const,
-    src: '/Home/images/hero6.jpg',
+    src: '/Principal/images/hero6.jpg',
   },
 ];
 
@@ -66,7 +66,7 @@ export const products: Product[] = [
       { label: 'Humedad', value: '\u2264 7%' },
       { label: 'Precio', value: '$7.10 / kg' },
     ],
-    image: '/Home/images/product1.jpeg',
+    image: '/Principal/images/product1.jpeg',
     priceNum: 28,
     priceLabel: '$28.00/kg',
     ctaLabel: 'Quiero beber su café',
@@ -75,7 +75,7 @@ export const products: Product[] = [
       location: 'Canchaque, Huancabamba',
       storyTitle: 'El renacer de Lucía',
       story: 'A los 19 años, una helada arrasó con toda su cosecha en una sola noche. Sin crédito, sin seguro, sin nadie que la respaldara, Lucía decidió no rendirse. Aprendió sola el proceso de lavado observando a sus vecinos y leyendo lo que encontraba. Tres años después, su Caturra Washed es el más solicitado por tostadoras especializadas en Alemania y Países Bajos. Hoy entrena a otras mujeres de su comunidad. "Perdí todo en una noche. Pero esa noche también me enseñó que yo era más fuerte que mi miedo."',
-      image: '/Home/images/farmer1.jpg',
+      image: '/Principal/images/farmer1.jpg',
     },
   },
   {
@@ -96,7 +96,7 @@ export const products: Product[] = [
       { label: 'Humedad', value: '\u2264 7%' },
       { label: 'Precio', value: '$6.40 / kg' },
     ],
-    image: '/Home/images/product2.jpeg',
+    image: '/Principal/images/product2.jpeg',
     priceNum: 24,
     priceLabel: '$24.00/kg',
     ctaLabel: 'Quiero beber su café',
@@ -105,7 +105,7 @@ export const products: Product[] = [
       location: 'Montero, Ayabaca',
       storyTitle: 'El despertar de Edilberto',
       story: 'Volvió de las fuerzas armadas con las manos vacías y una parcela abandonada que nadie quería. Durante dos años trabajó solo, de madrugada, antes de que saliera el sol, convirtiendo ese terreno en 3 hectáreas de cafetal. No tenía maquinaria, no tenía préstamos. Solo voluntad. Su Bourbon Natural financió la educación universitaria de sus cuatro hijos. "Mis hijos no van a heredar deudas. Van a heredar dignidad."',
-      image: '/Home/images/farmer2.jpeg',
+      image: '/Principal/images/farmer2.jpeg',
     },
   },
   {
@@ -126,7 +126,7 @@ export const products: Product[] = [
       { label: 'Humedad', value: '\u2264 7.5%' },
       { label: 'Precio', value: '$6.30 / kg' },
     ],
-    image: '/Home/images/product3.jpeg',
+    image: '/Principal/images/product3.jpeg',
     priceNum: 22,
     priceLabel: '$22.00/kg',
     ctaLabel: 'Quiero beber su café',
@@ -135,7 +135,7 @@ export const products: Product[] = [
       location: 'Sicchez, Ayabaca',
       storyTitle: 'La fuerza de Rosa',
       story: 'Madre soltera de tres hijos, heredó una deuda y una parcela que nadie quería tocar. Sin dinero para pagar jornaleros, aprendió el secado solar artesanal observando a sus vecinos durante meses. Hoy produce uno de los cafés Honey más complejos del Perú, sin intermediarios, exportando directamente a Europa. Cada saco lleva su nombre. "Nadie me regaló nada. Pero tampoco nadie me quitó las ganas."',
-      image: '/Home/images/farmer3.jpeg',
+      image: '/Principal/images/farmer3.jpeg',
     },
   },
   {
@@ -156,7 +156,7 @@ export const products: Product[] = [
       { label: 'Humedad', value: '\u2264 6.5%' },
       { label: 'Precio', value: '$10.00 / kg' },
     ],
-    image: '/Home/images/product4.jpeg',
+    image: '/Principal/images/product4.jpeg',
     priceNum: 38,
     priceLabel: '$38.00/kg',
     ctaLabel: 'Quiero beber su café',
@@ -165,7 +165,7 @@ export const products: Product[] = [
       location: 'S. Miguel, Huancabamba',
       storyTitle: 'La ruptura de Segundo',
       story: 'Creció viendo a su padre entregar sacos de café a intermediarios que pagaban lo mínimo y se llevaban lo máximo. A los 28 años decidió que esa cadena terminaba con él. Aprendió catación de forma autodidacta, certificó su finca con estándares internacionales y comenzó a exportar directamente. Hoy su Geisha Washed llega a Japón, Suecia y Dinamarca con su nombre impreso en el saco. "Mi padre nunca supo a quién le vendía. Yo sí sé a quién le vendo."',
-      image: '/Home/images/farmer4.jpeg',
+      image: '/Principal/images/farmer4.jpeg',
     },
   },
   {
@@ -186,7 +186,7 @@ export const products: Product[] = [
       { label: 'Humedad', value: '\u2264 7%' },
       { label: 'Precio', value: '$7.70 / kg' },
     ],
-    image: '/Home/images/product5.jpeg',
+    image: '/Principal/images/product5.jpeg',
     priceNum: 30,
     priceLabel: '$30.00/kg',
     ctaLabel: 'Quiero beber su café',
@@ -195,7 +195,7 @@ export const products: Product[] = [
       location: 'Chalaco, Morropón',
       storyTitle: 'La resistencia de Manuel',
       story: 'En los años 90, la violencia llegó hasta las montañas de Chalaco. Manuel perdió a su padre y a tres vecinos en una sola semana. Durante años, esas tierras fueron sinónimo de miedo y abandono. Hoy, a los 54 años, Manuel cultiva café en esos mismos campos. Cada saco que exporta es un acto de resistencia, de memoria y de paz. "Sembrar aquí donde todo fue destruido es mi forma de decir: seguimos vivos."',
-      image: '/Home/images/farmer5.jpg',
+      image: '/Principal/images/farmer5.jpg',
     },
   },
   {
@@ -216,7 +216,7 @@ export const products: Product[] = [
       { label: 'Humedad', value: '\u2264 6.8%' },
       { label: 'Precio', value: '$9.10 / kg' },
     ],
-    image: '/Home/images/product6.jpeg',
+    image: '/Principal/images/product6.jpeg',
     priceNum: 34,
     priceLabel: '$34.00/kg',
     ctaLabel: 'Quiero beber su café',
@@ -225,7 +225,7 @@ export const products: Product[] = [
       location: 'Jililí, Ayabaca',
       storyTitle: 'La esperanza de Rosa',
       story: 'Rosa escapó de una relación violenta con tres hijos pequeños — Lucía de 4, Ander de 6 y Mateo de 8 años. Llegó a Jililí con lo puesto, sin dinero, sin red de apoyo, sin plan. Una vecina le enseñó a cultivar café. Hoy su finca, que ella misma bautizó "La Esperanza", financia la escuela de sus tres hijos y exporta directamente a Europa. «Mis hijos me ven trabajar y saben que rendirse no es una opción.»',
-      image: '/Home/images/farmer6.jpg',
+      image: '/Principal/images/farmer6.jpg',
     },
   },
 ];
@@ -249,7 +249,7 @@ export const farmers: Farmer[] = [
     name: 'Segundo Herrera',
     location: 'Cusco · 1,400 msnm',
     story: "Productor de cacao Chuncho Orgánico en Cusco. Apostó por mantener la variedad nativa cuando todos cambiaban a híbridos, convencido de que el Cacao Chuncho Orgánico fino de aroma peruano merecía llegar al mundo con su nombre y su historia.",
-    image: '/Home/images/farmer4.jpeg',
+    image: '/Principal/images/farmer4.jpeg',
     index: '01',
     stat: '100%',
     statLabel: 'cacao Chuncho Orgánico nativo',
@@ -264,7 +264,7 @@ export const processSteps = [
     subtitle: 'Cacao Chuncho Orgánico nativo de altura',
     desc: 'Cacao Chuncho Orgánico nativo cultivado en altitudes de 800-1200m en los valles del Cusco.',
     tags: ['Cacao Chuncho Orgánico', '800-1200m'],
-    image: '/Home/images/segundo-work.jpeg',
+    image: '/Principal/images/segundo-work.jpeg',
     color: '#c9a96e',
   },
   {
@@ -274,7 +274,7 @@ export const processSteps = [
     subtitle: 'Recolección a mano',
     desc: 'Recolección manual y selectiva por nuestros productores. Solo los frutos en su punto exacto de madurez.',
     tags: ['100% Manual', 'Selectiva'],
-    image: '/Home/images/rosa-work.jpeg',
+    image: '/Principal/images/rosa-work.jpeg',
     color: '#a07850',
   },
   {
@@ -284,7 +284,7 @@ export const processSteps = [
     subtitle: 'Proceso artesanal',
     desc: 'Proceso artesanal de 5 a 7 días en cajones de madera. El tiempo y la paciencia despiertan el aroma del Chuncho.',
     tags: ['5-7 días', 'Artesanal'],
-    image: '/Home/images/carmen-work.jpeg',
+    image: '/Principal/images/carmen-work.jpeg',
     color: '#d4a853',
   },
   {
@@ -294,7 +294,7 @@ export const processSteps = [
     subtitle: 'Sol andino',
     desc: 'Secado solar en camas africanas elevadas. Sin secado artificial que altere el perfil sensorial del grano.',
     tags: ['Solar', 'Camas africanas'],
-    image: '/Home/images/family-segundo.jpeg',
+    image: '/Principal/images/family-segundo.jpeg',
     color: '#8b6340',
   },
 ];

@@ -2,8 +2,8 @@ import { useState, useEffect, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 
 const IMAGES = [
-  '/Home/images/mision1.png',
-  '/Home/images/mision2.png',
+  '/Principal/images/mision1.png',
+  '/Principal/images/mision2.png',
 ];
 
 const AUTOPLAY_MS = 4500;
@@ -52,7 +52,7 @@ const MisionSection = () => {
       {/* Background image */}
       <div
         className="absolute inset-0 bg-center bg-cover pointer-events-none"
-        style={{ backgroundImage: 'url(/Home/images/hero1.jpg)' }}
+        style={{ backgroundImage: 'url(/Principal/images/hero1.jpg)' }}
       />
       {/* Overlay suave guinda/marrón */}
       <div

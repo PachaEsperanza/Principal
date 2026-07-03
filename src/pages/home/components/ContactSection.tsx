@@ -10,7 +10,7 @@ const FARMERS = [
     need: 'Necesita: Tanques de fermentación artesanal',
     progress: 68,
     adopters: 14,
-    image: '/Home/images/farmer1.jpg',
+    image: '/Principal/images/farmer1.jpg',
     impact: {
       30: 'Financias 2 días de secado solar artesanal de su café Chuncho.',
       40: 'Cubres una semana completa de fermentación controlada.',
@@ -28,7 +28,7 @@ const FARMERS = [
     need: 'Necesita: Camas africanas de secado solar',
     progress: 45,
     adopters: 9,
-    image: '/Home/images/farmer2.jpeg',
+    image: '/Principal/images/farmer2.jpeg',
     impact: {
       30: 'Financias el mantenimiento de su cafetal por una semana.',
       40: 'Cubres los insumos de procesado natural de un quintal.',
@@ -46,7 +46,7 @@ const FARMERS = [
     need: 'Necesita: Secadora solar portátil',
     progress: 20,
     adopters: 4,
-    image: '/Home/images/farmer3.jpeg',
+    image: '/Principal/images/farmer3.jpeg',
     impact: {
       30: 'Financias los materiales de secado de su lote Honey.',
       40: 'Cubres una semana de procesado artesanal sin intermediarios.',
@@ -219,7 +219,7 @@ const ContactSection = () => {
       <section id="contact" className="relative py-14 md:py-20 px-4 md:px-6 overflow-hidden">
         {/* Background */}
         <div className="absolute inset-0">
-          <video autoPlay muted loop playsInline src="/Home/videos/hero4.mp4" className="w-full h-full object-cover object-center" />
+          <video autoPlay muted loop playsInline src="/Principal/videos/hero4.mp4" className="w-full h-full object-cover object-center" />
           <div className="absolute inset-0 bg-coffee-900/80" />
           <div className="absolute inset-0 bg-rose-950/40" />
         </div>

@@ -24,8 +24,8 @@ const mapPins: MapPin[] = [
     altitude: '1,400 m.s.n.m',
     storyTitle: 'El cacao Chuncho Orgánico de Segundo',
     story: "Productor de cacao Chuncho Orgánico en Cusco, en el corazón del Cusco. Apostó por mantener la variedad nativa cuando todos cambiaban a híbridos.",
-    image: '/Home/images/farmer4.jpeg',
-    familyImage: '/Home/images/farmer5.jpg',
+    image: '/Principal/images/farmer4.jpeg',
+    familyImage: '/Principal/images/farmer5.jpg',
     familyCaption: "Cacao Chuncho Orgánico con nombre y origen",
     stat: '100%', statLabel: 'cacao Chuncho Orgánico nativo',
     x: 52, y: 68,
@@ -73,7 +73,7 @@ const MapWithPins = ({ activeName, hintText }: { activeName?: string; hintText?:
     >
       <div className="relative w-full select-none" style={{ height: '580px' }}>
         <img
-          src="/Home/images/mapa.png"
+          src="/Principal/images/mapa.png"
           alt="Mapa del Perú"
           className="w-full h-full object-contain object-center"
           style={{ filter: 'drop-shadow(0 0 40px rgba(201,169,110,0.15))' }}

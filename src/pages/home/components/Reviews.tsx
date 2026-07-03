@@ -43,7 +43,7 @@ const Reviews = () => {
       {/* Background */}
       <div className="absolute inset-0">
         <img
-          src="/Home/images/reviews-bg.jpg"
+          src="/Principal/images/reviews-bg.jpg"
           alt="background"
           className="w-full h-full object-cover object-center"
         />

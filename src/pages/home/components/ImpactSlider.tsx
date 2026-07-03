@@ -15,28 +15,28 @@ interface ImpactCard {
 const impactCards: ImpactCard[] = [
   {
     icon: 'ri-group-line',
-    image: '/Home/images/impact1.jpeg',
+    image: '/Principal/images/impact1.jpeg',
     getValue: (n) => String(Math.max(1, Math.round(n / 12))),
     label: 'Familias productoras beneficiadas',
     sublabel: (n) => n <= 10 ? 'una pequeña familia apoyada' : n <= 40 ? 'varias familias esta semana' : 'comunidad entera impactada',
   },
   {
     icon: 'ri-money-dollar-circle-line',
-    image: '/Home/images/product5.jpeg',
+    image: '/Principal/images/product5.jpeg',
     getValue: () => '',
     label: 'USD directos al productor',
     sublabel: (n) => n <= 10 ? 'paga un día de trabajo' : n <= 40 ? 'cubre una semana de servicios' : 'financia un mes completo',
   },
   {
     icon: 'ri-book-open-line',
-    image: '/Home/images/impact3.jpeg',
+    image: '/Principal/images/impact3.jpeg',
     getValue: (n) => String(Math.max(1, Math.round(n / 18))),
     label: 'Niños con educación apoyada',
     sublabel: (n) => n <= 15 ? 'un mes de clases garantizado' : n <= 50 ? 'varios niños en la escuela' : 'toda una aula beneficiada',
   },
   {
     icon: 'ri-plant-line',
-    image: '/Home/images/product1.jpeg',
+    image: '/Principal/images/product1.jpeg',
     getValue: (n) => String(Math.max(1, Math.round(n * 1.4))),
     label: 'Plantas de café preservadas',
     sublabel: (n) => n <= 10 ? 'un pequeño jardín preservado' : n <= 40 ? 'parcela activa mantenida' : 'hectárea completa protegida',
@@ -49,7 +49,7 @@ const voices = [
     role: 'Productora de café Chuncho',
     location: 'Quillabamba, Cusco',
     quote: 'Perdí todo en una noche por una helada. Pero esa noche también me enseñó que yo era más fuerte que mi miedo. Hoy entreno a otras mujeres de mi comunidad.',
-    image: '/Home/images/farmer1.jpg',
+    image: '/Principal/images/farmer1.jpg',
     years: 4,
     yearsLabel: 'años cultivando',
   },
@@ -58,7 +58,7 @@ const voices = [
     role: 'Productor de Bourbon Natural',
     location: 'Tarapoto, San Martín',
     quote: 'Mis hijos no van a heredar deudas. Van a heredar dignidad. Cada saco que exporto es una promesa que les cumplo.',
-    image: '/Home/images/farmer2.jpeg',
+    image: '/Principal/images/farmer2.jpeg',
     years: 6,
     yearsLabel: 'años de cafetal',
   },
@@ -67,7 +67,7 @@ const voices = [
     role: 'Productora de Honey Amarillo',
     location: 'Valle Monzón, Huánuco',
     quote: 'Nadie me regaló nada. Pero tampoco nadie me quitó las ganas. Aprendí sola, observando. Hoy mis hijos me ven trabajar y saben que rendirse no es una opción.',
-    image: '/Home/images/farmer3.jpeg',
+    image: '/Principal/images/farmer3.jpeg',
     years: 3,
     yearsLabel: 'años exportando',
   },
@@ -76,7 +76,7 @@ const voices = [
     role: 'Productor Typica Natural',
     location: 'Ayacucho, Valle del Pampas',
     quote: 'Sembrar aquí donde todo fue destruido es mi forma de decir: seguimos vivos. Cada cosecha es un acto de resistencia y de paz.',
-    image: '/Home/images/farmer5.jpg',
+    image: '/Principal/images/farmer5.jpg',
     years: 8,
     yearsLabel: 'años de resistencia',
   },
@@ -179,7 +179,7 @@ const ImpactSlider = () => {
   return (
     <section className="relative py-10 md:py-14 px-4 md:px-6 overflow-hidden">
       <div className="absolute inset-0" style={{zIndex:0}}>
-        <img src="/Home/images/process3.jpeg" alt="" className="w-full h-full object-cover object-center" />
+        <img src="/Principal/images/process3.jpeg" alt="" className="w-full h-full object-cover object-center" />
         <div className="absolute inset-0" style={{ background: 'linear-gradient(180deg, rgba(26,13,5,0.72) 0%, rgba(18,10,3,0.78) 100%)' }} />
       </div>
       {/* Subtle top border */}

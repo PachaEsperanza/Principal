@@ -36,7 +36,7 @@ const ProcessSection = () => {
         loop
         playsInline
         className="absolute inset-0 w-full h-full object-cover z-0 pointer-events-none"
-        src="/Home/videos/fondo.mp4"
+        src="/Principal/videos/fondo.mp4"
       />
       {/* Dark overlay */}
       <div

@@ -127,7 +127,7 @@ const Manifesto = () => {
         loop
         playsInline
         className="absolute inset-0 w-full h-full object-cover opacity-90 pointer-events-none"
-        src="/Home/videos/fondo2.mp4"
+        src="/Principal/videos/fondo2.mp4"
       />
       <div className="absolute inset-0 bg-coffee-900/45 pointer-events-none" />
       <div className="relative z-10 max-w-6xl mx-auto grid lg:grid-cols-3 gap-10 items-start">
@@ -194,7 +194,7 @@ const Manifesto = () => {
         <div className="flex flex-col gap-4 lg:justify-center lg:h-full">
           <div className="rounded-2xl overflow-hidden w-full" style={{ border: '1px solid rgba(201,168,76,0.2)' }}>
             <img
-              src="/Home/images/imagen1.png"
+              src="/Principal/images/imagen1.png"
               alt="CompartoTuEsperanza"
               className="w-full h-full object-cover"
               style={{ minHeight: '360px', maxHeight: '480px', width: '100%', objectFit: 'cover' }}

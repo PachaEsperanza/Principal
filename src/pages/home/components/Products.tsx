@@ -175,7 +175,7 @@ export default function Products({ onAddToCart }: ProductsProps) {
         <img
           alt="background"
           className="w-full h-full object-cover object-center"
-          src="/Home/images/products-bg.jpeg"
+          src="/Principal/images/products-bg.jpeg"
         />
         <div className="absolute inset-0 bg-coffee-900/60"></div>
         <div className="absolute inset-0 bg-rose-950/30"></div>

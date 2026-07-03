@@ -127,7 +127,7 @@ const HistoriaSection = () => {
 
       {/* Fondo */}
       <div className="absolute inset-0 bg-center bg-cover pointer-events-none"
-        style={{ backgroundImage: 'url(/Home/images/fondos.jpg)', zIndex: 0 }} />
+        style={{ backgroundImage: 'url(/Principal/images/fondos.jpg)', zIndex: 0 }} />
       <div className="absolute inset-0 pointer-events-none" style={{
         background: 'linear-gradient(160deg,rgba(15,5,2,0.38) 0%,rgba(8,3,1,0.44) 60%,rgba(15,5,2,0.36) 100%)',
         zIndex: 1,
