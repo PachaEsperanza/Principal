@@ -41,13 +41,13 @@ export default function UnidosSection() {
   return (
     <section
       id="unidos"
-      className="relative py-24 overflow-hidden"
+      className="relative py-10 overflow-hidden"
       style={{ background: '#0f0805' }}
     >
       {/* Fondo sin overlay */}
       <div
         className="absolute inset-0 bg-center bg-cover pointer-events-none"
-        style={{ backgroundImage: 'url(/Principal/images/fondoo.jpeg)' }}
+        style={{ backgroundImage: 'url(/Principal/images/fondoo.jpg)' }}
       />
       {/* Overlay mínimo marrón */}
       <div
@@ -57,26 +57,27 @@ export default function UnidosSection() {
 
       <div className="relative z-10 max-w-7xl mx-auto px-6">
         {/* Header */}
-        <div className="text-center mb-14">
+        <div className="text-center mb-6">
           {/* Frase cursiva guinda */}
           <p style={{
             fontFamily: "'Playfair Display', serif",
             fontStyle: 'italic',
-            fontWeight: 800,
+            fontWeight: 400,
             fontSize: 'clamp(1.1rem, 2.2vw, 2.2rem)',
-            color: '#C9A84C',
             lineHeight: 1.25,
             marginBottom: '1.2rem',
-            textShadow: '0 1px 6px rgba(0,0,0,0.25)',
+            background: 'linear-gradient(90deg,#FFD700,#FFEE00,#FFD700)',
+            WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text', WebkitTextStroke: '0.3px #FFD700',
           }}>
             {t('unidos_frase')}
           </p>
           <h2 style={{
-            fontFamily: "'Playfair Display', serif",
-            fontWeight: 900,
-            fontSize: 'clamp(2rem, 4vw, 3.5rem)',
-            color: '#fff8f0',
-            lineHeight: 1.15,
+            fontFamily: "'Josefin Sans', sans-serif",
+            fontWeight: 100,
+            fontSize: 'clamp(1.4rem, 3vw, 2.8rem)',
+            lineHeight: 1.3, letterSpacing: '0.1em',
+            color: '#ffffff',
+            textTransform: 'uppercase',
           }}>
             {t('unidos_title')}
           </h2>
@@ -88,7 +89,7 @@ export default function UnidosSection() {
               display: 'inline-flex', alignItems: 'center', gap: '0.5rem',
               background: 'linear-gradient(135deg, #5A0D1E 0%, #7A1D2E 100%)',
               color: '#fff',
-              fontFamily: "'Playfair Display', serif",
+              fontFamily: "'Josefin Sans', sans-serif",
               fontWeight: 700,
               fontSize: '0.78rem',
               letterSpacing: '0.06em',
@@ -150,7 +151,7 @@ export default function UnidosSection() {
                       </div>
                     )}
                     <p style={{
-                      fontFamily: "'Playfair Display', serif",
+                      fontFamily: "'Josefin Sans', sans-serif",
                       color: isCenter ? 'rgba(255,248,240,0.92)' : 'rgba(255,248,240,0.55)',
                       fontSize: isCenter ? '0.9rem' : '0.72rem',
                       lineHeight: 1.8,
@@ -162,7 +163,7 @@ export default function UnidosSection() {
                       {text}
                       {isLastAndCenter && (
                         <span style={{
-                          fontFamily: "'Playfair Display', serif",
+                          fontFamily: "'Josefin Sans', sans-serif",
                           fontStyle: 'italic',
                           fontWeight: 900,
                           fontSize: '1.15rem',
@@ -181,7 +182,7 @@ export default function UnidosSection() {
         </div>
 
         {/* Controles */}
-        <div className="flex items-center justify-center gap-6 mt-10">
+        <div className="flex items-center justify-center gap-6 mt-5">
           <button
             onClick={() => goTo(active - 1)}
             className="w-10 h-10 flex items-center justify-center rounded-full transition-all cursor-pointer"

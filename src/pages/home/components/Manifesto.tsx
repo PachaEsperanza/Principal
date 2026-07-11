@@ -127,6 +127,7 @@ const Manifesto = () => {
         loop
         playsInline
         className="absolute inset-0 w-full h-full object-cover opacity-90 pointer-events-none"
+        style={{ transform: 'scale(1.25)' }}
         src="/Principal/videos/uwu.mp4"
       />
       <div className="absolute inset-0 bg-coffee-900/45 pointer-events-none" />
