@@ -41,7 +41,7 @@ const Carrusel = ({ cards, pressLabel }: { cards: string[]; pressLabel: string }
           <span style={{
             display: 'inline-flex', alignItems: 'center', gap: '0.4rem',
             background: 'linear-gradient(135deg,#5A0D1E 0%,#7A1D2E 100%)',
-            color: '#fff', fontSize: '0.72rem', fontFamily: "'Playfair Display', serif", fontWeight: 700,
+            color: '#fff', fontSize: '0.72rem', fontFamily: "'Josefin Sans', sans-serif", fontWeight: 700,
             letterSpacing: '0.07em', padding: '0.28rem 0.8rem',
             borderRadius: '9999px', boxShadow: '0 0 10px rgba(122,29,46,0.4)',
           }}>
@@ -53,7 +53,7 @@ const Carrusel = ({ cards, pressLabel }: { cards: string[]; pressLabel: string }
 
       <div style={cardStyle}>
         <i className="ri-double-quotes-l" style={{ color: 'rgba(201,169,110,0.32)', fontSize: '1.3rem', display: 'block', marginBottom: '0.5rem' }} />
-        <p style={{ fontFamily: "'Playfair Display',serif", color: 'rgba(255,248,240,0.88)', fontSize: '0.8rem', lineHeight: 1.8 }}>
+        <p style={{ fontFamily: "'Josefin Sans', sans-serif", color: 'rgba(255,248,240,0.88)', fontSize: '0.8rem', lineHeight: 1.8 }}>
           {cards[cur]}
         </p>
       </div>
@@ -82,7 +82,7 @@ const Carrusel = ({ cards, pressLabel }: { cards: string[]; pressLabel: string }
 const GoldenTitle = ({ text, children }: { text?: string; children?: ReactNode }) => (
   <div style={{ margin: '1.2rem 0 0.7rem' }}>
     <p style={{
-      fontFamily: "'Cormorant Garamond',serif", fontWeight: 900,
+      fontFamily: "'Josefin Sans', sans-serif", fontWeight: 900,
       fontSize: 'clamp(1.2rem, 2.6vw, 1.7rem)', letterSpacing: '0.02em',
       textTransform: 'uppercase',
       background: 'linear-gradient(90deg,#FFD700,#FFEE00,#FFD700)',
@@ -136,39 +136,30 @@ const HistoriaSection = () => {
       <div className="relative max-w-7xl mx-auto px-6 md:px-12 lg:px-16 py-16" style={{ zIndex: 2 }}>
 
         {/* Eyebrow centrado arriba */}
-        <p style={{
-          fontSize: '0.85rem', letterSpacing: '0.35em', textTransform: 'uppercase',
-          fontFamily: "'Cormorant Garamond', serif", fontWeight: 900, marginBottom: '1.5rem',
-          textAlign: 'center',
-          background: 'linear-gradient(90deg,#FFD700,#FFEE00,#FFD700)',
-          WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text',
-          WebkitTextStroke: '0.6px #FFD700',
-        }}>
-          {t('historia_eyebrow')}
-        </p>
-
         {/* ── Fila superior: bloque historia (izq) + COMPARTO (der) ── */}
         <div className="grid lg:grid-cols-2 gap-10 items-start">
 
           {/* LEFT: título + carrusel historia */}
           <div style={fadeLeft}>
             <h2 style={{
-              fontFamily: "'Cormorant Garamond',serif", fontWeight: 900,
+              fontFamily: "'Josefin Sans', sans-serif", fontWeight: 900,
               fontSize: 'clamp(1.8rem,3.5vw,2.8rem)', color: '#fff8f0',
               lineHeight: 1.15, marginBottom: '0.4rem', maxWidth: '480px',
               textTransform: 'uppercase',
             }}>
-              {t('historia_title_line1')}<br />{t('historia_title_line2')}
+              {t('historia_title_line1')} {t('historia_title_line2')}
             </h2>
             <div style={{ height: '2px', width: '60px', background: 'linear-gradient(90deg,#7A1D2E,transparent)', marginBottom: '1.2rem' }} />
             <Carrusel cards={cards1} pressLabel={pressLabel} />
           </div>
 
           {/* RIGHT: COMPARTO TU ESPERANZA — alineado a la card izquierda */}
-          <div style={fadeRight} className="lg:pt-[8.5rem]">
-            <GoldenTitle>
-              Comparto<em style={{ fontStyle: 'italic', textTransform: 'lowercase', letterSpacing: '-0.02em', marginLeft: '0.18em' }}>tu</em> Esperanza
-            </GoldenTitle>
+          <div style={fadeRight} className="lg:pt-[3rem]">
+            <div style={{ margin: '1.2rem 0 0.7rem' }}>
+              <p style={{ fontFamily: "'Josefin Sans', sans-serif", fontWeight: 100, fontSize: 'clamp(1.4rem,2.8vw,2.2rem)', letterSpacing: '0.25em', lineHeight: 1, display: 'block', background: 'linear-gradient(90deg,#FFD700,#FFEE00,#FFD700)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text', WebkitTextStroke: '0.6px #FFD700' }}>PΛCHΛ</p>
+              <p style={{ fontFamily: "'Josefin Sans', sans-serif", fontWeight: 100, fontSize: 'clamp(0.6rem,1.2vw,0.95rem)', letterSpacing: '0.55em', textTransform: 'uppercase', marginTop: '0.15em', lineHeight: 1, background: 'linear-gradient(90deg,#FFD700,#FFEE00,#FFD700)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>ESPERANZA</p>
+              <div style={{ height: '2px', width: '40px', background: 'linear-gradient(90deg,#FFD700,transparent)', marginTop: '0.3rem' }} />
+            </div>
             <Carrusel cards={cards2} pressLabel={pressLabel} />
           </div>
 
@@ -189,7 +180,7 @@ const HistoriaSection = () => {
         <div style={{ textAlign: 'center', marginTop: '3rem', paddingBottom: '1rem' }}>
           <p style={{
             fontFamily: "'Playfair Display', serif",
-            fontStyle: 'italic', fontWeight: 700,
+            fontStyle: 'italic', fontWeight: 400,
             fontSize: 'clamp(1.2rem, 2.8vw, 2rem)',
             color: 'rgba(255,248,240,0.92)',
             letterSpacing: '0.03em', lineHeight: 1.3,

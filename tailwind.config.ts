@@ -30,6 +30,7 @@ export default {
         fontFamily: {
           serif: ['"Playfair Display"', 'Georgia', 'serif'],
           sans: ['"Inter"', 'system-ui', 'sans-serif'],
+          josefin: ['"Josefin Sans"', 'sans-serif'],
         },
         keyframes: {
           shimmer: {
