@@ -130,7 +130,7 @@ const Manifesto = () => {
         style={{ transform: 'scale(1.25)' }}
         src="/Principal/videos/uwu.mp4"
       />
-      <div className="absolute inset-0 bg-coffee-900/25 pointer-events-none" />
+      <div className="absolute inset-0 bg-coffee-900/45 pointer-events-none" />
       <div className="relative z-10 max-w-6xl mx-auto grid lg:grid-cols-3 gap-10 items-start">
 
         {/* LEFT */}
