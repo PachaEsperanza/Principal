@@ -49,18 +49,16 @@ const ProcessSection = () => {
       <div className="relative z-10 max-w-7xl mx-auto px-4 md:px-8">
         {/* Header */}
         <div className="text-center mb-12">
-          <div className="flex items-center justify-center gap-3 mb-4">
-            <span className="w-10 h-px" style={{ background: '#5C8A1A' }} />
+          <div className="flex items-center justify-center mb-4">
             <span className="tracking-[0.1em] uppercase" style={{ color: '#fff8f0', fontFamily: "'Josefin Sans', sans-serif", fontWeight: 100, fontSize: 'clamp(0.9rem,2.2vw,1.4rem)' }}>
               {t('process_eyebrow')}
             </span>
-            <span className="w-10 h-px" style={{ background: '#5C8A1A' }} />
           </div>
           <h2
             className="text-xl md:text-2xl uppercase"
             style={{ fontFamily: "'Josefin Sans', sans-serif", color: '#fff8f0', fontWeight: 100, letterSpacing: '0.1em', lineHeight: 1.15 }}
           >
-            {t('process_title')} <em style={{ color: '#FFD700', fontStyle: 'normal' }}>{t('process_title_highlight')}</em>
+            {t('process_title')} <em style={{ color: '#FFD700', fontStyle: 'italic', fontFamily: "'Playfair Display', serif", textTransform: 'lowercase' }}>{t('process_title_highlight')}</em>
           </h2>
         </div>
 

@@ -11,24 +11,13 @@ const SiteFooter = () => {
 
         {/* LEFT: brand */}
         <div>
-          <div
-            className="font-serif uppercase mb-3"
-            style={{
-              color: '#D4A843',
-              fontFamily: "'Playfair Display', serif",
-              fontWeight: 900,
-              fontSize: 'clamp(1.4rem, 2.6vw, 2rem)',
-              letterSpacing: '0.04em',
-              WebkitTextStroke: '0.3px #D4A843',
-              textShadow: '0 0 30px rgba(212,168,67,0.4)',
-              filter: 'drop-shadow(0 2px 6px rgba(0,0,0,0.6))',
-            }}
-          >
-            Comparto tu Esperanza
+          <div className="mb-3">
+            <span style={{ display: 'block', fontFamily: "'Josefin Sans', sans-serif", fontWeight: 100, fontSize: 'clamp(2rem, 4vw, 3rem)', letterSpacing: '0.25em', color: '#FFD700', textTransform: 'uppercase', lineHeight: 1 }}>PΛCHΛ</span>
+            <span style={{ display: 'block', fontFamily: "'Josefin Sans', sans-serif", fontWeight: 100, fontSize: 'clamp(0.7rem, 1.4vw, 1rem)', letterSpacing: '0.55em', color: '#FFD700', textTransform: 'uppercase', marginTop: '0.1em' }}>ESPERANZA</span>
           </div>
           <p
             className="text-sm leading-relaxed whitespace-pre-line"
-            style={{ fontFamily: "'Playfair Display', serif", fontWeight: 600, color: 'rgba(245,230,211,0.8)' }}
+            style={{ fontFamily: "'Josefin Sans', sans-serif", fontWeight: 600, color: 'rgba(245,230,211,0.8)' }}
           >
             {t('footer_tagline')}
           </p>
@@ -39,10 +28,10 @@ const SiteFooter = () => {
 
           {/* Contacto & redes */}
           <div>
-            <h5 className="text-xs tracking-widest uppercase mb-4" style={{ fontFamily: "'Playfair Display', serif", fontWeight: 800, color: 'rgba(201,168,76,0.9)' }}>
+            <h5 className="text-xs tracking-widest uppercase mb-4" style={{ fontFamily: "'Josefin Sans', sans-serif", fontWeight: 800, color: '#FFD700' }}>
               Contacto
             </h5>
-            <ul className="space-y-2 text-sm" style={{ fontFamily: "'Playfair Display', serif", fontWeight: 600, color: 'rgba(245,230,211,0.75)' }}>
+            <ul className="space-y-2 text-sm" style={{ fontFamily: "'Josefin Sans', sans-serif", fontWeight: 600, color: 'rgba(245,230,211,0.75)' }}>
               <li>
                 <a href="mailto:info@compartotuesperanza.com" className="hover:text-gold transition-colors">
                   info@compartotuesperanza.com
@@ -68,10 +57,10 @@ const SiteFooter = () => {
 
           {/* Direcciones */}
           <div>
-            <h5 className="text-xs tracking-widest uppercase mb-4" style={{ fontFamily: "'Playfair Display', serif", fontWeight: 800, color: 'rgba(201,168,76,0.9)' }}>
+            <h5 className="text-xs tracking-widest uppercase mb-4" style={{ fontFamily: "'Josefin Sans', sans-serif", fontWeight: 800, color: '#FFD700' }}>
               Nuestras sedes
             </h5>
-            <div className="space-y-4 text-sm" style={{ fontFamily: "'Playfair Display', serif", fontWeight: 600, color: 'rgba(245,230,211,0.75)' }}>
+            <div className="space-y-4 text-sm" style={{ fontFamily: "'Josefin Sans', sans-serif", fontWeight: 600, color: 'rgba(245,230,211,0.75)' }}>
               <div>
                 <p className="text-gold/80 text-xs uppercase tracking-wider mb-1">🇵🇪 Perú</p>
                 <p>Cusco, Perú</p>
@@ -86,7 +75,7 @@ const SiteFooter = () => {
         </div>
       </div>
       <div className="relative z-10 max-w-6xl mx-auto flex justify-center items-center pt-8">
-        <p className="text-xs" style={{ fontFamily: "'Playfair Display', serif", fontWeight: 600, color: 'rgba(201,168,76,0.45)' }}>
+        <p className="text-xs" style={{ fontFamily: "'Josefin Sans', sans-serif", fontWeight: 600, color: '#FFD700' }}>
           {t('footer_copyright')}
         </p>
       </div>

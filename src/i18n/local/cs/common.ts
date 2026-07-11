@@ -318,7 +318,7 @@ const cs = {
   mision_eyebrow: "Náš slib",
   mision_badge_swipe: "Posuňte pro více",
   mision_paragraph_1: "Vybudovat velkou rodinu založenou na věrnosti, čestnosti a vzájemné důvěře, spojit síly s nejoddanějšími producenty z Cusco a proměnit jejich životy a uskutečnit jejich sny.",
-  mision_paragraph_2: "Toto je velký projekt, ve kterém pro vás riskujeme všechno, protože víme, že vaše úsilí si zaslouží uznání. Chráníme se navzájem před nespravedlivým systémem zaručením pevné a důstojné ceny nezávislé na globálních trzích, aby už nikdy nikdo nevyužíval vaši práci. V tomto posvátném poutu pracujeme společně pro společné dobro: naše organizace, Comparto tu Esperanza, se plně věnuje péči o vaše rodiny a hojení ran minulosti, zatímco náš partner, společnost Linaje del Inka, otevírá dveře světa pro export vašeho umění.",
+  mision_paragraph_2: "Toto je velký projekt, ve kterém pro vás riskujeme všechno, protože víme, že vaše úsilí si zaslouží uznání. Chráníme se navzájem před nespravedlivým systémem zaručením pevné a důstojné ceny nezávislé na globálních trzích, aby už nikdy nikdo nevyužíval vaši práci. V tomto posvátném poutu pracujeme společně pro společné dobro: naše organizace, Pacha Esperanza, se plně věnuje péči o vaše rodiny a hojení ran minulosti, zatímco náš partner, společnost Salkantay Andino, otevírá dveře světa pro export vašeho umění.",
   vision_title: 'Příběh, který chceme změnit',
   vision_eyebrow: "Budoucnost, kterou stavíme",
   vision_card1_title: "Cusco ve světě",
