@@ -36,7 +36,7 @@ const ProcessSection = () => {
         loop
         playsInline
         className="absolute inset-0 w-full h-full object-cover z-0 pointer-events-none"
-        src="/Principal/videos/fondo.mp4"
+        src="/Principal/videos/uwu.mp4"
       />
       {/* Dark overlay */}
       <div
@@ -51,16 +51,16 @@ const ProcessSection = () => {
         <div className="text-center mb-12">
           <div className="flex items-center justify-center gap-3 mb-4">
             <span className="w-10 h-px" style={{ background: '#5C8A1A' }} />
-            <span className="tracking-[0.35em] uppercase" style={{ color: '#5C8A1A', fontFamily: "'Playfair Display', serif", fontWeight: 900, fontSize: 'clamp(1.6rem, 3vw, 2.2rem)', filter: 'drop-shadow(0 1px 6px rgba(0,0,0,0.7))' }}>
+            <span className="tracking-[0.1em] uppercase" style={{ color: '#fff8f0', fontFamily: "'Josefin Sans', sans-serif", fontWeight: 100, fontSize: 'clamp(0.9rem,2.2vw,1.4rem)' }}>
               {t('process_eyebrow')}
             </span>
             <span className="w-10 h-px" style={{ background: '#5C8A1A' }} />
           </div>
           <h2
-            className="text-3xl md:text-4xl"
-            style={{ fontFamily: "'Playfair Display', serif", color: '#F5E6D3', fontWeight: 900 }}
+            className="text-xl md:text-2xl uppercase"
+            style={{ fontFamily: "'Josefin Sans', sans-serif", color: '#fff8f0', fontWeight: 100, letterSpacing: '0.1em', lineHeight: 1.15 }}
           >
-            {t('process_title')} <em style={{ color: '#D4A843', fontStyle: 'italic', textShadow: '0 0 30px rgba(212,168,67,0.7), 0 0 12px rgba(212,168,67,0.5)', filter: 'drop-shadow(0 2px 10px rgba(212,168,67,0.7))', WebkitTextStroke: '0.3px #D4A843', fontWeight: 950 }}>{t('process_title_highlight')}</em>
+            {t('process_title')} <em style={{ color: '#FFD700', fontStyle: 'normal' }}>{t('process_title_highlight')}</em>
           </h2>
         </div>
 
