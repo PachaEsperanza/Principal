@@ -59,7 +59,7 @@ const Hero = () => {
         <h1 className="mb-8 inline-block leading-none">
           <span style={{
             display: 'block',
-            fontFamily: "'Josefin Sans', sans-serif",
+            fontFamily: "'Raleway', sans-serif",
             fontSize: 'clamp(3rem,8vw,6.5rem)',
             fontWeight: 200,
             letterSpacing: '0.3em',
@@ -67,7 +67,7 @@ const Hero = () => {
           }}>PΛCHΛ</span>
           <span style={{
             display: 'block',
-            fontFamily: "'Josefin Sans', sans-serif",
+            fontFamily: "'Raleway', sans-serif",
             fontSize: 'clamp(0.9rem,2.2vw,1.8rem)',
             fontWeight: 200,
             letterSpacing: '0.55em',
