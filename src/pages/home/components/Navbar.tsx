@@ -89,11 +89,11 @@ const Navbar = ({ cartCount, onCartOpen }: NavbarProps) => {
                     {/* Banderas desktop */}
           <div className="hidden md:flex items-center gap-1.5">
             <style>{`
-              @keyframes wave-pe { 0%,100%{transform:rotate(-6deg)} 50%{transform:rotate(-2deg)} }
-              @keyframes wave-cz { 0%,100%{transform:rotate(6deg)} 50%{transform:rotate(2deg)} }
+              @keyframes wave-pe { 0%,100%{transform:rotate(-16deg)} 50%{transform:rotate(8deg)} }
+              @keyframes wave-cz { 0%,100%{transform:rotate(16deg)} 50%{transform:rotate(-8deg)} }
             `}</style>
-            <img src="https://flagcdn.com/w40/pe.png" alt="Peru" className="w-9 h-6 rounded-sm object-cover shadow-sm" style={{ animation: 'wave-pe 2s ease-in-out infinite', transformOrigin: 'left center' }} />
-            <img src="https://flagcdn.com/w40/cz.png" alt="Czech Republic" className="w-9 h-6 rounded-sm object-cover shadow-sm" style={{ animation: 'wave-cz 2s ease-in-out infinite', transformOrigin: 'right center' }} />
+            <img src="https://flagcdn.com/w40/pe.png" alt="Peru" className="w-9 h-6 rounded-sm object-cover shadow-sm" style={{ animation: 'wave-pe 1.1s ease-in-out infinite', transformOrigin: 'left center' }} />
+            <img src="https://flagcdn.com/w40/cz.png" alt="Czech Republic" className="w-9 h-6 rounded-sm object-cover shadow-sm" style={{ animation: 'wave-cz 1.1s ease-in-out infinite', transformOrigin: 'right center' }} />
           </div>
 
           {/* Selector idioma desktop */}
@@ -128,8 +128,8 @@ const Navbar = ({ cartCount, onCartOpen }: NavbarProps) => {
           {/* Mobile: banderas + idioma + hamburguesa */}
           <div className="md:hidden flex items-center gap-2">
             <div className="flex items-center gap-1">
-              <img src="https://flagcdn.com/w40/pe.png" alt="Peru" className="w-6 h-4 rounded-sm object-cover" style={{ animation: 'wave-pe 2s ease-in-out infinite', transformOrigin: 'left center' }} />
-              <img src="https://flagcdn.com/w40/cz.png" alt="Czech" className="w-6 h-4 rounded-sm object-cover" style={{ animation: 'wave-cz 2s ease-in-out infinite', transformOrigin: 'right center' }} />
+              <img src="https://flagcdn.com/w40/pe.png" alt="Peru" className="w-6 h-4 rounded-sm object-cover" style={{ animation: 'wave-pe 1.1s ease-in-out infinite', transformOrigin: 'left center' }} />
+              <img src="https://flagcdn.com/w40/cz.png" alt="Czech" className="w-6 h-4 rounded-sm object-cover" style={{ animation: 'wave-cz 1.1s ease-in-out infinite', transformOrigin: 'right center' }} />
             </div>
 
             <div ref={mobileLangRef} className="relative">

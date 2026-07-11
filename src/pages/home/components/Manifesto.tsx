@@ -120,17 +120,17 @@ const Manifesto = () => {
 
   
   return (
-    <section id="manifesto" ref={sectionRef} className="relative bg-coffee-900 py-16 px-6 overflow-hidden">
+    <section id="manifesto" ref={sectionRef} className="relative bg-coffee-900 py-8 px-6 overflow-hidden">
       <div
         className="absolute inset-0 bg-center bg-cover pointer-events-none"
         style={{ backgroundImage: 'url(/Principal/images/fondito.jpg)', opacity: 0.5 }}
       />
       <div className="absolute inset-0 bg-coffee-900/25 pointer-events-none" />
-      <div className="relative z-10 max-w-6xl mx-auto grid lg:grid-cols-3 gap-10 items-start">
+      <div className="relative z-10 max-w-6xl mx-auto grid lg:grid-cols-3 gap-8 items-start">
 
         {/* LEFT */}
         <div className={`lg:col-span-2 transition-all duration-700 ${contentVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'}`}>
-          <h2 className="text-2xl md:text-3xl text-cream leading-tight mb-8 uppercase" style={{ fontFamily: "'Josefin Sans', sans-serif", fontWeight: 100, letterSpacing: '0.1em' }}>
+          <h2 className="text-2xl md:text-3xl text-cream leading-tight mb-5 uppercase" style={{ fontFamily: "'Josefin Sans', sans-serif", fontWeight: 100, letterSpacing: '0.1em' }}>
             {t('manifesto_title').split('\n').map((line, i, arr) => (
               i === arr.length - 1
                 ? <span key={i}>{line} <em style={{ fontStyle: 'italic', fontFamily: "'Playfair Display', serif", fontWeight: 700, textTransform: 'lowercase', background: 'linear-gradient(90deg,#FFD700,#FFEE00,#FFD700)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>{t('manifesto_title_highlight')}</em></span>
@@ -138,10 +138,8 @@ const Manifesto = () => {
             ))}
           </h2>
 
-
-
           {/* Tab content */}
-          <div className="mb-8">
+          <div className="mb-5">
             {tabs.map((tab, i) => {
               const parts = tab.content.split('COMPARTO_TU_ESPERANZA ');
               return (
@@ -149,13 +147,13 @@ const Manifesto = () => {
                   key={tab.key}
                   className={`transition-all duration-500 ${activeTab === i ? 'opacity-100 block' : 'opacity-0 hidden'}`}
                 >
-                  <p className="text-cream/80 font-serif text-sm leading-relaxed mb-6 rounded-2xl p-5" style={{ background: 'rgba(20,10,5,0.55)', backdropFilter: 'blur(12px)', border: '1px solid rgba(201,168,76,0.15)' }}>
+                  <p className="text-cream/80 font-serif text-sm leading-relaxed mb-4 rounded-2xl p-5" style={{ background: 'rgba(20,10,5,0.55)', backdropFilter: 'blur(12px)', border: '1px solid rgba(201,168,76,0.15)' }}>
                     {parts[0]}
                   </p>
                   {parts[1] && (
                     <>
                       <p
-                        className="leading-tight mb-4 inline-block uppercase"
+                        className="leading-tight mb-3 inline-block uppercase"
                         style={{
                           fontFamily: "'Josefin Sans', sans-serif",
                           fontSize: 'clamp(1.5rem, 3.3vw, 2.3rem)',
@@ -179,7 +177,7 @@ const Manifesto = () => {
           </div>
 
           {/* Quote */}
-          <blockquote className="border-l-2 border-gold pl-5 mb-10">
+          <blockquote className="border-l-2 border-gold pl-5 mb-4">
             <p className="font-serif italic text-cream/90 text-lg leading-relaxed whitespace-pre-line">
               {t('manifesto_quote')}
             </p>
@@ -194,7 +192,7 @@ const Manifesto = () => {
               src="/Principal/images/imagen1.png"
               alt="CompartoTuEsperanza"
               className="w-full h-full object-cover"
-              style={{ minHeight: '360px', maxHeight: '480px', width: '100%', objectFit: 'cover' }}
+              style={{ minHeight: '300px', maxHeight: '420px', width: '100%', objectFit: 'cover' }}
             />
           </div>
         </div>
