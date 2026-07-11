@@ -61,7 +61,7 @@ const Hero = () => {
             display: 'block',
             fontFamily: "'Josefin Sans', sans-serif",
             fontSize: 'clamp(3rem,8vw,6.5rem)',
-            fontWeight: 100,
+            fontWeight: 200,
             letterSpacing: '0.3em',
             lineHeight: 1, color: '#FFD700',
           }}>PΛCHΛ</span>
@@ -69,7 +69,7 @@ const Hero = () => {
             display: 'block',
             fontFamily: "'Josefin Sans', sans-serif",
             fontSize: 'clamp(0.9rem,2.2vw,1.8rem)',
-            fontWeight: 100,
+            fontWeight: 200,
             letterSpacing: '0.55em',
             color: '#FFD700',
             textAlign: 'center',
