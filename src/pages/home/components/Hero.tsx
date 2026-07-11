@@ -62,9 +62,8 @@ const Hero = () => {
             fontFamily: "'Josefin Sans', sans-serif",
             fontSize: 'clamp(3rem,8vw,6.5rem)',
             fontWeight: 100,
-            letterSpacing: '0.25em',
-            color: '#FFD700',
-            lineHeight: 1,
+            letterSpacing: '0.3em',
+            lineHeight: 1, color: '#FFD700',
           }}>PΛCHΛ</span>
           <span style={{
             display: 'block',
@@ -73,9 +72,9 @@ const Hero = () => {
             fontWeight: 100,
             letterSpacing: '0.55em',
             color: '#FFD700',
-            textTransform: 'uppercase',
             textAlign: 'center',
             width: '100%',
+            textTransform: 'uppercase',
             marginTop: '0.15em',
             lineHeight: 1,
           }}>ESPERANZA</span>

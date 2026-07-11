@@ -108,7 +108,7 @@ const Farmers = () => {
     <section id="farmers" className="relative w-full bg-coffee-900 overflow-hidden py-10 md:py-12">
       <video autoPlay muted loop playsInline
         className="absolute inset-0 w-full h-full object-cover opacity-50 pointer-events-none"
-        src="/Principal/videos/farmers-bg.mp4"
+        src="/Principal/videos/fondo2.mp4"
       />
       <div className="absolute inset-0 bg-coffee-900/35 pointer-events-none" />
 
@@ -118,9 +118,9 @@ const Farmers = () => {
 
         {/* Header */}
         <div className="text-center mb-10">
-          <p className="text-gold text-xs tracking-[0.4em] uppercase font-black mb-3" style={{ fontFamily: "'Cormorant Garamond', serif" }}>{t('farmers_eyebrow')}</p>
-          <h2 className="text-3xl md:text-4xl text-cream font-black mb-2 uppercase" style={{ fontFamily: "'Cormorant Garamond', serif" }}>{t('farmers_title')}</h2>
-          <p className="text-cream/70 text-sm mt-2 max-w-md mx-auto leading-relaxed" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
+          <p className="text-gold text-xs tracking-[0.4em] uppercase font-black mb-3" style={{ fontFamily: "'Josefin Sans', sans-serif" }}>{t('farmers_eyebrow')}</p>
+          <h2 className="text-3xl md:text-4xl text-cream mb-2 uppercase" style={{ fontFamily: "'Josefin Sans', sans-serif", fontWeight: 100, letterSpacing: "0.2em" }}>{t('farmers_title')}</h2>
+          <p className="text-cream/70 text-sm mt-2 max-w-md mx-auto leading-relaxed" style={{ fontFamily: "'Josefin Sans', sans-serif" }}>
             {t('farmers_desc')}
           </p>
         </div>
@@ -237,11 +237,11 @@ const Farmers = () => {
                 onClick={handleStoryToggle}
               >
                 <p className="text-gold/70 font-sans text-[10px] tracking-widest uppercase mb-1">{f.location}</p>
-                <h3 className="font-serif text-xl text-cream leading-tight mb-3">{f.name}</h3>
+                <h3 className="text-xl text-cream leading-tight mb-3">{f.name}</h3>
                 <p className="text-cream/75 font-serif text-sm leading-relaxed mb-4">{f.story}</p>
                 <div className="flex items-center gap-2">
                   <i className="ri-user-line text-gold" style={{ fontSize: '13px' }} />
-                  <span className="font-serif text-gold font-bold">{f.stat}</span>
+                  <span className="text-gold font-bold">{f.stat}</span>
                   <span className="text-cream/40 font-sans text-xs">{f.statLabel}</span>
                 </div>
                 <p className="text-cream/30 font-sans text-[9px] mt-4 tracking-widest uppercase">{t('farmers_tap_close')}</p>
@@ -251,7 +251,7 @@ const Farmers = () => {
                 className="absolute bottom-5 left-5 z-20 transition-all duration-300"
                 style={{ opacity: showStory ? 0 : 1, transform: showStory ? 'translateY(4px)' : 'translateY(0)' }}
               >
-                <p className="font-serif text-lg text-cream leading-tight">{f.name}</p>
+                <p className="text-lg text-cream leading-tight">{f.name}</p>
                 <p className="text-cream/45 font-sans text-[10px] tracking-widest uppercase mt-0.5">{f.location}</p>
               </div>
             </div>
@@ -261,7 +261,7 @@ const Farmers = () => {
               style={{ opacity: curtainPhase === 'cover' ? 0 : 1 }}
             >
               <i className="ri-user-line text-gold" style={{ fontSize: '14px' }} />
-              <span className="font-serif text-gold text-lg font-bold">{f.stat}</span>
+              <span className="text-gold text-lg font-bold">{f.stat}</span>
               <span className="text-cream/40 font-sans text-xs">{f.statLabel}</span>
             </div>
           </div>
