@@ -28,7 +28,7 @@ export default {
           },
         },
         fontFamily: {
-          serif: ['"Playfair Display"', 'Georgia', 'serif'],
+          serif: ['"Josefin Sans"', 'system-ui', 'sans-serif'],
           sans: ['"Inter"', 'system-ui', 'sans-serif'],
           josefin: ['"Josefin Sans"', 'sans-serif'],
         },
