@@ -27,3 +27,8 @@ body {
   background: #C8A96E;
   border-radius: 3px;
 }
+
+/* Force Josefin Sans on hero title */
+#hero h1 span {
+  font-family: 'Josefin Sans', sans-serif !important;
+}

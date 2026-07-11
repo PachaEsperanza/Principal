@@ -107,10 +107,10 @@ const Farmers = () => {
   return (
     <section id="farmers" className="relative w-full bg-coffee-900 overflow-hidden py-10 md:py-12">
       <video autoPlay muted loop playsInline
-        className="absolute inset-0 w-full h-full object-cover opacity-50 pointer-events-none"
+        className="absolute inset-0 w-full h-full object-cover opacity-70 pointer-events-none"
         src="/Principal/videos/fondo2.mp4"
       />
-      <div className="absolute inset-0 bg-coffee-900/35 pointer-events-none" />
+      <div className="absolute inset-0 bg-coffee-900/15 pointer-events-none" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-20 lg:pl-32 lg:pr-12">
         <div className="grid lg:grid-cols-2 gap-8 items-start">
