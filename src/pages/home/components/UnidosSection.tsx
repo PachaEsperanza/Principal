@@ -41,7 +41,7 @@ export default function UnidosSection() {
   return (
     <section
       id="unidos"
-      className="relative py-10 overflow-hidden"
+      className="relative py-7 overflow-hidden"
       style={{ background: '#0f0805' }}
     >
       {/* Fondo sin overlay */}
@@ -104,7 +104,7 @@ export default function UnidosSection() {
         </div>
 
         {/* Carrusel */}
-        <div className="relative flex items-center justify-center gap-3" style={{ minHeight: '320px' }}>
+        <div className="relative flex items-center justify-center gap-3" style={{ minHeight: '280px' }}>
           {visible.map((cardIdx, pos) => {
             const isCenter = pos === 2;
             const text = cards[cardIdx];
@@ -130,8 +130,8 @@ export default function UnidosSection() {
                     WebkitBackdropFilter: 'blur(20px)',
                     border: isCenter ? '1px solid rgba(201,168,76,0.35)' : '1px solid rgba(201,168,76,0.15)',
                     borderRadius: '1.25rem',
-                    padding: isCenter ? '2rem' : '1.25rem',
-                    minHeight: isCenter ? '220px' : '160px',
+                    padding: isCenter ? '1.5rem' : '1rem',
+                    minHeight: isCenter ? '190px' : '140px',
                     display: 'flex',
                     flexDirection: 'column',
                     justifyContent: 'space-between',
@@ -182,7 +182,7 @@ export default function UnidosSection() {
         </div>
 
         {/* Controles */}
-        <div className="flex items-center justify-center gap-6 mt-5">
+        <div className="flex items-center justify-center gap-6 mt-3">
           <button
             onClick={() => goTo(active - 1)}
             className="w-10 h-10 flex items-center justify-center rounded-full transition-all cursor-pointer"

@@ -75,12 +75,12 @@ const MisionSection = () => {
           >
             {/* Header encima del carrusel */}
             <div className="mb-6">
-              <p className="text-gold text-xs tracking-[0.4em] uppercase font-sans mb-3">
+              <p className="text-xs tracking-[0.4em] uppercase font-sans mb-3" style={{ background: 'linear-gradient(90deg,#FFD700,#FFEE00,#FFD700)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text', WebkitTextStroke: '0.6px #FFD700' }}>
                 {t('mision_eyebrow')}
               </p>
               <h2
-                className="font-serif text-4xl md:text-5xl text-cream mb-3 max-w-md"
-                style={{ fontWeight: 900, lineHeight: 1.15 }}
+                className="text-xl md:text-2xl text-cream mb-3 max-w-md uppercase"
+                style={{ fontFamily: "'Josefin Sans', sans-serif", fontWeight: 100, lineHeight: 1.15, letterSpacing: '0.1em' }}
               >
                 {t('mision_title')}
               </h2>
@@ -191,12 +191,14 @@ const MisionSection = () => {
           >
             {/* Frase tagline — alineada al título izquierdo */}
             <p
-              className="font-serif italic font-black leading-snug"
+              className="font-serif italic leading-snug"
               style={{
-                color: '#C9A84C',
-                fontSize: 'clamp(1.4rem, 2.8vw, 2.6rem)',
-                textShadow: '0 1px 6px rgba(0,0,0,0.4)',
+                fontWeight: 400,
+                fontSize: 'clamp(1.1rem, 2.2vw, 2rem)',
                 marginTop: '-8rem',
+                background: 'linear-gradient(90deg,#FFD700,#FFEE00,#FFD700)',
+                WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text',
+                WebkitTextStroke: '0.6px #FFD700',
               }}
             >
               {t('mision_tagline')}

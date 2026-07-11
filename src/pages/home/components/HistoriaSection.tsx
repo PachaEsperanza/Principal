@@ -123,7 +123,7 @@ const HistoriaSection = () => {
   };
 
   return (
-    <section id="historia" ref={sectionRef} className="relative w-full overflow-hidden" style={{ minHeight: '600px' }}>
+    <section id="historia" ref={sectionRef} className="relative w-full overflow-hidden" style={{ minHeight: '480px' }}>
 
       {/* Fondo */}
       <div className="absolute inset-0 bg-center bg-cover pointer-events-none"
@@ -133,11 +133,11 @@ const HistoriaSection = () => {
         zIndex: 1,
       }} />
 
-      <div className="relative max-w-7xl mx-auto px-6 md:px-12 lg:px-16 py-16" style={{ zIndex: 2 }}>
+      <div className="relative max-w-7xl mx-auto px-6 md:px-12 lg:px-16 py-8" style={{ zIndex: 2 }}>
 
         {/* Eyebrow centrado arriba */}
         {/* ── Fila superior: bloque historia (izq) + COMPARTO (der) ── */}
-        <div className="grid lg:grid-cols-2 gap-10 items-start">
+        <div className="grid lg:grid-cols-2 gap-8 items-start">
 
           {/* LEFT: título + carrusel historia */}
           <div style={fadeLeft}>
@@ -166,7 +166,7 @@ const HistoriaSection = () => {
         </div>
 
         {/* ── Fila inferior: SALKANTAY centrado ── */}
-        <div className="flex flex-col items-center mt-10" style={{
+        <div className="flex flex-col items-center mt-6" style={{
           opacity: visible ? 1 : 0,
           transition: 'opacity 0.7s ease 0.3s',
         }}>
@@ -177,7 +177,7 @@ const HistoriaSection = () => {
         </div>
 
         {/* Frase final */}
-        <div style={{ textAlign: 'center', marginTop: '3rem', paddingBottom: '1rem' }}>
+        <div style={{ textAlign: 'center', marginTop: '1.8rem', paddingBottom: '0.5rem' }}>
           <p style={{
             fontFamily: "'Playfair Display', serif",
             fontStyle: 'italic', fontWeight: 400,
