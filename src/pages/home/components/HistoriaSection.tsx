@@ -142,14 +142,14 @@ const HistoriaSection = () => {
           {/* LEFT: título + carrusel historia */}
           <div style={fadeLeft}>
             <h2 style={{
-              fontFamily: "'Josefin Sans', sans-serif", fontWeight: 900,
-              fontSize: 'clamp(1.8rem,3.5vw,2.8rem)', color: '#fff8f0',
-              lineHeight: 1.15, marginBottom: '0.4rem', maxWidth: '480px',
-              textTransform: 'uppercase',
+              fontFamily: "'Josefin Sans', sans-serif", fontWeight: 100,
+              fontSize: 'clamp(0.9rem,2.2vw,2rem)', color: '#fff8f0',
+              lineHeight: 1.15, marginBottom: '0.4rem', letterSpacing: '0.1em',
+              textTransform: 'uppercase', textAlign: 'center', whiteSpace: 'nowrap',
             }}>
               {t('historia_title_line1')} {t('historia_title_line2')}
             </h2>
-            <div style={{ height: '2px', width: '60px', background: 'linear-gradient(90deg,#7A1D2E,transparent)', marginBottom: '1.2rem' }} />
+            <div style={{ height: '2px', width: '60px', background: 'linear-gradient(90deg,#7A1D2E,transparent)', marginBottom: '1.2rem', margin: '0.4rem auto 1.2rem' }} />
             <Carrusel cards={cards1} pressLabel={pressLabel} />
           </div>
 
