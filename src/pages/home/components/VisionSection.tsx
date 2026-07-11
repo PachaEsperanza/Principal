@@ -77,8 +77,8 @@ const VisionSection = () => {
                 </span>
               </div>
               <h2
-                className="font-serif text-4xl md:text-5xl text-cream mb-3 max-w-md"
-                style={{ fontWeight: 900, lineHeight: 1.15 }}
+                className="text-xl md:text-2xl text-cream mb-3 max-w-md uppercase"
+                style={{ fontFamily: "'Josefin Sans', sans-serif", fontWeight: 100, lineHeight: 1.15, letterSpacing: '0.1em' }}
               >
                 {t('vision_title')}
               </h2>

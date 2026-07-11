@@ -191,8 +191,9 @@ const MisionSection = () => {
           >
             {/* Frase tagline — alineada al título izquierdo */}
             <p
-              className="font-serif italic leading-snug"
+              className="italic leading-snug"
               style={{
+                fontFamily: "'Playfair Display', 'Times New Roman', Georgia, serif",
                 fontWeight: 400,
                 fontSize: 'clamp(1.1rem, 2.2vw, 2rem)',
                 marginTop: '-8rem',
