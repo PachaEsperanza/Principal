@@ -102,7 +102,7 @@ const en = {
   footer_farmers: "Producers",
   footer_process: "Process",
   footer_contact: 'Contact',
-  footer_copyright: "© 2026 Comparto tu Esperanza. All rights reserved.",
+  footer_copyright: "© 2026 Pacha Esperanza. All rights reserved.",
 
   // Reviews
   reviews_eyebrow: 'Voices from the World',
