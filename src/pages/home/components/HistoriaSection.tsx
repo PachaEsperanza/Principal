@@ -82,7 +82,7 @@ const Carrusel = ({ cards, pressLabel }: { cards: string[]; pressLabel: string }
 const GoldenTitle = ({ text, children }: { text?: string; children?: ReactNode }) => (
   <div style={{ margin: '1.2rem 0 0.7rem' }}>
     <p style={{
-      fontFamily: "'Josefin Sans', sans-serif", fontWeight: 900,
+      fontFamily: "'Josefin Sans', sans-serif", fontWeight: 100, letterSpacing: '0.2em',
       fontSize: 'clamp(1.2rem, 2.6vw, 1.7rem)', letterSpacing: '0.02em',
       textTransform: 'uppercase',
       background: 'linear-gradient(90deg,#FFD700,#FFEE00,#FFD700)',
@@ -156,8 +156,8 @@ const HistoriaSection = () => {
           {/* RIGHT: COMPARTO TU ESPERANZA — alineado a la card izquierda */}
           <div style={fadeRight} className="lg:pt-[3rem]">
             <div style={{ margin: '1.2rem 0 0.7rem' }}>
-              <p style={{ fontFamily: "'Josefin Sans', sans-serif", fontWeight: 100, fontSize: 'clamp(1.4rem,2.8vw,2.2rem)', letterSpacing: '0.25em', lineHeight: 1, display: 'block', background: 'linear-gradient(90deg,#FFD700,#FFEE00,#FFD700)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text', WebkitTextStroke: '0.6px #FFD700' }}>PΛCHΛ</p>
-              <p style={{ fontFamily: "'Josefin Sans', sans-serif", fontWeight: 100, fontSize: 'clamp(0.6rem,1.2vw,0.95rem)', letterSpacing: '0.55em', textTransform: 'uppercase', marginTop: '0.15em', lineHeight: 1, background: 'linear-gradient(90deg,#FFD700,#FFEE00,#FFD700)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>ESPERANZA</p>
+              <p style={{ fontFamily: "'Josefin Sans', sans-serif", fontWeight: 100, fontSize: 'clamp(1.4rem,2.8vw,2.2rem)', letterSpacing: '0.25em', lineHeight: 1, display: 'block', color: '#FFD700' }}>PΛCHΛ</p>
+              <p style={{ fontFamily: "'Josefin Sans', sans-serif", fontWeight: 100, fontSize: 'clamp(0.6rem,1.2vw,0.95rem)', letterSpacing: '0.55em', textTransform: 'uppercase', marginTop: '0.15em', lineHeight: 1, color: '#FFD700' }}>ESPERANZA</p>
               <div style={{ height: '2px', width: '40px', background: 'linear-gradient(90deg,#FFD700,transparent)', marginTop: '0.3rem' }} />
             </div>
             <Carrusel cards={cards2} pressLabel={pressLabel} />
