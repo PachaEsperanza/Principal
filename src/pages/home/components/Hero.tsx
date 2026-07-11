@@ -90,13 +90,11 @@ const Hero = () => {
                 <span style={{
                   display: 'block',
                   fontFamily: "'Josefin Sans', sans-serif",
-                  color: '#D4A843',
-                  fontWeight: 900,
+                  color: '#FFD700',
+                  fontWeight: 700,
                   fontSize: 'clamp(0.82rem, 1.55vw, 1.05rem)',
                   letterSpacing: '0.12em',
                   textTransform: 'uppercase',
-                  
-                  textShadow: '0 0 18px rgba(212,168,67,0.5)',
                   marginBottom: '0.45rem',
                   lineHeight: 1.2,
                 }}>
