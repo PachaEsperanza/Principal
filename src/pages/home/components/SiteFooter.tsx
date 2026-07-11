@@ -33,8 +33,8 @@ const SiteFooter = () => {
             </h5>
             <ul className="space-y-2 text-sm" style={{ fontFamily: "'Josefin Sans', sans-serif", fontWeight: 600, color: 'rgba(245,230,211,0.75)' }}>
               <li>
-                <a href="mailto:info@compartotuesperanza.com" className="hover:text-gold transition-colors">
-                  info@compartotuesperanza.com
+                <a href="mailto:info@pachaesperanza.com" className="hover:text-gold transition-colors">
+                  info@pachaesperanza.com
                 </a>
               </li>
               <li>
