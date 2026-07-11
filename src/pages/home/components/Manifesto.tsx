@@ -127,17 +127,17 @@ const Manifesto = () => {
         loop
         playsInline
         className="absolute inset-0 w-full h-full object-cover opacity-90 pointer-events-none"
-        src="/Principal/videos/fondo2.mp4"
+        src="/Principal/videos/uwu.mp4"
       />
       <div className="absolute inset-0 bg-coffee-900/45 pointer-events-none" />
       <div className="relative z-10 max-w-6xl mx-auto grid lg:grid-cols-3 gap-10 items-start">
 
         {/* LEFT */}
         <div className={`lg:col-span-2 transition-all duration-700 ${contentVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'}`}>
-          <h2 className="font-serif text-3xl md:text-4xl text-cream leading-tight mb-8" style={{ fontWeight: 800 }}>
+          <h2 className="text-2xl md:text-3xl text-cream leading-tight mb-8 uppercase" style={{ fontFamily: "'Josefin Sans', sans-serif", fontWeight: 100, letterSpacing: '0.1em' }}>
             {t('manifesto_title').split('\n').map((line, i, arr) => (
               i === arr.length - 1
-                ? <span key={i}>{line} <em style={{ fontStyle: 'italic', color: '#D4A843', WebkitTextStroke: '0.3px #D4A843', filter: 'drop-shadow(0 0 12px rgba(212,168,67,0.5))' }}>{t('manifesto_title_highlight')}</em></span>
+                ? <span key={i}>{line} <em style={{ fontStyle: 'italic', fontFamily: "'Playfair Display', serif", fontWeight: 700, textTransform: 'lowercase', background: 'linear-gradient(90deg,#FFD700,#FFEE00,#FFD700)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>{t('manifesto_title_highlight')}</em></span>
                 : <span key={i}>{line}<br /></span>
             ))}
           </h2>
@@ -161,7 +161,7 @@ const Manifesto = () => {
                       <p
                         className="leading-tight mb-4 inline-block uppercase"
                         style={{
-                          fontFamily: "'Cormorant Garamond', serif",
+                          fontFamily: "'Josefin Sans', sans-serif",
                           fontSize: 'clamp(1.5rem, 3.3vw, 2.3rem)',
                           letterSpacing: '0.08em',
                           fontWeight: 500,
@@ -169,7 +169,8 @@ const Manifesto = () => {
                           WebkitTextStroke: '0.3px #D4A843',
                         }}
                       >
-                        Comparto tu Esperanza
+                        <span style={{ display:'block', fontFamily:"'Josefin Sans',sans-serif", fontWeight:100, letterSpacing:'0.25em', background:'linear-gradient(90deg,#FFD700,#FFEE00,#FFD700)', WebkitBackgroundClip:'text', WebkitTextFillColor:'transparent', backgroundClip:'text', WebkitTextStroke:'0.6px #FFD700' }}>PΛCHΛ</span>
+                        <span style={{ display:'block', fontFamily:"'Josefin Sans',sans-serif", fontWeight:100, fontSize:'0.7em', letterSpacing:'0.55em', background:'linear-gradient(90deg,#FFD700,#FFEE00,#FFD700)', WebkitBackgroundClip:'text', WebkitTextFillColor:'transparent', backgroundClip:'text' }}>ESPERANZA</span>
                       </p>
                       <p className="text-cream/80 font-serif text-sm leading-relaxed rounded-2xl p-5" style={{ background: 'rgba(20,10,5,0.55)', backdropFilter: 'blur(12px)', border: '1px solid rgba(201,168,76,0.15)' }}>
                         {parts[1]}
