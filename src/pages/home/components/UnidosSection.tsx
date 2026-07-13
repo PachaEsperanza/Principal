@@ -76,7 +76,7 @@ export default function UnidosSection() {
             fontWeight: 700,
             fontSize: 'clamp(1.2rem, 2.6vw, 2.4rem)',
             lineHeight: 1.3, letterSpacing: '0.1em',
-            color: '#0B8A30',
+            color: '#90D610',
             textTransform: 'uppercase',
           }}>
             {t('unidos_title')}
