@@ -63,7 +63,7 @@ const Navbar = ({ cartCount, onCartOpen }: NavbarProps) => {
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
           scrolled ? 'backdrop-blur-sm border-b border-gold/10' : 'bg-transparent'
         }`}
-        style={{ background: scrolled ? 'rgba(146,17,15,0.97)' : 'transparent' }}
+        style={{ background: scrolled ? 'rgba(117,15,57,0.97)' : 'transparent' }}
       >
         <div className="w-full px-4 h-16 flex items-center justify-between gap-3">
 
@@ -107,7 +107,7 @@ const Navbar = ({ cartCount, onCartOpen }: NavbarProps) => {
               <i className={`ri-arrow-down-s-line text-sm transition-transform duration-200 ${langOpen ? 'rotate-180' : ''}`} />
             </button>
             {langOpen && (
-              <div className="absolute right-0 top-full mt-2 border border-gold/20 rounded-lg overflow-hidden shadow-xl min-w-[140px]" style={{ background: "#92110F" }}>
+              <div className="absolute right-0 top-full mt-2 border border-gold/20 rounded-lg overflow-hidden shadow-xl min-w-[140px]" style={{ background: "#750F39" }}>
                 {LANGUAGES.map((lang) => (
                   <button
                     key={lang.code}
@@ -142,7 +142,7 @@ const Navbar = ({ cartCount, onCartOpen }: NavbarProps) => {
                 <i className={`ri-arrow-down-s-line text-sm transition-transform ${mobileLangOpen ? 'rotate-180' : ''}`} />
               </button>
               {mobileLangOpen && (
-                <div className="absolute right-0 top-full mt-2 border border-gold/20 rounded-xl overflow-hidden z-[60]" style={{ minWidth: 130, boxShadow: '0 12px 40px rgba(0,0,0,0.5)', background: "#92110F" }}>
+                <div className="absolute right-0 top-full mt-2 border border-gold/20 rounded-xl overflow-hidden z-[60]" style={{ minWidth: 130, boxShadow: '0 12px 40px rgba(0,0,0,0.5)', background: "#750F39" }}>
                   {LANGUAGES.map((lang) => (
                     <button
                       key={lang.code}
@@ -172,7 +172,7 @@ const Navbar = ({ cartCount, onCartOpen }: NavbarProps) => {
       {/* Mobile menu */}
       <div className={`fixed inset-0 z-50 transition-all duration-300 md:hidden ${mobOpen ? 'visible opacity-100' : 'invisible opacity-0'}`}>
         <div className="absolute inset-0 bg-black/60" onClick={() => setMobOpen(false)} />
-        <div className={`absolute top-0 right-0 w-72 h-full transition-transform duration-300 ${mobOpen ? 'translate-x-0' : 'translate-x-full'} flex flex-col p-8`} style={{ background: "#92110F" }}>
+        <div className={`absolute top-0 right-0 w-72 h-full transition-transform duration-300 ${mobOpen ? 'translate-x-0' : 'translate-x-full'} flex flex-col p-8`} style={{ background: "#750F39" }}>
           <button onClick={() => setMobOpen(false)} className="self-end mb-8 w-9 h-9 flex items-center justify-center cursor-pointer">
             <i className="ri-close-line text-cream text-2xl" />
           </button>
