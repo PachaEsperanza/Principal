@@ -53,7 +53,7 @@ const Hero = () => {
 
       {/* Content */}
       <div className="relative z-10 h-full flex flex-col items-start justify-center text-left px-6 md:px-16 max-w-4xl">
-        <p className="font-normal text-[clamp(0.75rem,1.6vw,1.25rem)] leading-tight tracking-[0.08em] uppercase mb-4 whitespace-pre-line pl-1 md:pl-2" style={{ fontFamily: "'Josefin Sans', sans-serif", color: '#FFD700' }}>
+        <p className="font-normal text-[clamp(0.75rem,1.6vw,1.25rem)] leading-tight tracking-[0.08em] uppercase mb-4 whitespace-pre-line pl-1 md:pl-2" style={{ fontFamily: "'Josefin Sans', sans-serif", color: '#0B8A30' }}>
           {t('hero_subtitle')}
         </p>
         <h1 className="mb-8 inline-block leading-none">
@@ -90,7 +90,7 @@ const Hero = () => {
                 <span style={{
                   display: 'block',
                   fontFamily: "'Josefin Sans', sans-serif",
-                  color: '#FFD700',
+                  color: '#0B8A30',
                   fontWeight: 700,
                   fontSize: 'clamp(0.82rem, 1.55vw, 1.05rem)',
                   letterSpacing: '0.12em',
