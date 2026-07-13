@@ -73,10 +73,10 @@ export default function UnidosSection() {
           </p>
           <h2 style={{
             fontFamily: "'Josefin Sans', sans-serif",
-            fontWeight: 100,
-            fontSize: 'clamp(1.4rem, 3vw, 2.8rem)',
+            fontWeight: 700,
+            fontSize: 'clamp(1.2rem, 2.6vw, 2.4rem)',
             lineHeight: 1.3, letterSpacing: '0.1em',
-            color: '#ffffff',
+            color: '#0B8A30',
             textTransform: 'uppercase',
           }}>
             {t('unidos_title')}
