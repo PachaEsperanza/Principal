@@ -63,7 +63,7 @@ export default function UnidosSection() {
             fontFamily: "'Playfair Display', serif",
             fontStyle: 'italic',
             fontWeight: 400,
-            fontSize: 'clamp(1.1rem, 2.2vw, 2.2rem)',
+            fontSize: 'clamp(1rem, 1.9vw, 1.9rem)',
             lineHeight: 1.25,
             marginBottom: '1.2rem',
             background: 'linear-gradient(90deg,#FFD700,#FFEE00,#FFD700)',
