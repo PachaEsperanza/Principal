@@ -45,7 +45,7 @@ const VisionSection = () => {
     <section
       ref={sectionRef}
       id="vision"
-      className="relative py-20 md:py-28 overflow-hidden"
+      className="relative py-10 md:py-14 overflow-hidden"
       style={{ background: '#0F0500' }}
     >
       {/* Background video */}
@@ -151,7 +151,6 @@ const VisionSection = () => {
               {([
                 { title: t('vision_card1_title'), body: t('vision_card1_body'), icon: 'ri-earth-line' },
                 { title: t('vision_card2_title'), body: t('vision_card2_body'), icon: 'ri-home-heart-line' },
-                { title: t('vision_card3_title'), body: t('vision_card3_body'), icon: 'ri-sparkling-2-line' },
               ]).map((item, i) => (
                 <div
                   key={i}
