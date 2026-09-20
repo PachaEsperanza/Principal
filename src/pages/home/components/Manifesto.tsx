@@ -232,14 +232,17 @@ const Manifesto = () => {
                       fontFamily: "'Josefin Sans', sans-serif",
                       fontWeight: 700,
                       letterSpacing: '0.06em',
-                      color: '#D9A441',
-                      fontSize: isCenter ? '1.15rem' : '0.85rem',
+                      background: 'linear-gradient(90deg,#FFD700,#FFEE00,#FFD700)',
+                      WebkitBackgroundClip: 'text',
+                      WebkitTextFillColor: 'transparent',
+                      backgroundClip: 'text',
+                      fontSize: isCenter ? '1.1rem' : '0.8rem',
                     }}
                   >
                     {card.title}
                   </h3>
                   {isCenter && (
-                    <p className="text-cream/70 text-sm" style={{ lineHeight: 1.35 }}>{card.description}</p>
+                    <p className="text-white text-sm" style={{ lineHeight: 1.35 }}>{card.description}</p>
                   )}
                 </div>
               </div>
