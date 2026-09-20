@@ -184,7 +184,7 @@ const HistoriaSection = () => {
               <p style={{
                 display: 'block',
                 fontFamily: "'Josefin Sans', sans-serif",
-                fontWeight: 300,
+                fontWeight: 500,
                 fontSize: 'clamp(0.55rem, 1.1vw, 0.85rem)',
                 letterSpacing: '0.55em',
                 textTransform: 'uppercase',
