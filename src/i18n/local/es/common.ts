@@ -103,7 +103,7 @@ const es = {
   footer_farmers: "Productores",
   footer_process: "Proceso",
   footer_contact: 'Contacto',
-  footer_copyright: "© 2026 Pacha Esperanza. Todos los derechos reservados.",
+  footer_copyright: "© 2026 Salkantay Andino. Todos los derechos reservados.",
 
   // Reviews
   reviews_eyebrow: 'Voces del Mundo',
@@ -328,7 +328,7 @@ const es = {
   mision_eyebrow: "Nuestra promesa",
   mision_badge_swipe: "Desliza para ver más",
   mision_paragraph_1: "Construir una gran familia basada en la lealtad, la honestidad y la confianza mutua, uniendo fuerzas con los productores más comprometidos del Cusco para transformar sus vidas y hacer realidad sus sueños.",
-  mision_paragraph_2: "Este es un gran proyecto donde apostamos y arriesgamos todo por ustedes, porque sabemos que su esfuerzo merece ser valorado. Nos protegemos mutuamente frente a un sistema injusto garantizando un precio fijo y digno, independiente de los mercados globales, para que nunca más nadie se aproveche de su trabajo. En este lazo sagrado, trabajamos unidos por un bien común: nuestra organización, Pacha Esperanza, se entrega por completo a cuidar de sus familias y a sanar las heridas del pasado, mientras junto con la aliada, la empresa Salkantay Andino, se encarga de abrir las puertas del mundo para exportar su arte.",
+  mision_paragraph_2: "Este es un gran proyecto donde apostamos y arriesgamos todo por ustedes, porque sabemos que su esfuerzo merece ser valorado. Nos protegemos mutuamente frente a un sistema injusto garantizando un precio fijo y digno, independiente de los mercados globales, para que nunca más nadie se aproveche de su trabajo. En este lazo sagrado, trabajamos unidos por un bien común: nuestra organización, {{SALKANTAY}}, se entrega por completo a cuidar de sus familias y a sanar las heridas del pasado, mientras junto con la aliada, la empresa Salkantay Andino, se encarga de abrir las puertas del mundo para exportar su arte.",
   vision_title: 'La historia que queremos cambiar',
   vision_eyebrow: "El futuro que construimos",
   vision_card1_title: "Cusco Internacional",

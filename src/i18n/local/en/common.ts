@@ -103,7 +103,7 @@ const en = {
   footer_farmers: "Producers",
   footer_process: "Process",
   footer_contact: 'Contact',
-  footer_copyright: "© 2026 Pacha Esperanza. All rights reserved.",
+  footer_copyright: "© 2026 Salkantay Andino. All rights reserved.",
 
   // Reviews
   reviews_eyebrow: 'Voices from the World',
@@ -319,7 +319,7 @@ const en = {
   mision_eyebrow: "Our promise",
   mision_badge_swipe: "Swipe to see more",
   mision_paragraph_1: "To build a great family based on loyalty, honesty and mutual trust, joining forces with the most committed producers of Cusco to transform their lives and make their dreams come true.",
-  mision_paragraph_2: "This is a great project where we bet and risk everything for you, because we know your effort deserves to be valued. We protect each other against an unfair system by guaranteeing a fixed and dignified price, independent of global markets, so that no one ever takes advantage of your work again. In this sacred bond, we work together for a common good: our organization, Pacha Esperanza, dedicates itself entirely to caring for your families and healing the wounds of the past, while our partner, the company Salkantay Andino, takes care of opening the doors of the world to export your art.",
+  mision_paragraph_2: "This is a great project where we bet and risk everything for you, because we know your effort deserves to be valued. We protect each other against an unfair system by guaranteeing a fixed and dignified price, independent of global markets, so that no one ever takes advantage of your work again. In this sacred bond, we work together for a common good: our organization, {{SALKANTAY}}, dedicates itself entirely to caring for your families and healing the wounds of the past, while our partner, the company Salkantay Andino, takes care of opening the doors of the world to export your art.",
   vision_title: 'The story we want to change',
   vision_eyebrow: "The future we are building",
   vision_card1_title: "Cusco Goes Global",

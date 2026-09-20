@@ -220,7 +220,14 @@ const MisionSection = () => {
                   style={{ fontSize: '1.6rem' }}
                 />
                 <p className="font-serif text-cream/90 text-xs md:text-sm leading-relaxed">
-                  {para}
+                  {para.includes('{{SALKANTAY}}')
+                    ? para.split('{{SALKANTAY}}').map((chunk, ci, arr) => (
+                        <span key={ci}>
+                          {chunk}
+                          {ci < arr.length - 1 && <strong style={{ textTransform: 'uppercase' }}>SALKANTAY ANDINO</strong>}
+                        </span>
+                      ))
+                    : para}
                 </p>
               </div>
             ))}

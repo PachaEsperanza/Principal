@@ -171,7 +171,29 @@ const HistoriaSection = () => {
           transition: 'opacity 0.7s ease 0.3s',
         }}>
           <div style={{ width: '100%', maxWidth: '620px' }}>
-            <GoldenTitle text="SALKANTAY ANDINO" />
+            <div style={{ margin: '1.2rem 0 0.7rem', textAlign: 'center' }}>
+              <p style={{
+                display: 'block',
+                fontFamily: "'Josefin Sans', sans-serif",
+                fontWeight: 100,
+                fontSize: 'clamp(1.4rem, 3.2vw, 2.2rem)',
+                letterSpacing: '0.3em',
+                lineHeight: 1,
+                color: '#FFFFFF',
+              }}>SΛLKΛNTΛY</p>
+              <p style={{
+                display: 'block',
+                fontFamily: "'Josefin Sans', sans-serif",
+                fontWeight: 100,
+                fontSize: 'clamp(0.55rem, 1.1vw, 0.85rem)',
+                letterSpacing: '0.55em',
+                color: '#D9A441',
+                textTransform: 'uppercase',
+                marginTop: '0.15em',
+                lineHeight: 1,
+              }}>ANDINO</p>
+              <div style={{ height: '2px', width: '40px', background: 'linear-gradient(90deg,#D9A441,transparent)', margin: '0.5rem auto 0' }} />
+            </div>
             <Carrusel cards={cards3} pressLabel={pressLabel} />
           </div>
         </div>

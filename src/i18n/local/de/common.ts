@@ -103,7 +103,7 @@ const de = {
   footer_farmers: "Produzenten",
   footer_process: "Prozess",
   footer_contact: 'Kontakt',
-  footer_copyright: "© 2026 Pacha Esperanza. Alle Rechte vorbehalten.",
+  footer_copyright: "© 2026 Salkantay Andino. Alle Rechte vorbehalten.",
 
   // Reviews
   reviews_eyebrow: 'Stimmen aus der Welt',
@@ -319,7 +319,7 @@ const de = {
   mision_eyebrow: "Unser Versprechen",
   mision_badge_swipe: "Wische für mehr",
   mision_paragraph_1: "Eine große Familie aufzubauen, die auf Loyalität, Ehrlichkeit und gegenseitigem Vertrauen basiert, indem wir die Kräfte mit den engagiertesten Produzenten von Cusco bündeln, um ihr Leben zu verändern und ihre Träume zu verwirklichen.",
-  mision_paragraph_2: "Dies ist ein großes Projekt, bei dem wir alles für euch wagen, weil wir wissen, dass eure Anstrengung Wertschätzung verdient. Wir schützen uns gegenseitig vor einem ungerechten System, indem wir einen festen und würdigen Preis garantieren, unabhängig von den globalen Märkten, damit niemand jemals wieder eure Arbeit ausnutzt. In diesem heiligen Band arbeiten wir gemeinsam für ein gemeinsames Ziel: Unsere Organisation, Pacha Esperanza, widmet sich ganz der Pflege eurer Familien und der Heilung der Wunden der Vergangenheit, während unser Partner, das Unternehmen Salkantay Andino, die Türen der Welt öffnet, um eure Kunst zu exportieren.",
+  mision_paragraph_2: "Dies ist ein großes Projekt, bei dem wir alles für euch wagen, weil wir wissen, dass eure Anstrengung Wertschätzung verdient. Wir schützen uns gegenseitig vor einem ungerechten System, indem wir einen festen und würdigen Preis garantieren, unabhängig von den globalen Märkten, damit niemand jemals wieder eure Arbeit ausnutzt. In diesem heiligen Band arbeiten wir gemeinsam für ein gemeinsames Ziel: Unsere Organisation, {{SALKANTAY}}, widmet sich ganz der Pflege eurer Familien und der Heilung der Wunden der Vergangenheit, während unser Partner, das Unternehmen Salkantay Andino, die Türen der Welt öffnet, um eure Kunst zu exportieren.",
   vision_title: 'Die Geschichte, die wir verändern wollen',
   vision_eyebrow: "Die Zukunft, die wir aufbauen",
   vision_card1_title: "Cusco international",

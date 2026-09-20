@@ -12,8 +12,8 @@ const SiteFooter = () => {
         {/* LEFT: brand */}
         <div>
           <div className="mb-3">
-            <span style={{ display: 'block', fontFamily: "'Josefin Sans', sans-serif", fontWeight: 100, fontSize: 'clamp(2rem, 4vw, 3rem)', letterSpacing: '0.25em', color: '#FFD700', textTransform: 'uppercase', lineHeight: 1 }}>PΛCHΛ</span>
-            <span style={{ display: 'block', fontFamily: "'Josefin Sans', sans-serif", fontWeight: 100, fontSize: 'clamp(0.7rem, 1.4vw, 1rem)', letterSpacing: '0.55em', color: '#FFD700', textTransform: 'uppercase', marginTop: '0.1em' }}>ESPERANZA</span>
+            <span style={{ display: 'block', fontFamily: "'Josefin Sans', sans-serif", fontWeight: 100, fontSize: 'clamp(2rem, 4vw, 3rem)', letterSpacing: '0.25em', color: '#FFFFFF', textTransform: 'uppercase', lineHeight: 1 }}>SΛLKΛNTΛY</span>
+            <span style={{ display: 'block', fontFamily: "'Josefin Sans', sans-serif", fontWeight: 100, fontSize: 'clamp(0.7rem, 1.4vw, 1rem)', letterSpacing: '0.55em', color: '#D9A441', textTransform: 'uppercase', marginTop: '0.1em' }}>ANDINO</span>
           </div>
           <p
             className="text-sm leading-relaxed whitespace-pre-line"
@@ -33,8 +33,8 @@ const SiteFooter = () => {
             </h5>
             <ul className="space-y-2 text-sm" style={{ fontFamily: "'Josefin Sans', sans-serif", fontWeight: 600, color: 'rgba(245,230,211,0.75)' }}>
               <li>
-                <a href="mailto:info@pachaesperanza.com" className="hover:text-gold transition-colors">
-                  info@pachaesperanza.com
+                <a href="mailto:info@salkantayandino.com" className="hover:text-gold transition-colors">
+                  info@salkantayandino.com
                 </a>
               </li>
               <li>

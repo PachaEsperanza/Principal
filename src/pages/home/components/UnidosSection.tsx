@@ -41,7 +41,7 @@ export default function UnidosSection() {
   return (
     <section
       id="unidos"
-      className="relative py-7 overflow-hidden"
+      className="relative py-5 overflow-hidden"
       style={{ background: '#0f0805' }}
     >
       {/* Fondo sin overlay */}
@@ -65,7 +65,7 @@ export default function UnidosSection() {
             fontWeight: 400,
             fontSize: 'clamp(1rem, 1.9vw, 1.9rem)',
             lineHeight: 1.25,
-            marginBottom: '1.2rem',
+            marginBottom: '0.4rem',
             background: 'linear-gradient(90deg,#FFD700,#FFEE00,#FFD700)',
             WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text', WebkitTextStroke: '0.3px #FFD700',
           }}>
