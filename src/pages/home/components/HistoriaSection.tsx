@@ -184,13 +184,16 @@ const HistoriaSection = () => {
               <p style={{
                 display: 'block',
                 fontFamily: "'Josefin Sans', sans-serif",
-                fontWeight: 100,
+                fontWeight: 300,
                 fontSize: 'clamp(0.55rem, 1.1vw, 0.85rem)',
                 letterSpacing: '0.55em',
-                color: '#D9A441',
                 textTransform: 'uppercase',
                 marginTop: '0.15em',
                 lineHeight: 1,
+                background: 'linear-gradient(90deg,#FFD700,#FFEE00,#FFD700)',
+                WebkitBackgroundClip: 'text',
+                WebkitTextFillColor: 'transparent',
+                backgroundClip: 'text',
               }}>ANDINO</p>
               <div style={{ height: '2px', width: '40px', background: 'linear-gradient(90deg,#D9A441,transparent)', margin: '0.5rem auto 0' }} />
             </div>
