@@ -57,27 +57,32 @@ const Hero = () => {
           {t('hero_subtitle')}
         </p>
         <h1 className="mb-8 inline-block leading-none">
+          <img
+            src="/Principal/images/salkantay-icon.png"
+            alt=""
+            style={{ display: 'block', margin: '0 auto 0.6em', height: 'clamp(36px, 5vw, 56px)', width: 'auto' }}
+          />
           <span style={{
             display: 'block',
             fontFamily: "'Raleway', sans-serif",
-            fontSize: 'clamp(3rem,8vw,6.5rem)',
+            fontSize: 'clamp(2rem,5.5vw,4.3rem)',
             fontWeight: 400,
             letterSpacing: '0.3em',
-            lineHeight: 1, color: '#FFD700',
-          }}>PΛCHΛ</span>
+            lineHeight: 1, color: '#FFFFFF',
+          }}>SΛLKΛNTΛY</span>
           <span style={{
             display: 'block',
             fontFamily: "'Raleway', sans-serif",
             fontSize: 'clamp(0.9rem,2.2vw,1.8rem)',
             fontWeight: 400,
             letterSpacing: '0.55em',
-            color: '#FFD700',
+            color: '#D9A441',
             textAlign: 'center',
             width: '100%',
             textTransform: 'uppercase',
             marginTop: '0.15em',
             lineHeight: 1,
-          }}>ESPERANZA</span>
+          }}>ANDINO</span>
         </h1>
         <p className="max-w-xl leading-relaxed mb-10" style={{ fontFamily: "'Josefin Sans', sans-serif" }}>
           {(() => {
