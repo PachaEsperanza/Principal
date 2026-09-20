@@ -27,7 +27,8 @@ const en = {
 
   // Manifesto
   manifesto_eyebrow: 'Our Philosophy',
-  manifesto_title: "We unite our lives and risk everything, because only as one great family will we make our",
+  manifesto_title: "our system",
+  manifesto_subtitle: "SYNTROPIC",
   manifesto_title_highlight: "dreams real.",
   manifesto_tab_historia: 'Story',
   manifesto_tab_mision: 'Mission',

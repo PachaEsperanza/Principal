@@ -78,14 +78,28 @@ const CircleStat = ({
 
 const Manifesto = () => {
   const { t } = useTranslation();
-  const [activeTab, setActiveTab] = useState(0);
   const [statsVisible, setStatsVisible] = useState(false);
   const [contentVisible, setContentVisible] = useState(false);
   const sectionRef = useRef<HTMLElement>(null);
   const statsRef = useRef<HTMLDivElement>(null);
+  const [carouselActive, setCarouselActive] = useState(0);
+  const [screenWidth, setScreenWidth] = useState(
+    typeof window !== 'undefined' ? window.innerWidth : 1280
+  );
 
-  const tabs = [
-    { key: 'historia', label: t('manifesto_tab_historia'), content: t('manifesto_historia') },
+  useEffect(() => {
+    const onResize = () => setScreenWidth(window.innerWidth);
+    window.addEventListener('resize', onResize);
+    return () => window.removeEventListener('resize', onResize);
+  }, []);
+
+  const sintropicoCards = [
+    { image: '/Principal/images/1.png', title: 'Sombra y microclima', description: 'Los árboles regulan la temperatura y humedad, protegiendo al cacao de condiciones extremas. Sin embargo, un estudio en Ghana encontró que el crecimiento y rendimiento del cacao disminuyeron cuando la cobertura de sombra era excesiva a nivel de parcela.' },
+    { image: '/Principal/images/2.png', title: 'Biomasa y fertilidad del suelo', description: 'Las hojas y ramas podadas se incorporan al suelo, descomponiéndose en materia orgánica que libera nutrientes. Este ciclo mejora la estructura del suelo y aumenta la actividad biológica, favoreciendo condiciones óptimas para el cacao.' },
+    { image: '/Principal/images/3.png', title: 'Agua y protección del suelo', description: 'La cobertura vegetal permanente reduce la erosión causada por la lluvia y mejora la infiltración de agua. Esto protege el suelo y ayuda a mantener humedad estable, clave para el desarrollo saludable del cacao.' },
+    { image: '/Principal/images/4.png', title: 'Diversificación de ingresos', description: 'Además del cacao, la finca puede producir frutas para venta o consumo y madera como ingreso a largo plazo. Las especies de servicio aportan beneficios ecológicos sin competir directamente por el espacio productivo principal.' },
+    { image: '/Principal/images/5.png', title: 'Diseño por estratos', description: 'El sistema se organiza en 4 niveles: árboles altos (maderables/frutales), árboles de sombra media, el cacao como cultivo productivo, y cobertura baja. Cada estrato ocupa un nicho diferente dentro del ciclo del sistema.' },
+    { image: '/Principal/images/6.png', title: 'Manejo de densidad y especies', description: 'Sembrar muchos árboles no mejora automáticamente el cacao; el exceso genera competencia por agua y nutrientes. La clave está en elegir la especie correcta, la distancia adecuada y la densidad que permita que cada planta cumpla su función sin perjudicar al cultivo.' },
   ];
 
   const stats = [
@@ -126,75 +140,141 @@ const Manifesto = () => {
         style={{ backgroundImage: 'url(/Principal/images/fondito.jpg)', opacity: 0.5 }}
       />
       <div className="absolute inset-0 bg-coffee-900/25 pointer-events-none" />
-      <div className="relative z-10 max-w-6xl mx-auto grid lg:grid-cols-3 gap-8 items-start">
+      <div className="relative z-10 max-w-6xl mx-auto">
 
-        {/* LEFT */}
-        <div className={`lg:col-span-2 transition-all duration-700 ${contentVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'}`}>
-          <h2 className="text-2xl md:text-3xl text-cream leading-tight mb-5 uppercase" style={{ fontFamily: "'Josefin Sans', sans-serif", fontWeight: 100, letterSpacing: '0.1em' }}>
-            {t('manifesto_title').split('\n').map((line, i, arr) => (
-              i === arr.length - 1
-                ? <span key={i}>{line} <em style={{ fontStyle: 'italic', fontFamily: "'Playfair Display', serif", fontWeight: 700, textTransform: 'lowercase', background: 'linear-gradient(90deg,#FFD700,#FFEE00,#FFD700)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>{t('manifesto_title_highlight')}</em></span>
-                : <span key={i}>{line}<br /></span>
-            ))}
+        {/* Title */}
+        <div className={`text-center mb-8 transition-all duration-700 ${contentVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'}`}>
+          <h2 className="mb-0" style={{ lineHeight: 1 }}>
+            <em
+              style={{
+                fontStyle: 'italic',
+                fontFamily: "'Playfair Display', serif",
+                fontWeight: 700,
+                textTransform: 'lowercase',
+                fontSize: 'clamp(1.8rem, 4vw, 3rem)',
+                background: 'linear-gradient(90deg,#FFD700,#FFEE00,#FFD700)',
+                WebkitBackgroundClip: 'text',
+                WebkitTextFillColor: 'transparent',
+                backgroundClip: 'text',
+              }}
+            >
+              {t('manifesto_title')}
+            </em>
           </h2>
-
-          {/* Tab content */}
-          <div className="mb-5">
-            {tabs.map((tab, i) => {
-              const parts = tab.content.split('COMPARTO_TU_ESPERANZA ');
-              return (
-                <div
-                  key={tab.key}
-                  className={`transition-all duration-500 ${activeTab === i ? 'opacity-100 block' : 'opacity-0 hidden'}`}
-                >
-                  <p className="text-cream/80 font-serif text-sm leading-relaxed mb-4 rounded-2xl p-5" style={{ background: 'rgba(20,10,5,0.55)', backdropFilter: 'blur(12px)', border: '1px solid rgba(201,168,76,0.15)' }}>
-                    {parts[0]}
-                  </p>
-                  {parts[1] && (
-                    <>
-                      <p
-                        className="leading-tight mb-3 inline-block uppercase"
-                        style={{
-                          fontFamily: "'Josefin Sans', sans-serif",
-                          fontSize: 'clamp(1.5rem, 3.3vw, 2.3rem)',
-                          letterSpacing: '0.08em',
-                          fontWeight: 500,
-                          color: '#D4A843',
-                          WebkitTextStroke: '0.3px #D4A843',
-                        }}
-                      >
-                        <span style={{ display:'block', fontFamily:"'Josefin Sans',sans-serif", fontWeight:100, letterSpacing:'0.25em', background:'linear-gradient(90deg,#FFD700,#FFEE00,#FFD700)', WebkitBackgroundClip:'text', WebkitTextFillColor:'transparent', backgroundClip:'text', WebkitTextStroke:'0.6px #FFD700' }}>PΛCHΛ</span>
-                        <span style={{ display:'block', fontFamily:"'Josefin Sans',sans-serif", fontWeight:100, fontSize:'0.7em', letterSpacing:'0.55em', background:'linear-gradient(90deg,#FFD700,#FFEE00,#FFD700)', WebkitBackgroundClip:'text', WebkitTextFillColor:'transparent', backgroundClip:'text' }}>ESPERANZA</span>
-                      </p>
-                      <p className="text-cream/80 font-serif text-sm leading-relaxed rounded-2xl p-5" style={{ background: 'rgba(20,10,5,0.55)', backdropFilter: 'blur(12px)', border: '1px solid rgba(201,168,76,0.15)' }}>
-                        {parts[1]}
-                      </p>
-                    </>
-                  )}
-                </div>
-              );
-            })}
-          </div>
-
-          {/* Quote */}
-          <blockquote className="border-l-2 border-gold pl-5 mb-4">
-            <p className="font-serif italic text-cream/90 text-lg leading-relaxed whitespace-pre-line">
-              {t('manifesto_quote')}
-            </p>
-          </blockquote>
-
+          <p
+            style={{
+              fontFamily: "'Josefin Sans', sans-serif",
+              fontWeight: 300,
+              letterSpacing: '0.55em',
+              color: '#FFFFFF',
+              textTransform: 'uppercase',
+              fontSize: 'clamp(0.9rem, 2.2vw, 1.5rem)',
+              marginTop: '-0.15em',
+              lineHeight: 1,
+            }}
+          >
+            {t('manifesto_subtitle')}
+          </p>
         </div>
 
-        {/* Image column */}
-        <div className="flex flex-col gap-4 lg:justify-center lg:h-full">
-          <div className="rounded-2xl overflow-hidden w-full" style={{ border: '1px solid rgba(201,168,76,0.2)' }}>
-            <img
-              src="/Principal/images/imagen1.png"
-              alt="CompartoTuEsperanza"
-              className="w-full h-full object-cover"
-              style={{ minHeight: '300px', maxHeight: '420px', width: '100%', objectFit: 'cover' }}
-            />
+        {/* Sintrópico cards carousel — fan style, 2 cards centradas */}
+        <div style={{ position: 'relative', minHeight: 580 }}>
+          {sintropicoCards.map((card, idx) => {
+            const total = sintropicoCards.length;
+            let diff = idx - carouselActive;
+            if (diff > total / 2) diff -= total;
+            if (diff < -total / 2) diff += total;
+
+            const isCenter = diff === 0 || diff === 1;
+            const distFromCenter = diff === 0 || diff === 1 ? 0 : diff < 0 ? -diff : diff - 1;
+
+            let show = true;
+            if (distFromCenter === 1 && screenWidth < 640) show = false;
+            if (distFromCenter === 2 && screenWidth < 1024) show = false;
+            if (distFromCenter >= 3) show = false;
+
+            const centerWidth = Math.min(360, (screenWidth - 96) / 2);
+            const cardWidth = isCenter ? centerWidth : distFromCenter === 1 ? 200 : 160;
+            const scale = isCenter ? 1 : distFromCenter === 1 ? 0.9 : 0.75;
+            const opacity = !show ? 0 : isCenter ? 1 : distFromCenter === 1 ? 0.7 : 0.4;
+            const zIndex = 20 - distFromCenter;
+            const step = centerWidth + 30;
+            const adjusted = diff - 0.5;
+
+            return (
+              <div
+                key={idx}
+                onClick={() => setCarouselActive(idx)}
+                className="rounded-2xl overflow-hidden border cursor-pointer"
+                style={{
+                  position: 'absolute',
+                  top: 0,
+                  left: '50%',
+                  width: cardWidth,
+                  borderColor: isCenter ? 'rgba(212,164,65,0.4)' : 'rgba(255,255,255,0.1)',
+                  background: isCenter ? 'rgba(255,255,255,0.1)' : 'rgba(255,255,255,0.05)',
+                  backdropFilter: 'blur(8px)',
+                  WebkitBackdropFilter: 'blur(8px)',
+                  transform: `translateX(calc(-50% + ${adjusted * step}px)) scale(${scale})`,
+                  opacity,
+                  zIndex,
+                  pointerEvents: show ? 'auto' : 'none',
+                  transition: 'transform 500ms ease, opacity 500ms ease, width 500ms ease',
+                }}
+              >
+                <div style={{ overflow: 'hidden', aspectRatio: '1.2 / 1', background: 'rgba(0,0,0,0.25)' }}>
+                  <img src={card.image} alt={card.title} className="w-full h-full object-contain" />
+                </div>
+                <div style={{ padding: isCenter ? 24 : 16 }}>
+                  <h3
+                    className="mb-2 uppercase"
+                    style={{
+                      fontFamily: "'Josefin Sans', sans-serif",
+                      fontWeight: 700,
+                      letterSpacing: '0.06em',
+                      color: '#D9A441',
+                      fontSize: isCenter ? '1.15rem' : '0.85rem',
+                    }}
+                  >
+                    {card.title}
+                  </h3>
+                  {isCenter && (
+                    <p className="text-cream/70 text-sm" style={{ lineHeight: 1.35 }}>{card.description}</p>
+                  )}
+                </div>
+              </div>
+            );
+          })}
+        </div>
+
+        {/* Controles */}
+        <div className="flex items-center justify-center gap-6 mt-10">
+          <button
+            onClick={() => setCarouselActive((i) => (i - 1 + sintropicoCards.length) % sintropicoCards.length)}
+            className="w-10 h-10 flex items-center justify-center rounded-full border border-white/20 bg-white/10 text-cream hover:bg-white/20 transition-all cursor-pointer"
+          >
+            <i className="ri-arrow-left-s-line text-lg" />
+          </button>
+
+          <div className="flex gap-2">
+            {sintropicoCards.map((_, i) => (
+              <button
+                key={i}
+                onClick={() => setCarouselActive(i)}
+                className={`rounded-full transition-all cursor-pointer ${
+                  i === carouselActive ? 'w-6 h-2' : 'w-2 h-2 bg-white/30 hover:bg-white/50'
+                }`}
+                style={i === carouselActive ? { background: '#D9A441' } : undefined}
+              />
+            ))}
           </div>
+
+          <button
+            onClick={() => setCarouselActive((i) => (i + 1) % sintropicoCards.length)}
+            className="w-10 h-10 flex items-center justify-center rounded-full border border-white/20 bg-white/10 text-cream hover:bg-white/20 transition-all cursor-pointer"
+          >
+            <i className="ri-arrow-right-s-line text-lg" />
+          </button>
         </div>
 
       </div>

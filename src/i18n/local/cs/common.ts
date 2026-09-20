@@ -27,7 +27,8 @@ const cs = {
 
   // Manifesto
   manifesto_eyebrow: 'Naše filozofie',
-  manifesto_title: "Spojujeme své životy a riskujeme vše, protože jen jako jedna velká rodina uskutečníme naše",
+  manifesto_title: "náš systém",
+  manifesto_subtitle: "SYNTROPICKÝ",
   manifesto_title_highlight: "sny.",
   manifesto_tab_historia: 'Příběh',
   manifesto_tab_mision: 'Mise',

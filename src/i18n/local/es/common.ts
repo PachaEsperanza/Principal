@@ -27,7 +27,8 @@ const es = {
 
   // Manifesto
   manifesto_eyebrow: 'Nuestra Filosofía',
-  manifesto_title: "Unimos nuestras vidas y lo arriesgamos todo, porque solo como una gran familia haremos realidad nuestros",
+  manifesto_title: "nuestro sistema",
+  manifesto_subtitle: "SINTRÓPICO",
   manifesto_title_highlight: "sueños.",
   manifesto_tab_historia: 'Historia',
   manifesto_tab_mision: 'Misión',
