@@ -69,7 +69,6 @@ const Navbar = ({ cartCount, onCartOpen }: NavbarProps) => {
 
           {/* Logo desktop */}
           <div className="hidden md:flex items-center flex-shrink-0">
-            <img src="/Principal/images/logo-hojas.png" alt="Pacha Esperanza" style={{ height: '38px', width: 'auto', objectFit: 'contain' }} />
           </div>
 
           {/* Links desktop */}
@@ -160,7 +159,6 @@ const Navbar = ({ cartCount, onCartOpen }: NavbarProps) => {
               )}
             </div>
 
-            <img src="/Principal/images/logo-hojas.png" alt="Pacha Esperanza" style={{ height: '30px', width: 'auto', objectFit: 'contain' }} />
             <button className="w-9 h-9 flex items-center justify-center cursor-pointer" onClick={() => setMobOpen(true)}>
               <i className="ri-menu-line text-cream text-xl" />
             </button>

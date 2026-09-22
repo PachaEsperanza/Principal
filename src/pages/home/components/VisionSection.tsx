@@ -151,6 +151,7 @@ const VisionSection = () => {
               {([
                 { title: t('vision_card1_title'), body: t('vision_card1_body'), icon: 'ri-earth-line' },
                 { title: t('vision_card2_title'), body: t('vision_card2_body'), icon: 'ri-home-heart-line' },
+                { title: t('vision_card3_title'), body: t('vision_card3_body'), icon: 'ri-flag-line' },
               ]).map((item, i) => (
                 <div
                   key={i}
@@ -197,7 +198,16 @@ const VisionSection = () => {
                       </h3>
                     </div>
                     <p className="font-serif text-cream/85 text-xs md:text-sm leading-relaxed">
-                      {item.body}
+                      {item.body.includes('{{CZECH}}')
+                        ? item.body.split('{{CZECH}}').map((chunk, ci, arr) => (
+                            <span key={ci}>
+                              {chunk}
+                              {ci < arr.length - 1 && (
+                                <strong style={{ fontWeight: 700, fontSize: '1.15em' }}>República Checa</strong>
+                              )}
+                            </span>
+                          ))
+                        : item.body}
                     </p>
                   </div>
                 </div>

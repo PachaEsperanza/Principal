@@ -47,20 +47,9 @@ const MisionSection = () => {
     <section
       id="mision"
       ref={sectionRef}
-      className="relative w-full bg-coffee-900 overflow-hidden py-16 px-6"
+      className="relative w-full overflow-hidden py-16 px-6"
+      style={{ background: '#1E3A5F' }}
     >
-      {/* Background image */}
-      <div
-        className="absolute inset-0 bg-center bg-cover pointer-events-none"
-        style={{ backgroundImage: 'url(/Principal/images/hero1.jpg)' }}
-      />
-      {/* Overlay suave guinda/marrón */}
-      <div
-        className="absolute inset-0 pointer-events-none"
-        style={{
-          background: 'linear-gradient(160deg, rgba(42,24,10,0.52) 0%, rgba(30,18,8,0.56) 60%, rgba(42,24,10,0.50) 100%)',
-        }}
-      />
 
       <div className="relative z-10 max-w-7xl mx-auto px-0 md:px-8 lg:px-16">
         <div className="grid lg:grid-cols-2 gap-10 items-start">
