@@ -2,7 +2,7 @@ import { useState, useRef, useEffect } from 'react';
 import {
   IconCacao, IconPlatano, IconPina, IconYuca, IconNaranja, IconGuayaba,
   IconPapaya, IconLima, IconGuaba, IconPijuayo, IconArbol, IconAbeja,
-  IconMoneda, IconAbono, IconSol,
+  IconMoneda, IconAbono, IconSol, FloatIcon,
 } from './SintropicoIcons';
 
 // ─── Estilos compartidos ────────────────────────────────────────────────
@@ -12,7 +12,7 @@ const eyebrow: React.CSSProperties = {
   fontSize: '0.7rem',
   letterSpacing: '0.15em',
   textTransform: 'uppercase',
-  color: '#D9A441',
+  color: '#9C6B1F',
   marginBottom: '0.5rem',
   display: 'block',
 };
@@ -20,7 +20,7 @@ const eyebrow: React.CSSProperties = {
 const cardTitle: React.CSSProperties = {
   fontFamily: "'Playfair Display', serif",
   fontWeight: 800,
-  color: '#F5E6D0',
+  color: '#2A1D0E',
   fontSize: 'clamp(1.3rem, 3vw, 2rem)',
   lineHeight: 1.15,
   marginBottom: '1.25rem',
@@ -88,9 +88,9 @@ const SlideReglas = () => (
     <span style={eyebrow}>El sistema en 4 reglas</span>
     <h3 style={cardTitle}>Sembrar juntas las plantas que se ayudan entre sí</h3>
     <div className="grid sm:grid-cols-2 gap-4">
-      {reglas.map((r) => (
-        <div key={r.n} style={miniCard} className="flex gap-3 items-start">
-          <div style={{ flexShrink: 0 }}>{r.icon}</div>
+      {reglas.map((r, i) => (
+        <div key={r.n} style={miniCard} className="flex gap-4 items-start">
+          <FloatIcon delay={i * 0.3}>{r.icon}</FloatIcon>
           <div>
             <p style={miniLabel}>{r.n} · {r.t}</p>
             <p style={miniBody}>{r.d}</p>
@@ -128,7 +128,7 @@ const SlideEstratos = () => (
         </div>
       ))}
     </div>
-    <p style={{ ...miniBody, marginTop: '1rem', fontStyle: 'italic' }}>
+    <p style={{ ...miniBody, color: '#6B5232', marginTop: '1rem', fontStyle: 'italic' }}>
       El cacao chuncho vive en el piso medio y necesita entre 40% y 50% de sombra. Todo el diseño está hecho para darle esa sombra sin quitarle luz.
     </p>
   </div>
@@ -136,29 +136,29 @@ const SlideEstratos = () => (
 
 // ─── Slide 4: Vista desde arriba (mapa simplificado) ───────────────────
 const calles = [
-  { nombre: 'Calle A', icon: <IconPlatano size={30} />, extra: 'Yuca y piña en el borde' },
-  { nombre: 'Calle B', icon: <IconNaranja size={30} />, extra: 'Papaya entre cada árbol' },
-  { nombre: 'Calle C', icon: <IconGuaba size={30} />, extra: 'Madera cada 12 metros' },
+  { nombre: 'Calle A', icon: <IconPlatano size={52} />, extra: 'Yuca y piña en el borde' },
+  { nombre: 'Calle B', icon: <IconNaranja size={52} />, extra: 'Papaya entre cada árbol' },
+  { nombre: 'Calle C', icon: <IconGuaba size={52} />, extra: 'Madera cada 12 metros' },
 ];
 const SlideMapa = () => (
   <div>
     <span style={eyebrow}>Vista desde arriba</span>
     <h3 style={cardTitle}>Qué va entre cada planta de cacao</h3>
-    <div className="flex flex-wrap items-center justify-center gap-2 mb-5" style={{ ...miniBody, fontSize: '0.72rem' }}>
-      <IconCacao size={26} /><span>Cacao cada 3 m</span>
+    <div className="flex flex-wrap items-center justify-center gap-2 mb-5" style={{ ...miniBody, color: '#5C4326', fontSize: '0.78rem' }}>
+      <FloatIcon><IconCacao size={40} /></FloatIcon><span>Cacao cada 3 m</span>
       <span style={{ opacity: 0.4 }}>·</span>
       <span>Calles a 4 m de distancia</span>
     </div>
     <div className="grid sm:grid-cols-3 gap-4">
-      {calles.map((c) => (
+      {calles.map((c, i) => (
         <div key={c.nombre} style={miniCard} className="text-center">
-          <div className="flex justify-center mb-2">{c.icon}</div>
+          <div className="flex justify-center mb-2"><FloatIcon delay={i * 0.3}>{c.icon}</FloatIcon></div>
           <p style={miniLabel}>{c.nombre}</p>
           <p style={miniBody}>{c.extra}</p>
         </div>
       ))}
     </div>
-    <p style={{ ...miniBody, marginTop: '1rem', fontStyle: 'italic' }}>
+    <p style={{ ...miniBody, color: '#6B5232', marginTop: '1rem', fontStyle: 'italic' }}>
       Cada planta grande va justo al medio entre dos cacaos de la línea vecina, nunca frente a frente — así ninguna raíz compite y la sombra cae repartida.
     </p>
   </div>
@@ -175,16 +175,16 @@ const SlideBajos = () => (
     <span style={eyebrow}>Primera plata del sistema</span>
     <h3 style={cardTitle}>Plátano, yuca y piña</h3>
     <div className="grid sm:grid-cols-3 gap-4">
-      {bajos.map((b) => (
+      {bajos.map((b, i) => (
         <div key={b.t} style={miniCard}>
-          <div className="mb-2">{b.icon}</div>
+          <div className="mb-2"><FloatIcon delay={i * 0.3}>{b.icon}</FloatIcon></div>
           <p style={miniLabel}>{b.t}</p>
           <p style={{ ...miniBody, color: '#D9A441', marginBottom: '0.3rem' }}>{b.s}</p>
           <p style={miniBody}>{b.d}</p>
         </div>
       ))}
     </div>
-    <p style={{ ...miniBody, marginTop: '1rem', fontStyle: 'italic' }}>Nada sale de la parcela: todo lo que se poda se queda como abono.</p>
+    <p style={{ ...miniBody, color: '#6B5232', marginTop: '1rem', fontStyle: 'italic' }}>Nada sale de la parcela: todo lo que se poda se queda como abono.</p>
   </div>
 );
 
@@ -200,9 +200,9 @@ const SlideMedianos = () => (
     <span style={eyebrow}>Fruta fresca para el mercado</span>
     <h3 style={cardTitle}>Cítricos y frutales medianos</h3>
     <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-4">
-      {medianos.map((m) => (
+      {medianos.map((m, i) => (
         <div key={m.t} style={miniCard}>
-          <div className="mb-2">{m.icon}</div>
+          <div className="mb-2"><FloatIcon delay={i * 0.3}>{m.icon}</FloatIcon></div>
           <p style={miniLabel}>{m.t}</p>
           <p style={{ ...miniBody, color: '#D9A441', marginBottom: '0.3rem' }}>{m.s}</p>
           <p style={miniBody}>{m.d}</p>
@@ -223,9 +223,9 @@ const SlideAltos = () => (
     <span style={eyebrow}>Abono, sombra alta y ahorro</span>
     <h3 style={cardTitle}>Guaba, pijuayo y madera</h3>
     <div className="grid sm:grid-cols-3 gap-4">
-      {altos.map((a) => (
+      {altos.map((a, i) => (
         <div key={a.t} style={miniCard}>
-          <div className="mb-2">{a.icon}</div>
+          <div className="mb-2"><FloatIcon delay={i * 0.3}>{a.icon}</FloatIcon></div>
           <p style={miniLabel}>{a.t}</p>
           <p style={{ ...miniBody, color: '#D9A441', marginBottom: '0.3rem' }}>{a.s}</p>
           <p style={miniBody}>{a.d}</p>
@@ -246,7 +246,7 @@ const ingresos = [
 const SlideIngresos = () => (
   <div className="rounded-2xl p-5 md:p-6" style={{ background: 'rgba(217,164,65,0.10)', border: '1.5px solid rgba(217,164,65,0.45)' }}>
     <div className="flex items-center gap-2 mb-1">
-      <IconMoneda size={28} />
+      <FloatIcon><IconMoneda size={48} /></FloatIcon>
       <span style={{ ...eyebrow, marginBottom: 0, color: '#F0C46A' }}>Ingresos · lo más importante</span>
     </div>
     <h3 style={cardTitle}>Cuándo empieza a entrar la plata</h3>
@@ -259,7 +259,7 @@ const SlideIngresos = () => (
         </div>
       ))}
     </div>
-    <p style={{ ...miniBody, marginTop: '1rem', fontStyle: 'italic' }}>
+    <p style={{ ...miniBody, color: '#6B5232', marginTop: '1rem', fontStyle: 'italic' }}>
       Lo seguro es el orden: primero raíces y plátano, después fruta, después madera.
     </p>
   </div>
@@ -272,7 +272,7 @@ const SlideAbejas = () => (
     <h3 style={cardTitle}>Panales de abejas en 4 puntos de la parcela</h3>
     <div className="grid md:grid-cols-2 gap-4">
       <div style={miniCard} className="flex gap-3 items-start">
-        <IconAbeja />
+        <FloatIcon><IconAbeja /></FloatIcon>
         <ul style={{ ...miniBody, paddingLeft: '1rem', listStyle: 'disc' }}>
           <li><strong style={{ color: '#E0C98A' }}>Dónde:</strong> una en cada esquina de la parcela, a media sombra.</li>
           <li><strong style={{ color: '#E0C98A' }}>Cuándo:</strong> a partir del año 2, cuando ya hay flores todo el año.</li>
@@ -373,7 +373,13 @@ export default function SintropicoSection() {
   const Slide = slides[current];
 
   return (
-    <section id="sintropico" className="relative py-16 md:py-20 px-4 md:px-6" style={{ background: '#150A04' }}>
+    <section id="sintropico" className="relative py-16 md:py-20 px-4 md:px-6" style={{ background: '#F5E6D0' }}>
+      <style>{`
+        @keyframes sintropico-float {
+          0%, 100% { transform: translateY(0) rotate(0deg); }
+          50% { transform: translateY(-8px) rotate(-3deg); }
+        }
+      `}</style>
       <div className="max-w-5xl mx-auto">
 
         {/* Título */}
@@ -383,7 +389,7 @@ export default function SintropicoSection() {
             fontFamily: "'Playfair Display', serif",
             fontWeight: 700,
             fontSize: 'clamp(1.6rem, 4vw, 2.6rem)',
-            background: 'linear-gradient(90deg,#FFD700,#FFEE00,#FFD700)',
+            background: 'linear-gradient(90deg,#9E7D45,#C8A96E,#9E7D45)',
             WebkitBackgroundClip: 'text',
             WebkitTextFillColor: 'transparent',
             backgroundClip: 'text',
@@ -395,7 +401,7 @@ export default function SintropicoSection() {
             fontFamily: "'Playfair Display', serif",
             fontWeight: 800,
             fontSize: 'clamp(1.5rem, 4.2vw, 2.7rem)',
-            color: '#F5E6D0',
+            color: '#2A1D0E',
             lineHeight: 1.15,
             marginTop: '0.2rem',
           }}>
@@ -407,8 +413,9 @@ export default function SintropicoSection() {
         <div
           className="rounded-3xl p-6 md:p-10"
           style={{
-            background: 'rgba(255,255,255,0.03)',
-            border: '1px solid rgba(201,168,76,0.15)',
+            background: 'rgba(255,255,255,0.55)',
+            border: '1px solid rgba(140,90,30,0.15)',
+            boxShadow: '0 12px 40px rgba(90,60,20,0.08)',
             minHeight: '360px',
             opacity: animating ? 0 : 1,
             transform: animating ? 'translateY(8px)' : 'translateY(0)',
@@ -430,19 +437,21 @@ export default function SintropicoSection() {
         <div className="flex items-center justify-center gap-6 mt-8">
           <button
             onClick={() => goTo(current - 1)}
-            className="w-10 h-10 flex items-center justify-center rounded-full border border-white/20 bg-white/10 text-cream hover:bg-white/20 transition-all cursor-pointer"
+            className="w-10 h-10 flex items-center justify-center rounded-full transition-all cursor-pointer"
+            style={{ border: '1px solid rgba(61,31,0,0.25)', background: 'rgba(255,255,255,0.5)', color: '#3D1F00' }}
             aria-label="Anterior"
           >
             <i className="ri-arrow-left-s-line text-lg" />
           </button>
 
-          <span style={{ fontFamily: "'Josefin Sans', sans-serif", color: 'rgba(245,230,208,0.6)', fontSize: '0.8rem' }}>
+          <span style={{ fontFamily: "'Josefin Sans', sans-serif", color: 'rgba(42,29,14,0.6)', fontSize: '0.8rem' }}>
             {current + 1} / {slides.length}
           </span>
 
           <button
             onClick={() => goTo(current + 1)}
-            className="w-10 h-10 flex items-center justify-center rounded-full border border-white/20 bg-white/10 text-cream hover:bg-white/20 transition-all cursor-pointer"
+            className="w-10 h-10 flex items-center justify-center rounded-full transition-all cursor-pointer"
+            style={{ border: '1px solid rgba(61,31,0,0.25)', background: 'rgba(255,255,255,0.5)', color: '#3D1F00' }}
             aria-label="Siguiente"
           >
             <i className="ri-arrow-right-s-line text-lg" />
@@ -459,7 +468,7 @@ export default function SintropicoSection() {
               style={{
                 width: i === current ? '22px' : '7px',
                 height: '7px',
-                background: i === current ? '#D9A441' : 'rgba(255,255,255,0.2)',
+                background: i === current ? '#B8722A' : 'rgba(61,31,0,0.15)',
               }}
             />
           ))}

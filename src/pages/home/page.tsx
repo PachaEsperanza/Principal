@@ -3,7 +3,6 @@ import Navbar from './components/Navbar';
 import CartPanel from './components/CartPanel';
 import AndeanBasketToast from './components/AndeanBasketToast';
 import Hero from './components/Hero';
-import Manifesto from './components/Manifesto';
 import SintropicoSection from './components/SintropicoSection';
 import MisionSection from './components/MisionSection';
 import VisionSection from './components/VisionSection';
@@ -71,7 +70,6 @@ const HomePage = () => {
       <Hero />
       <Farmers />
       <HistoriaSection />
-      <Manifesto />
       <SintropicoSection />
       <MisionSection />
       <VisionSection />
