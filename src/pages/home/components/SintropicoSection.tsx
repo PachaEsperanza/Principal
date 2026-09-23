@@ -27,8 +27,8 @@ const cardTitle: React.CSSProperties = {
 };
 
 const miniCard: React.CSSProperties = {
-  background: 'rgba(255,255,255,0.06)',
-  border: '1px solid rgba(201,168,76,0.18)',
+  background: '#2A1D0E',
+  border: '1px solid rgba(217,164,65,0.25)',
   borderRadius: '1rem',
   padding: '1.1rem',
 };
@@ -54,8 +54,8 @@ const SlideCambia = () => (
     <span style={eyebrow}>Lo que cambia</span>
     <h3 style={cardTitle}>Hoy usted vende cacao. Con este sistema vende cacao y fruta.</h3>
     <div className="grid md:grid-cols-2 gap-4">
-      <div style={{ ...miniCard, background: 'rgba(255,255,255,0.04)' }}>
-        <p style={{ ...miniLabel, color: '#B08968' }}>Parcela actual</p>
+      <div style={{ ...miniCard, background: '#3D2A18' }}>
+        <p style={{ ...miniLabel, color: '#C8A671' }}>Parcela actual</p>
         <ul style={{ ...miniBody, paddingLeft: '1rem', listStyle: 'disc' }}>
           <li>Un solo producto: cacao en grano.</li>
           <li>Ingreso concentrado en la campaña.</li>
@@ -63,7 +63,7 @@ const SlideCambia = () => (
           <li>Sombra despareja, plantas expuestas al sol.</li>
         </ul>
       </div>
-      <div style={{ ...miniCard, background: 'rgba(63,107,90,0.35)', borderColor: 'rgba(143,174,78,0.35)' }}>
+      <div style={{ ...miniCard, background: '#1F3D24', borderColor: 'rgba(143,174,78,0.35)' }}>
         <p style={{ ...miniLabel, color: '#A8C97F' }}>Con sistema sintrópico</p>
         <ul style={{ ...miniBody, paddingLeft: '1rem', listStyle: 'disc' }}>
           <li>Cacao + plátano, piña, papaya, cítricos, guaba, pijuayo.</li>
@@ -113,6 +113,14 @@ const SlideEstratos = () => (
   <div>
     <span style={eyebrow}>Estratos</span>
     <h3 style={cardTitle}>Los 5 pisos de la parcela</h3>
+    <div className="rounded-2xl overflow-hidden mb-5" style={{ background: '#FAF7F2', border: '1px solid rgba(140,90,30,0.12)' }}>
+      <img
+        src="/Principal/images/estratos-diagrama.jpeg"
+        alt="Diagrama de los 5 pisos de la parcela: emergente, alto, medio (cacao), bajo y rasante"
+        className="w-full h-auto object-contain"
+        style={{ maxHeight: '320px', margin: '0 auto', display: 'block' }}
+      />
+    </div>
     <div className="flex flex-col gap-2.5">
       {estratos.map((e) => (
         <div key={e.nivel} className="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-4 rounded-xl px-4 py-3"
@@ -244,12 +252,12 @@ const ingresos = [
   { periodo: 'Año 8+', t: 'Madera', d: 'Bolaina, capirona y cedro como ahorro familiar.', color: '#1F3D24' },
 ];
 const SlideIngresos = () => (
-  <div className="rounded-2xl p-5 md:p-6" style={{ background: 'rgba(217,164,65,0.10)', border: '1.5px solid rgba(217,164,65,0.45)' }}>
+  <div className="rounded-2xl p-5 md:p-6" style={{ background: '#4A3410', border: '1.5px solid rgba(217,164,65,0.45)' }}>
     <div className="flex items-center gap-2 mb-1">
       <FloatIcon><IconMoneda size={48} /></FloatIcon>
       <span style={{ ...eyebrow, marginBottom: 0, color: '#F0C46A' }}>Ingresos · lo más importante</span>
     </div>
-    <h3 style={cardTitle}>Cuándo empieza a entrar la plata</h3>
+    <h3 style={{ ...cardTitle, color: '#FBF6EE' }}>Cuándo empieza a entrar la plata</h3>
     <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-3">
       {ingresos.map((i) => (
         <div key={i.periodo} className="rounded-xl p-3.5" style={{ background: i.color }}>
@@ -259,7 +267,7 @@ const SlideIngresos = () => (
         </div>
       ))}
     </div>
-    <p style={{ ...miniBody, color: '#6B5232', marginTop: '1rem', fontStyle: 'italic' }}>
+    <p style={{ ...miniBody, marginTop: '1rem', fontStyle: 'italic' }}>
       Lo seguro es el orden: primero raíces y plátano, después fruta, después madera.
     </p>
   </div>
@@ -279,7 +287,7 @@ const SlideAbejas = () => (
           <li><strong style={{ color: '#E0C98A' }}>Qué abeja:</strong> abejas nativas sin aguijón. No pican y son seguras cerca de la casa.</li>
         </ul>
       </div>
-      <div style={{ ...miniCard, background: 'rgba(217,164,65,0.12)' }}>
+      <div style={{ ...miniCard, background: '#4A3410', borderColor: 'rgba(217,164,65,0.35)' }}>
         <p style={miniLabel}>Lo que aportan</p>
         <ul style={{ ...miniBody, paddingLeft: '1rem', listStyle: 'disc' }}>
           <li>Mejor cuajado de flor en cítricos, guayaba y carambola.</li>
@@ -297,7 +305,7 @@ const SlideSiNo = () => (
     <span style={eyebrow}>100% orgánico</span>
     <h3 style={cardTitle}>Qué sí se usa y qué no entra a la parcela</h3>
     <div className="grid md:grid-cols-2 gap-4">
-      <div className="rounded-xl p-4" style={{ background: 'rgba(63,107,90,0.35)', border: '1px solid rgba(143,174,78,0.3)' }}>
+      <div className="rounded-xl p-4" style={{ background: '#1F3D24', border: '1px solid rgba(143,174,78,0.3)' }}>
         <p style={{ ...miniLabel, color: '#A8C97F' }}>Sí</p>
         <ul style={{ ...miniBody, paddingLeft: '1rem', listStyle: 'disc' }}>
           <li>Compost y humus de la misma finca</li>
@@ -306,7 +314,7 @@ const SlideSiNo = () => (
           <li>Caldos minerales y trampas para plagas</li>
         </ul>
       </div>
-      <div className="rounded-xl p-4" style={{ background: 'rgba(20,10,5,0.5)', border: '1px solid rgba(200,85,30,0.3)' }}>
+      <div className="rounded-xl p-4" style={{ background: '#2A0F08', border: '1px solid rgba(200,85,30,0.3)' }}>
         <p style={{ ...miniLabel, color: '#D9662A' }}>No</p>
         <ul style={{ ...miniBody, paddingLeft: '1rem', listStyle: 'disc' }}>
           <li>Herbicidas de cualquier tipo</li>
@@ -334,7 +342,7 @@ const SlideGanancias = () => (
     <h3 style={cardTitle}>Lo que gana el agricultor</h3>
     <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-3.5">
       {ganancias.map((g) => (
-        <div key={g.t} style={g.highlight ? { ...miniCard, background: 'rgba(63,107,90,0.4)', borderColor: 'rgba(143,174,78,0.4)' } : miniCard}>
+        <div key={g.t} style={g.highlight ? { ...miniCard, background: '#1F3D24', borderColor: 'rgba(143,174,78,0.4)' } : miniCard}>
           <p style={miniLabel}>{g.t}</p>
           <p style={miniBody}>{g.d}</p>
         </div>
@@ -373,7 +381,7 @@ export default function SintropicoSection() {
   const Slide = slides[current];
 
   return (
-    <section id="sintropico" className="relative py-16 md:py-20 px-4 md:px-6" style={{ background: '#F5E6D0' }}>
+    <section id="sintropico" className="relative py-6 md:py-8 px-4 md:px-6" style={{ background: '#F5E6D0' }}>
       <style>{`
         @keyframes sintropico-float {
           0%, 100% { transform: translateY(0) rotate(0deg); }
