@@ -113,28 +113,30 @@ const SlideEstratos = () => (
   <div>
     <span style={eyebrow}>Estratos</span>
     <h3 style={cardTitle}>Los 5 pisos de la parcela</h3>
-    <div className="rounded-2xl overflow-hidden mb-5" style={{ background: '#FAF7F2', border: '1px solid rgba(140,90,30,0.12)' }}>
-      <img
-        src="/Principal/images/estratos-diagrama.jpeg"
-        alt="Diagrama de los 5 pisos de la parcela: emergente, alto, medio (cacao), bajo y rasante"
-        className="w-full h-auto object-contain"
-        style={{ maxHeight: '320px', margin: '0 auto', display: 'block' }}
-      />
-    </div>
-    <div className="flex flex-col gap-2.5">
-      {estratos.map((e) => (
-        <div key={e.nivel} className="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-4 rounded-xl px-4 py-3"
-          style={{ background: e.color }}>
-          <span style={{
-            fontFamily: "'Josefin Sans', sans-serif", fontSize: '0.68rem', letterSpacing: '0.05em',
-            color: e.dark ? 'rgba(30,20,10,0.7)' : 'rgba(255,255,255,0.65)', minWidth: '150px', flexShrink: 0,
-          }}>{e.nivel}</span>
-          <span style={{
-            fontFamily: "'Josefin Sans', sans-serif", fontSize: '0.85rem',
-            color: e.dark ? '#2A1D0E' : '#FBF6EE', fontWeight: e.bold ? 700 : 400,
-          }}>{e.txt}</span>
-        </div>
-      ))}
+    <div className="grid md:grid-cols-2 gap-5 items-stretch">
+      <div className="flex flex-col gap-2.5">
+        {estratos.map((e) => (
+          <div key={e.nivel} className="flex-1 flex flex-col justify-center gap-1 rounded-xl px-4 py-3"
+            style={{ background: e.color }}>
+            <span style={{
+              fontFamily: "'Josefin Sans', sans-serif", fontSize: '0.68rem', letterSpacing: '0.05em',
+              color: e.dark ? 'rgba(30,20,10,0.7)' : 'rgba(255,255,255,0.65)',
+            }}>{e.nivel}</span>
+            <span style={{
+              fontFamily: "'Josefin Sans', sans-serif", fontSize: '0.85rem',
+              color: e.dark ? '#2A1D0E' : '#FBF6EE', fontWeight: e.bold ? 700 : 400,
+            }}>{e.txt}</span>
+          </div>
+        ))}
+      </div>
+      <div className="rounded-2xl overflow-hidden" style={{ background: '#FAF7F2', border: '1px solid rgba(140,90,30,0.12)' }}>
+        <img
+          src="/Principal/images/estratos-diagrama.jpeg"
+          alt="Diagrama de los 5 pisos de la parcela: emergente, alto, medio (cacao), bajo y rasante"
+          className="w-full h-full object-contain"
+          style={{ display: 'block' }}
+        />
+      </div>
     </div>
     <p style={{ ...miniBody, color: '#6B5232', marginTop: '1rem', fontStyle: 'italic' }}>
       El cacao chuncho vive en el piso medio y necesita entre 40% y 50% de sombra. Todo el diseño está hecho para darle esa sombra sin quitarle luz.
