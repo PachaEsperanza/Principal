@@ -99,15 +99,37 @@ export const IconArbol = ({ size = 64 }: { size?: number }) => (
   </svg>
 );
 
-export const IconAbeja = ({ size = 64 }: { size?: number }) => (
-  <svg width={size} height={size} viewBox="0 0 64 64">
-    <ellipse cx="24" cy="28" rx="10" ry="8" fill="#F0F0F0" opacity="0.55" />
-    <ellipse cx="40" cy="28" rx="10" ry="8" fill="#F0F0F0" opacity="0.55" />
-    <ellipse cx="32" cy="36" rx="14" ry="11" fill="#2A2010" />
-    <rect x="20" y="30" width="24" height="5" fill="#E8B93C" />
-    <rect x="20" y="40" width="24" height="5" fill="#E8B93C" />
-  </svg>
-);
+export const IconAbeja = ({ size = 64 }: { size?: number }) => {
+  const clipId = `abeja-clip-${size}`;
+  return (
+    <svg width={size} height={size} viewBox="0 0 64 64">
+      <defs>
+        <clipPath id={clipId}>
+          <ellipse cx="32" cy="38" rx="13" ry="15" />
+        </clipPath>
+      </defs>
+      {/* Alas */}
+      <ellipse cx="21" cy="24" rx="11" ry="8" fill="#EAF2FF" opacity="0.85" stroke="#B9CCE8" strokeWidth="0.8" transform="rotate(-18 21 24)" />
+      <ellipse cx="43" cy="24" rx="11" ry="8" fill="#EAF2FF" opacity="0.85" stroke="#B9CCE8" strokeWidth="0.8" transform="rotate(18 43 24)" />
+      {/* Cuerpo (abdomen con rayas, recortadas dentro del óvalo) */}
+      <g clipPath={`url(#${clipId})`}>
+        <ellipse cx="32" cy="38" rx="13" ry="15" fill="#F0B429" />
+        <rect x="19" y="29" width="26" height="4.5" fill="#2A2010" />
+        <rect x="19" y="38" width="26" height="4.5" fill="#2A2010" />
+        <rect x="19" y="47" width="26" height="4.5" fill="#2A2010" />
+      </g>
+      {/* Cabeza */}
+      <circle cx="32" cy="21" r="7.5" fill="#2A2010" />
+      <circle cx="29" cy="20" r="1.4" fill="#FFFFFF" />
+      <circle cx="35" cy="20" r="1.4" fill="#FFFFFF" />
+      {/* Antenas */}
+      <path d="M28 15 C 26 10, 24 8, 22 7" stroke="#2A2010" strokeWidth="1.6" fill="none" strokeLinecap="round" />
+      <path d="M36 15 C 38 10, 40 8, 42 7" stroke="#2A2010" strokeWidth="1.6" fill="none" strokeLinecap="round" />
+      <circle cx="22" cy="7" r="1.6" fill="#2A2010" />
+      <circle cx="42" cy="7" r="1.6" fill="#2A2010" />
+    </svg>
+  );
+};
 
 export const IconMoneda = ({ size = 64 }: { size?: number }) => (
   <svg width={size} height={size} viewBox="0 0 64 64">

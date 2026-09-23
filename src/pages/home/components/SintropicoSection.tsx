@@ -433,10 +433,7 @@ export default function SintropicoSection() {
             fontFamily: "'Playfair Display', serif",
             fontWeight: 700,
             fontSize: 'clamp(1.6rem, 4vw, 2.6rem)',
-            background: 'linear-gradient(90deg,#FFD700,#FFEE00,#FFD700)',
-            WebkitBackgroundClip: 'text',
-            WebkitTextFillColor: 'transparent',
-            backgroundClip: 'text',
+            color: '#4A2F0E',
             lineHeight: 1.1,
           }}>
             Sistema sintrópico
