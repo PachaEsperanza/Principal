@@ -276,13 +276,27 @@ const SlideIngresos = () => (
 );
 
 // ─── Slide 9: Abejas ──────────────────────────────────────────────────
+const abejaMoves = [
+  { dur: 4.2, delay: 0, dx: 10, dy: -10, rot: 8 },
+  { dur: 3.6, delay: 0.4, dx: -8, dy: -14, rot: -10 },
+  { dur: 5, delay: 0.9, dx: 12, dy: -8, rot: 6 },
+  { dur: 3.9, delay: 1.3, dx: -10, dy: -12, rot: -7 },
+];
 const SlideAbejas = () => (
   <div>
+    <div className="flex items-center gap-3 mb-1" style={{ height: '52px' }}>
+      {abejaMoves.map((m, i) => (
+        <div key={i} style={{
+          animation: `sintropico-bee-fly-${i % 4} ${m.dur}s ease-in-out ${m.delay}s infinite`,
+        }}>
+          <IconAbeja size={40} />
+        </div>
+      ))}
+    </div>
     <span style={eyebrow}>Desde el año 2</span>
     <h3 style={cardTitle}>Panales de abejas en 4 puntos de la parcela</h3>
     <div className="grid md:grid-cols-2 gap-4">
       <div style={miniCard} className="flex gap-3 items-start">
-        <FloatIcon><IconAbeja /></FloatIcon>
         <ul style={{ ...miniBody, paddingLeft: '1rem', listStyle: 'disc' }}>
           <li><strong style={{ color: '#E0C98A' }}>Dónde:</strong> una en cada esquina de la parcela, a media sombra.</li>
           <li><strong style={{ color: '#E0C98A' }}>Cuándo:</strong> a partir del año 2, cuando ya hay flores todo el año.</li>
@@ -389,6 +403,26 @@ export default function SintropicoSection() {
           0%, 100% { transform: translateY(0) rotate(0deg); }
           50% { transform: translateY(-8px) rotate(-3deg); }
         }
+        @keyframes sintropico-bee-fly-0 {
+          0%, 100% { transform: translate(0,0) rotate(0deg); }
+          30% { transform: translate(10px,-10px) rotate(8deg); }
+          60% { transform: translate(4px,-16px) rotate(-4deg); }
+        }
+        @keyframes sintropico-bee-fly-1 {
+          0%, 100% { transform: translate(0,0) rotate(0deg); }
+          35% { transform: translate(-8px,-14px) rotate(-10deg); }
+          70% { transform: translate(-14px,-4px) rotate(5deg); }
+        }
+        @keyframes sintropico-bee-fly-2 {
+          0%, 100% { transform: translate(0,0) rotate(0deg); }
+          40% { transform: translate(12px,-8px) rotate(6deg); }
+          75% { transform: translate(6px,-18px) rotate(-6deg); }
+        }
+        @keyframes sintropico-bee-fly-3 {
+          0%, 100% { transform: translate(0,0) rotate(0deg); }
+          25% { transform: translate(-10px,-12px) rotate(-7deg); }
+          65% { transform: translate(-4px,-4px) rotate(9deg); }
+        }
       `}</style>
       <div className="max-w-5xl mx-auto">
 
@@ -399,7 +433,7 @@ export default function SintropicoSection() {
             fontFamily: "'Playfair Display', serif",
             fontWeight: 700,
             fontSize: 'clamp(1.6rem, 4vw, 2.6rem)',
-            background: 'linear-gradient(90deg,#9E7D45,#C8A96E,#9E7D45)',
+            background: 'linear-gradient(90deg,#FFD700,#FFEE00,#FFD700)',
             WebkitBackgroundClip: 'text',
             WebkitTextFillColor: 'transparent',
             backgroundClip: 'text',
